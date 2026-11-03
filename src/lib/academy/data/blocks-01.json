@@ -1,0 +1,234 @@
+[
+  {
+    "id": "01.01",
+    "name": "Why CoDesign and when to engage",
+    "phase": "01 Our approach",
+    "sub": "Introduction",
+    "lvl": "N0",
+    "primary": "WORK",
+    "obj": "Explain in two sentences what CoDesign is for and recognise the moments to bring the team in.",
+    "who": "Everyone who meets clients: sales, account teams, BRMs (Business Relationship Managers), site and tech leads.",
+    "acc": "Arnaud (business positioning).",
+    "when": "Before any client conversation about experience, renewal or a new site.",
+    "inputs": "Account situation: contract end date, satisfaction trend, planned site changes.",
+    "steps": [
+      "Spot a trigger: contract ends in 18 months or less, a priority client must be retained, satisfaction is slipping, a new site or refurbishment is planned",
+      "Check sponsorship: a senior client sponsor, an account owner and a tech owner",
+      "Call the CoDesign team for a Presales conversation (02)"
+    ],
+    "output": "A qualified lead for 02 Presales.",
+    "std": "Trigger and sponsor named.",
+    "quality": "Engage early: 18 months before renewal works better than 2-3 months.",
+    "mistakes": "Calling CoDesign for a one-off workshop at the last minute · no sponsor.",
+    "handoff": "Qualified lead → 02.03 Client Intelligence.",
+    "example": "WORK: Northbridge restaurant contract renews in 16 months and attendance is flat → trigger met; sponsor = Head of Workplace. [fictional]",
+    "var": {
+      "PLAY": "New stand opening next season.",
+      "HEAL": "Patient-experience scores falling two quarters in a row.",
+      "LEARN": "New student centre planned."
+    },
+    "cred": "Use named projects only; commercial figures need Arnaud's sign-off (see conflicts register).",
+    "tools": "Overview deck [S06]",
+    "deck": "[S06, slides 1-5] · [S07, slides 1, 5] · [S05, slides 11, 35, 38]",
+    "prompt": "Generic Claude prompt: 'Here is an account summary [paste]. Which CoDesign engagement triggers apply, and what 3 questions should I ask the client sponsor?'",
+    "verify": "Contract dates and sponsor names.",
+    "fallback": "The four-trigger checklist above.",
+    "l_obj": "Identify an engagement trigger in an account description and name the sponsor needed.",
+    "explain": "Clients don't renew a contract; they renew the experience they helped create. CoDesign brings users, frontline teams and sponsors into decisions early.",
+    "type": "foundation",
+    "templates": [
+      {
+        "label": "Credentials folder (SharePoint)",
+        "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+      }
+    ],
+    "os_agents": [],
+    "exercise": {
+      "situation": "Three account descriptions (one per segment pack).",
+      "questions": [
+        "Which trigger applies?",
+        "Who must sponsor?",
+        "Is it too late, too early or right?"
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "Northbridge: 16 months, trigger met. Riverside: new stand, right time. St Aldric: falling scores, sponsor = director of patient experience.",
+      "success_criteria": "Trigger and sponsor correctly identified."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134897"
+  },
+  {
+    "id": "01.02",
+    "name": "Team, roles and regional operating model",
+    "phase": "01 Our approach",
+    "sub": "Introduction",
+    "lvl": "N0",
+    "primary": "HEAL",
+    "obj": "Know who does what in an engagement and where regional colleagues contribute.",
+    "who": "CoDesign core team (method, facilitation, templates) · regional champions and local designers (local cases, supported delivery) · account, sales and BRMs (access, sponsorship, continuity) · tech pre-sales (capability fit).",
+    "acc": "Proposed ownership (to confirm): Diane integration · Noël method and quality · Gabriel templates, evidence, OS mapping · Arnaud positioning and sponsor review.",
+    "when": "At every project start (03.01 RACI).",
+    "inputs": "Project RACI; capability self-assessment.",
+    "steps": [
+      "Find your role in the RACI",
+      "Check the capability level your role needs (N0-N4)",
+      "Agree supported tasks with the CoDesign lead"
+    ],
+    "output": "Your role and level for the engagement.",
+    "std": "Every task has one accountable person.",
+    "quality": "People act at the level they have shown, with coaching above it.",
+    "mistakes": "Assuming attendance at training = independent delivery.",
+    "handoff": "→ 01.03.",
+    "example": "HEAL: on St Aldric the BRM Healthcare joins site visits as Contributor (N1) and co-facilitates one group (N2, coached). [fictional]",
+    "var": {
+      "WORK": "BRM Corporate co-hosts the Northbridge kick-off.",
+      "PLAY": "Local designer leads matchday observation.",
+      "LEARN": "BRM Education & Government sponsors access."
+    },
+    "cred": "Not applicable.",
+    "tools": "RACI",
+    "deck": "[S04, slide 8] · [S05, slides 13, 18] · [S03, slide 4]",
+    "prompt": "Planning & RACI agent with project scope and team list.",
+    "verify": "Names and availability.",
+    "fallback": "RACI table by hand.",
+    "l_obj": "Place yourself in a RACI and state your target level.",
+    "explain": "The method scales through documentation, tooling and people close to the business.",
+    "type": "foundation",
+    "templates": [
+      {
+        "label": "Example RACI (Cincinnati Children's, internal)",
+        "url": "https://sodexo.sharepoint.com/:x:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/07_Projects%20-%20Credentials/US_Cicinnati%20Childrens%20Hospital/00_Governance/CCH_RACI_v4_2026-07.xlsx?d=wf98867a5070d4d298c836ee15fcd2b3b&csf=1&web=1&e=5x8Kc7"
+      }
+    ],
+    "os_agents": [
+      {
+        "name": "Planning & RACI",
+        "url": "https://sodexo-codesign-os.vercel.app/agents/planning-agent.html"
+      }
+    ],
+    "exercise": {
+      "situation": "RACI for a Format A workshop project.",
+      "questions": ["Which tasks are yours?", "Which need coaching?", "Who signs off?"]
+    },
+    "answer_key": {
+      "sample_answer": "Depends on role; sign-off sits with CoDesign lead and client sponsor.",
+      "success_criteria": "Accountable person named per task."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134898"
+  },
+  {
+    "id": "01.03",
+    "name": "End-to-end approach and the six-section campus",
+    "phase": "01 Our approach",
+    "sub": "Introduction",
+    "lvl": "N0",
+    "primary": "WORK",
+    "obj": "Describe the end-to-end process: Presales, then the four Double Diamond phases.",
+    "who": "All learners.",
+    "acc": "Noël (method).",
+    "when": "Start of any learning route.",
+    "inputs": "This campus.",
+    "steps": [
+      "01 Our approach: why, who, how (introduction)",
+      "02 Presales: frame the opportunity, before the Double Diamond",
+      "03 Discover: diverge on the problem with evidence",
+      "04 Define: converge on who, what hurts, where to act",
+      "05 Co-create: diverge on solutions with users and client",
+      "06 Test & Deliver: converge on tested, owned decisions"
+    ],
+    "output": "Shared mental model.",
+    "std": "Learner can place any activity in the right section.",
+    "quality": "Six campus sections = one introduction + five process sections. Presales precedes the four Double Diamond phases.",
+    "mistakes": "Treating a half-day workshop as the whole engagement · skipping Discover.",
+    "handoff": "→ choose learning route (Format A or B).",
+    "example": "WORK: Northbridge runs 02 → 06 over about 12 weeks; the half-day workshop is one day inside 05. [fictional]",
+    "var": {
+      "PLAY": "Riverside fits around the fixture calendar.",
+      "HEAL": "St Aldric adds clinical review gates.",
+      "LEARN": "Lakeshore follows the semester."
+    },
+    "cred": "Not applicable.",
+    "tools": "Start Here frame",
+    "deck": "[S03, slides 1-4] · [S05, slides 3, 27] · [S07, slide 1]",
+    "prompt": "Generic Claude prompt: 'Sort these activities into the six campus sections and explain each placement in one line.'",
+    "verify": "Placement against the six-section taxonomy on Start Here.",
+    "fallback": "Card sort on the Start Here process strip.",
+    "l_obj": "Sort 10 activity cards into the six sections.",
+    "explain": "Diverge to explore, converge to decide — twice: first on the problem, then on the solution.",
+    "type": "foundation",
+    "templates": [
+      {
+        "label": "XP Design for Client template",
+        "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/08_Codesign%20Process%20Templates/TEMPLATE_Sodexo%20CoDesign%20Services%20-%20XP%20Design%20for%20Client%20.pptx?d=wf795306586174afdbd429f8888f91bd5&csf=1&web=1&e=DMqySv"
+      }
+    ],
+    "os_agents": [],
+    "exercise": {
+      "situation": "10 activity cards (e.g. 'site visit', 'value proposition', 'proposal').",
+      "questions": [
+        "Place each in a section.",
+        "Which happen before the workshop?",
+        "Which need user evidence?"
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "Proposal 02; site visit 03; journey 04; idea sheet 05; value proposition 06; test 06.X3.",
+      "success_criteria": "≥ 8/10 correctly placed."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134899"
+  },
+  {
+    "id": "01.04",
+    "name": "Human-led, AI-supported: how we use CoDesign OS",
+    "phase": "01 Our approach",
+    "sub": "Introduction",
+    "lvl": "N0",
+    "primary": "PLAY",
+    "obj": "Use AI support safely: the method works without AI; when used, a designer verifies, edits and decides.",
+    "who": "All learners.",
+    "acc": "Gabriel (OS mapping); Noël (method).",
+    "when": "Before any OS demonstration.",
+    "inputs": "OS access; approved data rules.",
+    "steps": [
+      "Do the step manually first in training",
+      "Use the OS agent with real context",
+      "Check every [EVIDENCE] tag against sources",
+      "Delete invented quotes or figures",
+      "Decide what stays — a human decision"
+    ],
+    "output": "AI output that is verified and owned by a person.",
+    "std": "No unverified fact leaves the team.",
+    "quality": "Readable without AI; prompts at the bottom of every card; human decides.",
+    "mistakes": "Pasting confidential data into unapproved tools · treating AI ideas as evidence.",
+    "handoff": "→ any block's lane E.",
+    "example": "PLAY: Journey Map agent drafts Dev's matchday journey; the designer deletes two invented quotes and keeps the stage names.",
+    "var": {
+      "WORK": "Client Intelligence draft checked against the annual report.",
+      "HEAL": "No patient data in prompts.",
+      "LEARN": "Survey data anonymised before use."
+    },
+    "cred": "Not applicable.",
+    "tools": "CoDesign OS (23 live agents, read 3 Nov 2026)",
+    "deck": "[S04, slides 5-6] · [S05, slides 13-15]",
+    "prompt": "See each block.",
+    "verify": "See each block.",
+    "fallback": "Every block has a manual fallback.",
+    "l_obj": "Explain the three human checks applied to any AI output.",
+    "explain": "Human first. AI second. Human decides.",
+    "type": "foundation",
+    "templates": [
+      { "label": "CoDesign OS — Agent Explorer", "url": "https://sodexo-codesign-os.vercel.app/" },
+      { "label": "OS prompt library", "url": "https://sodexo-codesign-os.vercel.app/prompts.html" }
+    ],
+    "os_agents": [],
+    "exercise": {
+      "situation": "An AI-generated journey with 2 invented quotes.",
+      "questions": ["Spot them.", "What do you do?", "What must a human decide?"]
+    },
+    "answer_key": {
+      "sample_answer": "Quotes without transcript IDs; delete or tag [TO VALIDATE]; humans decide which opportunities go forward.",
+      "success_criteria": "Both invented quotes found."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134900"
+  }
+]

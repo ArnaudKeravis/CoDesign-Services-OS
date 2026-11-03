@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "name": "CoDesign Method Campus",
+    "version": "2.1",
+    "date": "2026-11-03",
+    "owner": "Diane",
+    "status": "draft for review",
+    "note": "Case data is FICTIONAL training data. Answer keys are facilitator-only."
+  },
+  "taxonomy": "Six campus sections comprise an introduction plus five process sections. Presales precedes the four phases of the Double Diamond.",
+  "sections": [
+    { "code": "01", "name": "01 Our approach", "subtitle": "Introduction · why, who, how" },
+    { "code": "02", "name": "02 Presales", "subtitle": "Before the Double Diamond · frame the opportunity" },
+    { "code": "03", "name": "03 Discover", "subtitle": "Diamond 1 · diverge on the problem" },
+    { "code": "04", "name": "04 Define", "subtitle": "Diamond 1 · converge on the problem" },
+    { "code": "05", "name": "05 Co-create", "subtitle": "Diamond 2 · diverge on solutions" },
+    { "code": "06", "name": "06 Test & Deliver", "subtitle": "Diamond 2 · converge on tested, owned decisions" }
+  ],
+  "lanes": [
+    { "code": "A", "name": "Method" },
+    { "code": "B", "name": "Training" },
+    { "code": "C", "name": "Practice" },
+    { "code": "D", "name": "Examples & credentials" },
+    { "code": "E", "name": "Enablers" },
+    { "code": "F", "name": "Assessment & action" }
+  ],
+  "levels": [
+    { "code": "N0", "label": "N0 Aware" },
+    { "code": "N1", "label": "N1 Contributor" },
+    { "code": "N2", "label": "N2 Facilitator" },
+    { "code": "N3", "label": "N3 Practitioner" },
+    { "code": "N4", "label": "N4 Lead / Faculty" }
+  ],
+  "segments": ["WORK", "PLAY", "HEAL", "LEARN"]
+}

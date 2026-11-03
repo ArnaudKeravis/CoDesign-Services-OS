@@ -1,0 +1,207 @@
+[
+  {
+    "id": "02.01",
+    "name": "Intro to CoDesign & Proposal",
+    "phase": "02 Presales",
+    "sub": "Before the Double Diamond · project framing",
+    "lvl": "N3",
+    "primary": "WORK",
+    "obj": "Explain what CoDesign brings, understand the client's real challenge and turn it into a clear, tailored proposal.",
+    "who": "Business/Sales brings the opportunity and commercial ambition · CoDesign team challenges the brief, selects the approach and writes the proposal · Client shares context, constraints and expected outcomes.",
+    "acc": "CoDesign lead (N3) signs off the proposal; account owner validates commercial terms.",
+    "when": "At the start of an opportunity, before the project is launched and before Discover. Prerequisite: 02.03 Client Intelligence brief.",
+    "inputs": "Client brief or request; business context; stakeholders, timing, budget if known; relevant previous work. Minimum evidence: a named sponsor and a written brief (even an email).",
+    "steps": [
+      "Understand the initial request and context",
+      "Reframe: challenge the problem as stated",
+      "Identify where CoDesign adds value",
+      "Select method and activities",
+      "Define scope, timing and deliverables",
+      "Build and present the proposal"
+    ],
+    "output": "A tailored proposal: challenge, objectives, approach, phases, activities, deliverables, stakeholders, timeline and budget.",
+    "std": "A non-designer can read it and explain what will happen, why, and what the client receives.",
+    "quality": "Client-specific, outcome-oriented, realistic; the method answers a real need.",
+    "mistakes": "Selling a workshop when the problem needs research · copying a past proposal without reframing · promising outcomes that need user evidence.",
+    "handoff": "Proposal accepted and a sponsor named → 03.01 Kick-off & Planning.",
+    "example": "WORK: Northbridge asks for 'a workshop to fix the restaurant'. The team reframes it as 'make the anchor day worth the commute' and proposes Discover (3 weeks), a half-day Format A workshop and a test plan. [fictional]",
+    "var": {
+      "PLAY": "Riverside asks for 'faster kiosks'. Reframe around the half-time journey, including access needs.",
+      "HEAL": "St Aldric asks for 'a new menu'. Reframe around choice timing and family involvement; flag clinical sign-off in scope.",
+      "LEARN": "Lakeshore asks for 'cheaper meal plans'. Reframe around the commuter's 3-hour gap."
+    },
+    "cred": "Choose 2-3 from 02.02. Credential grid S06 slide 7 proves projects are referenced, not their impact.",
+    "tools": "Proposal template · Double Diamond overview · Miro · PowerPoint",
+    "deck": "[S03, slides 6-9] · [S05, slides 27-28] planning and 70/20/10 · [S06, slide 5] engagement triggers",
+    "prompt": "Use Brief Challenger with the client email and Client Intelligence brief: 'Score this brief on readiness, list the 5 clarification questions to ask before quoting, and flag any walk-away signals.'",
+    "verify": "Scope, price, dates and named credentials; remove any figure the client has not given.",
+    "fallback": "Fill the proposal template section by section: Context → Why now → Challenge → Objectives → Approach → Activities → Deliverables → Timeline → Team.",
+    "l_obj": "Reframe a client request into a CoDesign challenge statement and justify the proposed approach.",
+    "explain": "Presales is not Discover. Its job is to decide what deserves to be explored and how.",
+    "type": "source_block",
+    "templates": [
+      {
+        "label": "XP Design for Client — proposal template (SharePoint)",
+        "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/08_Codesign%20Process%20Templates/TEMPLATE_Sodexo%20CoDesign%20Services%20-%20XP%20Design%20for%20Client%20.pptx?d=wf795306586174afdbd429f8888f91bd5&csf=1&web=1&e=DMqySv"
+      },
+      {
+        "label": "Labs deck (Figma)",
+        "url": "https://www.figma.com/design/jJ8SGyCAXkq56cGvjDthZM/Labs-deck-Presentation-in-English?node-id=1101-3590&t=up0ZPdDG7KcZKv2H-1"
+      }
+    ],
+    "os_agents": [
+      { "name": "Proposal Creation", "url": "https://sodexo-codesign-os.vercel.app/agents/proposal-agent.html" },
+      { "name": "Brief Challenger", "url": "https://sodexo-codesign-os.vercel.app/agents/brief-challenger-agent.html" }
+    ],
+    "exercise": {
+      "situation": "A client asks for 'a one-day workshop to redesign our staff canteen menu'. Budget set, date booked.",
+      "questions": [
+        "What is the client really asking for, and what might the real challenge be?",
+        "Which two questions would you ask before agreeing?",
+        "Would you propose the workshop as requested? If not, what instead, and how do you justify it commercially?"
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "Real challenge is likely participation or experience, not the menu. Questions: 'What would success look like in 6 months?' and 'What do you already know about why people do or do not use the canteen?'. Keep the date but propose 2-3 weeks of light Discover before it, so the workshop works on evidence.",
+      "success_criteria": "Challenge statement names a user, a moment and an outcome; justification links approach to risk avoided."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134901"
+  },
+  {
+    "id": "02.02",
+    "name": "Credentials Examples",
+    "phase": "02 Presales",
+    "sub": "Build credibility",
+    "lvl": "N1",
+    "primary": "HEAL",
+    "obj": "Select the few credentials that prove we can solve this client's challenge.",
+    "who": "Business/Sales shares the opportunity · CoDesign team selects and adapts the story · Client reacts to what resonates.",
+    "acc": "CoDesign lead checks every claim against the credential source and confidentiality rules.",
+    "when": "During Presales, once the challenge is understood.",
+    "inputs": "Client context and challenge; credential library; previous deliverables. Minimum evidence: each credential has an approved source file.",
+    "steps": [
+      "Understand what needs to be proven",
+      "Search the credential library",
+      "Select 2-4 relevant examples",
+      "Extract the strongest proof point",
+      "Adapt the story to the client",
+      "Integrate into the proposal"
+    ],
+    "output": "A short tailored selection: challenge, approach, outputs and, where documented, impact.",
+    "std": "Every proof point traces to an approved document; confidential details removed.",
+    "quality": "Relevant over exhaustive, recent, visual, connected to the client's challenge.",
+    "mistakes": "Showing 15 logos · quoting impact figures nobody can source · using a confidential client name without approval.",
+    "handoff": "Selection embedded in the proposal (02.01).",
+    "example": "HEAL: for St Aldric, shortlist Clariane (dining model, care homes) and explain the transfer limits: care homes are not acute wards, so lead with the method and the resident journey, not the numbers. [credential listed in S06; impact figures to verify]",
+    "var": {
+      "WORK": "Microsoft and Santander for workplace dining; show the persona and roadmap outputs.",
+      "PLAY": "Arsenal FC or Roland-Garros for matchday F&B; check which artifacts are approved.",
+      "LEARN": "No verified education credential: use a cross-sector case and say so openly."
+    },
+    "cred": "A listing proves a project is referenced; it does not prove a deliverable or quantified impact exists.",
+    "tools": "Credential library · SharePoint · PowerPoint",
+    "deck": "[S03, slides 10-13] · [S06, slides 4 and 7] · [S07, slide 8]",
+    "prompt": "No selection agent exists. Generic Claude prompt: 'From this credential list [paste], shortlist 3 for a [segment] client whose challenge is [x]. For each: why it is relevant, the one proof point to lead with, and what must be verified before use.'",
+    "verify": "Every figure and client name against SharePoint; sharing permission.",
+    "fallback": "Filter the credential grid by segment and challenge, then apply the 3 questions: relevant? sourced? shareable?",
+    "l_obj": "Shortlist 3 credentials with an explicit relevance rationale and one sourced proof point each.",
+    "explain": "Don't show everything we have done. Show what proves we can solve this client's challenge.",
+    "type": "source_block",
+    "templates": [
+      {
+        "label": "Credentials folder (SharePoint)",
+        "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+      },
+      {
+        "label": "Credentials New version.pptx",
+        "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/08_Success%20Stories%20-%20Credentials/Credentials/Credentials%20New%20version.pptx?d=wdec7a35cadfb4331909ca400547a1436&csf=1&web=1&e=SgUMPG"
+      },
+      {
+        "label": "Digital & AI - Credentials.pptx",
+        "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/08_Success%20Stories%20-%20Credentials/Digital%20%26%20AI%20-%20Credentials.pptx?d=wd09506418eda4fd9a130f8d42c0dc80a&csf=1&web=1&e=dRKuQV"
+      }
+    ],
+    "os_agents": [
+      {
+        "name": "Credential Writer (post-project)",
+        "url": "https://sodexo-codesign-os.vercel.app/agents/credential-writer-agent.html"
+      }
+    ],
+    "exercise": {
+      "situation": "You are pitching to a hospital group that wants to improve the patient meal experience. The library holds 40 credentials.",
+      "questions": [
+        "On which criteria do you shortlist three?",
+        "Your strongest case is an airport lounge. Do you show it, and how?",
+        "For your best credential, which single proof point do you lead with?"
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "Criteria: similar user moment, similar constraint (safety, time), approved artifacts. Show the lounge as 'how we redesign a time-pressured service moment', not as a sector match. Lead with a method proof (journey + pilot) unless an impact figure is sourced.",
+      "success_criteria": "Shortlist justified on user moment and constraint, not on sector logo alone."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134902"
+  },
+  {
+    "id": "02.03",
+    "name": "Client Intelligence",
+    "phase": "02 Presales",
+    "sub": "Client understanding & opportunity framing",
+    "lvl": "N1",
+    "primary": "WORK",
+    "obj": "Understand the client's context, priorities, stakeholders and signals before engaging further.",
+    "who": "Business/Sales shares account knowledge · CoDesign team researches and formulates hypotheses · Internal experts add sector knowledge.",
+    "acc": "Account owner validates facts; CoDesign lead validates hypotheses.",
+    "when": "At the very start of Presales, before or alongside first meetings.",
+    "inputs": "Account information, previous proposals, public reports, CRM notes. Minimum evidence: sources listed for every fact.",
+    "steps": [
+      "Gather internal knowledge",
+      "Research the client and ecosystem",
+      "Identify priorities, pain points, changes",
+      "Map key stakeholders",
+      "Highlight trends and signals",
+      "Formulate opportunities and questions"
+    ],
+    "output": "A concise Client Intelligence Brief: context, priorities, challenges, stakeholders, signals, hypotheses, questions to validate.",
+    "std": "Facts and assumptions are visibly separated; 3 questions ready for the first meeting.",
+    "quality": "Relevant, recent, actionable; analysis produces better questions.",
+    "mistakes": "A 30-page dossier nobody reads · presenting assumptions as facts · skipping the account team.",
+    "handoff": "Brief shared with Sales and used in 02.01.",
+    "example": "WORK: Northbridge annual report mentions 'return-to-office cost discipline' [fictional]. Fact: real-estate budget frozen. Assumption: employees dislike the restaurant. Question: 'What would make Tuesday worth coming in for?'",
+    "var": {
+      "PLAY": "Riverside: season-ticket renewal rate, new stand opening, local transport works.",
+      "HEAL": "St Aldric: patient experience scores, waste targets, nurse staffing pressure.",
+      "LEARN": "Lakeshore: enrolment trends, commuter ratio, affordability commitments."
+    },
+    "cred": "Previous work with the same client or sector (search 02.02 library).",
+    "tools": "Account documentation, annual reports, CRM/SharePoint, stakeholder map",
+    "deck": "[S03, slides 14-17]",
+    "prompt": "'Prepare a pre-Discovery briefing on [client] for a first meeting with [role]. Separate [EVIDENCE] from [ASSUMPTION], list stakeholders and 3 questions to ask.'",
+    "verify": "Every fact has a source; nothing confidential from CRM pasted into external tools beyond approved use.",
+    "fallback": "Use the 9-heading template: Who → Context → Priorities → Challenges → Stakeholders → Trends → Relationship → Opportunities → Questions.",
+    "l_obj": "Sort statements into facts and assumptions and write 3 open meeting questions.",
+    "explain": "Client Intelligence is not Discovery. It prepares Discovery.",
+    "type": "source_block",
+    "templates": [
+      {
+        "label": "Project template root (SharePoint) — Client Intelligence brief template: MISSING, owner Gabriel",
+        "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+      }
+    ],
+    "os_agents": [
+      { "name": "Client Intelligence", "url": "https://sodexo-codesign-os.vercel.app/agents/client-intelligence-agent.html" }
+    ],
+    "exercise": {
+      "situation": "You have 45 minutes to prepare a first meeting with the Head of Workplace of a global bank.",
+      "questions": [
+        "Where do you look first, and for what?",
+        "Sort: they are cutting real-estate costs · employees dislike the current offer · the CEO mentioned hybrid work in the annual report.",
+        "Write the three questions you would ask."
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "Fact: CEO mention in annual report (sourced). Assumptions: cost cutting (unless sourced), employee dislike (needs evidence). Good questions are open and about outcomes: 'What does a good office day look like for you?'",
+      "success_criteria": "Correct fact/assumption sort with a reason; questions are open, not leading."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134903"
+  }
+]

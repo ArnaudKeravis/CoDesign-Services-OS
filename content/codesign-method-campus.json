@@ -1,0 +1,3202 @@
+{
+  "meta": {
+    "name": "CoDesign Method Campus",
+    "version": "2.1",
+    "date": "2026-11-03",
+    "owner": "Diane",
+    "status": "draft for review",
+    "note": "Case data is FICTIONAL training data. Answer keys are facilitator-only."
+  },
+  "taxonomy": "Six campus sections comprise an introduction plus five process sections. Presales precedes the four phases of the Double Diamond.",
+  "sections": [
+    {
+      "code": "01",
+      "name": "01 Our approach",
+      "subtitle": "Introduction · why, who, how"
+    },
+    {
+      "code": "02",
+      "name": "02 Presales",
+      "subtitle": "Before the Double Diamond · frame the opportunity"
+    },
+    {
+      "code": "03",
+      "name": "03 Discover",
+      "subtitle": "Diamond 1 · diverge on the problem"
+    },
+    {
+      "code": "04",
+      "name": "04 Define",
+      "subtitle": "Diamond 1 · converge on the problem"
+    },
+    {
+      "code": "05",
+      "name": "05 Co-create",
+      "subtitle": "Diamond 2 · diverge on solutions"
+    },
+    {
+      "code": "06",
+      "name": "06 Test & Deliver",
+      "subtitle": "Diamond 2 · converge on tested, owned decisions"
+    }
+  ],
+  "lanes": [
+    {
+      "code": "A",
+      "name": "Method"
+    },
+    {
+      "code": "B",
+      "name": "Training"
+    },
+    {
+      "code": "C",
+      "name": "Practice"
+    },
+    {
+      "code": "D",
+      "name": "Examples & credentials"
+    },
+    {
+      "code": "E",
+      "name": "Enablers"
+    },
+    {
+      "code": "F",
+      "name": "Assessment & action"
+    }
+  ],
+  "levels": [
+    {
+      "code": "N0",
+      "label": "N0 Aware"
+    },
+    {
+      "code": "N1",
+      "label": "N1 Contributor"
+    },
+    {
+      "code": "N2",
+      "label": "N2 Facilitator"
+    },
+    {
+      "code": "N3",
+      "label": "N3 Practitioner"
+    },
+    {
+      "code": "N4",
+      "label": "N4 Lead / Faculty"
+    }
+  ],
+  "segments": [
+    "WORK",
+    "PLAY",
+    "HEAL",
+    "LEARN"
+  ],
+  "blocks": [
+    {
+      "id": "01.01",
+      "name": "Why CoDesign and when to engage",
+      "phase": "01 Our approach",
+      "sub": "Introduction",
+      "lvl": "N0",
+      "primary": "WORK",
+      "obj": "Explain in two sentences what CoDesign is for and recognise the moments to bring the team in.",
+      "who": "Everyone who meets clients: sales, account teams, BRMs (Business Relationship Managers), site and tech leads.",
+      "acc": "Arnaud (business positioning).",
+      "when": "Before any client conversation about experience, renewal or a new site.",
+      "inputs": "Account situation: contract end date, satisfaction trend, planned site changes.",
+      "steps": [
+        "Spot a trigger: contract ends in 18 months or less, a priority client must be retained, satisfaction is slipping, a new site or refurbishment is planned",
+        "Check sponsorship: a senior client sponsor, an account owner and a tech owner",
+        "Call the CoDesign team for a Presales conversation (02)"
+      ],
+      "output": "A qualified lead for 02 Presales.",
+      "std": "Trigger and sponsor named.",
+      "quality": "Engage early: 18 months before renewal works better than 2-3 months.",
+      "mistakes": "Calling CoDesign for a one-off workshop at the last minute · no sponsor.",
+      "handoff": "Qualified lead → 02.03 Client Intelligence.",
+      "example": "WORK: Northbridge restaurant contract renews in 16 months and attendance is flat → trigger met; sponsor = Head of Workplace. [fictional]",
+      "var": {
+        "PLAY": "New stand opening next season.",
+        "HEAL": "Patient-experience scores falling two quarters in a row.",
+        "LEARN": "New student centre planned."
+      },
+      "cred": "Use named projects only; commercial figures need Arnaud's sign-off (see conflicts register).",
+      "tools": "Overview deck [S06]",
+      "deck": "[S06, slides 1-5] · [S07, slides 1, 5] · [S05, slides 11, 35, 38]",
+      "prompt": "Generic Claude prompt: 'Here is an account summary [paste]. Which CoDesign engagement triggers apply, and what 3 questions should I ask the client sponsor?'",
+      "verify": "Contract dates and sponsor names.",
+      "fallback": "The four-trigger checklist above.",
+      "l_obj": "Identify an engagement trigger in an account description and name the sponsor needed.",
+      "explain": "Clients don't renew a contract; they renew the experience they helped create. CoDesign brings users, frontline teams and sponsors into decisions early.",
+      "type": "foundation",
+      "templates": [
+        {
+          "label": "Credentials folder (SharePoint)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "Three account descriptions (one per segment pack).",
+        "questions": [
+          "Which trigger applies?",
+          "Who must sponsor?",
+          "Is it too late, too early or right?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Northbridge: 16 months, trigger met. Riverside: new stand, right time. St Aldric: falling scores, sponsor = director of patient experience.",
+        "success_criteria": "Trigger and sponsor correctly identified."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134897"
+    },
+    {
+      "id": "01.02",
+      "name": "Team, roles and regional operating model",
+      "phase": "01 Our approach",
+      "sub": "Introduction",
+      "lvl": "N0",
+      "primary": "HEAL",
+      "obj": "Know who does what in an engagement and where regional colleagues contribute.",
+      "who": "CoDesign core team (method, facilitation, templates) · regional champions and local designers (local cases, supported delivery) · account, sales and BRMs (access, sponsorship, continuity) · tech pre-sales (capability fit).",
+      "acc": "Proposed ownership (to confirm): Diane integration · Noël method and quality · Gabriel templates, evidence, OS mapping · Arnaud positioning and sponsor review.",
+      "when": "At every project start (03.01 RACI).",
+      "inputs": "Project RACI; capability self-assessment.",
+      "steps": [
+        "Find your role in the RACI",
+        "Check the capability level your role needs (N0-N4)",
+        "Agree supported tasks with the CoDesign lead"
+      ],
+      "output": "Your role and level for the engagement.",
+      "std": "Every task has one accountable person.",
+      "quality": "People act at the level they have shown, with coaching above it.",
+      "mistakes": "Assuming attendance at training = independent delivery.",
+      "handoff": "→ 01.03.",
+      "example": "HEAL: on St Aldric the BRM Healthcare joins site visits as Contributor (N1) and co-facilitates one group (N2, coached). [fictional]",
+      "var": {
+        "WORK": "BRM Corporate co-hosts the Northbridge kick-off.",
+        "PLAY": "Local designer leads matchday observation.",
+        "LEARN": "BRM Education & Government sponsors access."
+      },
+      "cred": "Not applicable.",
+      "tools": "RACI",
+      "deck": "[S04, slide 8] · [S05, slides 13, 18] · [S03, slide 4]",
+      "prompt": "Planning & RACI agent with project scope and team list.",
+      "verify": "Names and availability.",
+      "fallback": "RACI table by hand.",
+      "l_obj": "Place yourself in a RACI and state your target level.",
+      "explain": "The method scales through documentation, tooling and people close to the business.",
+      "type": "foundation",
+      "templates": [
+        {
+          "label": "Example RACI (Cincinnati Children's, internal)",
+          "url": "https://sodexo.sharepoint.com/:x:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/07_Projects%20-%20Credentials/US_Cicinnati%20Childrens%20Hospital/00_Governance/CCH_RACI_v4_2026-07.xlsx?d=wf98867a5070d4d298c836ee15fcd2b3b&csf=1&web=1&e=5x8Kc7"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Planning & RACI",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/planning-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "RACI for a Format A workshop project.",
+        "questions": [
+          "Which tasks are yours?",
+          "Which need coaching?",
+          "Who signs off?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Depends on role; sign-off sits with CoDesign lead and client sponsor.",
+        "success_criteria": "Accountable person named per task."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134898"
+    },
+    {
+      "id": "01.03",
+      "name": "End-to-end approach and the six-section campus",
+      "phase": "01 Our approach",
+      "sub": "Introduction",
+      "lvl": "N0",
+      "primary": "WORK",
+      "obj": "Describe the end-to-end process: Presales, then the four Double Diamond phases.",
+      "who": "All learners.",
+      "acc": "Noël (method).",
+      "when": "Start of any learning route.",
+      "inputs": "This campus.",
+      "steps": [
+        "01 Our approach: why, who, how (introduction)",
+        "02 Presales: frame the opportunity, before the Double Diamond",
+        "03 Discover: diverge on the problem with evidence",
+        "04 Define: converge on who, what hurts, where to act",
+        "05 Co-create: diverge on solutions with users and client",
+        "06 Test & Deliver: converge on tested, owned decisions"
+      ],
+      "output": "Shared mental model.",
+      "std": "Learner can place any activity in the right section.",
+      "quality": "Six campus sections = one introduction + five process sections. Presales precedes the four Double Diamond phases.",
+      "mistakes": "Treating a half-day workshop as the whole engagement · skipping Discover.",
+      "handoff": "→ choose learning route (Format A or B).",
+      "example": "WORK: Northbridge runs 02 → 06 over about 12 weeks; the half-day workshop is one day inside 05. [fictional]",
+      "var": {
+        "PLAY": "Riverside fits around the fixture calendar.",
+        "HEAL": "St Aldric adds clinical review gates.",
+        "LEARN": "Lakeshore follows the semester."
+      },
+      "cred": "Not applicable.",
+      "tools": "Start Here frame",
+      "deck": "[S03, slides 1-4] · [S05, slides 3, 27] · [S07, slide 1]",
+      "prompt": "Generic Claude prompt: 'Sort these activities into the six campus sections and explain each placement in one line.'",
+      "verify": "Placement against the six-section taxonomy on Start Here.",
+      "fallback": "Card sort on the Start Here process strip.",
+      "l_obj": "Sort 10 activity cards into the six sections.",
+      "explain": "Diverge to explore, converge to decide — twice: first on the problem, then on the solution.",
+      "type": "foundation",
+      "templates": [
+        {
+          "label": "XP Design for Client template",
+          "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/08_Codesign%20Process%20Templates/TEMPLATE_Sodexo%20CoDesign%20Services%20-%20XP%20Design%20for%20Client%20.pptx?d=wf795306586174afdbd429f8888f91bd5&csf=1&web=1&e=DMqySv"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "10 activity cards (e.g. 'site visit', 'value proposition', 'proposal').",
+        "questions": [
+          "Place each in a section.",
+          "Which happen before the workshop?",
+          "Which need user evidence?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Proposal 02; site visit 03; journey 04; idea sheet 05; value proposition 06; test 06.X3.",
+        "success_criteria": "≥ 8/10 correctly placed."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134899"
+    },
+    {
+      "id": "01.04",
+      "name": "Human-led, AI-supported: how we use CoDesign OS",
+      "phase": "01 Our approach",
+      "sub": "Introduction",
+      "lvl": "N0",
+      "primary": "PLAY",
+      "obj": "Use AI support safely: the method works without AI; when used, a designer verifies, edits and decides.",
+      "who": "All learners.",
+      "acc": "Gabriel (OS mapping); Noël (method).",
+      "when": "Before any OS demonstration.",
+      "inputs": "OS access; approved data rules.",
+      "steps": [
+        "Do the step manually first in training",
+        "Use the OS agent with real context",
+        "Check every [EVIDENCE] tag against sources",
+        "Delete invented quotes or figures",
+        "Decide what stays — a human decision"
+      ],
+      "output": "AI output that is verified and owned by a person.",
+      "std": "No unverified fact leaves the team.",
+      "quality": "Readable without AI; prompts at the bottom of every card; human decides.",
+      "mistakes": "Pasting confidential data into unapproved tools · treating AI ideas as evidence.",
+      "handoff": "→ any block's lane E.",
+      "example": "PLAY: Journey Map agent drafts Dev's matchday journey; the designer deletes two invented quotes and keeps the stage names.",
+      "var": {
+        "WORK": "Client Intelligence draft checked against the annual report.",
+        "HEAL": "No patient data in prompts.",
+        "LEARN": "Survey data anonymised before use."
+      },
+      "cred": "Not applicable.",
+      "tools": "CoDesign OS (23 live agents, read 3 Nov 2026)",
+      "deck": "[S04, slides 5-6] · [S05, slides 13-15]",
+      "prompt": "See each block.",
+      "verify": "See each block.",
+      "fallback": "Every block has a manual fallback.",
+      "l_obj": "Explain the three human checks applied to any AI output.",
+      "explain": "Human first. AI second. Human decides.",
+      "type": "foundation",
+      "templates": [
+        {
+          "label": "CoDesign OS — Agent Explorer",
+          "url": "https://sodexo-codesign-os.vercel.app/"
+        },
+        {
+          "label": "OS prompt library",
+          "url": "https://sodexo-codesign-os.vercel.app/prompts.html"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "An AI-generated journey with 2 invented quotes.",
+        "questions": [
+          "Spot them.",
+          "What do you do?",
+          "What must a human decide?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Quotes without transcript IDs; delete or tag [TO VALIDATE]; humans decide which opportunities go forward.",
+        "success_criteria": "Both invented quotes found."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134900"
+    },
+    {
+      "id": "02.01",
+      "name": "Intro to CoDesign & Proposal",
+      "phase": "02 Presales",
+      "sub": "Before the Double Diamond · project framing",
+      "lvl": "N3",
+      "primary": "WORK",
+      "obj": "Explain what CoDesign brings, understand the client's real challenge and turn it into a clear, tailored proposal.",
+      "who": "Business/Sales brings the opportunity and commercial ambition · CoDesign team challenges the brief, selects the approach and writes the proposal · Client shares context, constraints and expected outcomes.",
+      "acc": "CoDesign lead (N3) signs off the proposal; account owner validates commercial terms.",
+      "when": "At the start of an opportunity, before the project is launched and before Discover. Prerequisite: 02.03 Client Intelligence brief.",
+      "inputs": "Client brief or request; business context; stakeholders, timing, budget if known; relevant previous work. Minimum evidence: a named sponsor and a written brief (even an email).",
+      "steps": [
+        "Understand the initial request and context",
+        "Reframe: challenge the problem as stated",
+        "Identify where CoDesign adds value",
+        "Select method and activities",
+        "Define scope, timing and deliverables",
+        "Build and present the proposal"
+      ],
+      "output": "A tailored proposal: challenge, objectives, approach, phases, activities, deliverables, stakeholders, timeline and budget.",
+      "std": "A non-designer can read it and explain what will happen, why, and what the client receives.",
+      "quality": "Client-specific, outcome-oriented, realistic; the method answers a real need.",
+      "mistakes": "Selling a workshop when the problem needs research · copying a past proposal without reframing · promising outcomes that need user evidence.",
+      "handoff": "Proposal accepted and a sponsor named → 03.01 Kick-off & Planning.",
+      "example": "WORK: Northbridge asks for 'a workshop to fix the restaurant'. The team reframes it as 'make the anchor day worth the commute' and proposes Discover (3 weeks), a half-day Format A workshop and a test plan. [fictional]",
+      "var": {
+        "PLAY": "Riverside asks for 'faster kiosks'. Reframe around the half-time journey, including access needs.",
+        "HEAL": "St Aldric asks for 'a new menu'. Reframe around choice timing and family involvement; flag clinical sign-off in scope.",
+        "LEARN": "Lakeshore asks for 'cheaper meal plans'. Reframe around the commuter's 3-hour gap."
+      },
+      "cred": "Choose 2-3 from 02.02. Credential grid S06 slide 7 proves projects are referenced, not their impact.",
+      "tools": "Proposal template · Double Diamond overview · Miro · PowerPoint",
+      "deck": "[S03, slides 6-9] · [S05, slides 27-28] planning and 70/20/10 · [S06, slide 5] engagement triggers",
+      "prompt": "Use Brief Challenger with the client email and Client Intelligence brief: 'Score this brief on readiness, list the 5 clarification questions to ask before quoting, and flag any walk-away signals.'",
+      "verify": "Scope, price, dates and named credentials; remove any figure the client has not given.",
+      "fallback": "Fill the proposal template section by section: Context → Why now → Challenge → Objectives → Approach → Activities → Deliverables → Timeline → Team.",
+      "l_obj": "Reframe a client request into a CoDesign challenge statement and justify the proposed approach.",
+      "explain": "Presales is not Discover. Its job is to decide what deserves to be explored and how.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "XP Design for Client — proposal template (SharePoint)",
+          "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/08_Codesign%20Process%20Templates/TEMPLATE_Sodexo%20CoDesign%20Services%20-%20XP%20Design%20for%20Client%20.pptx?d=wf795306586174afdbd429f8888f91bd5&csf=1&web=1&e=DMqySv"
+        },
+        {
+          "label": "Labs deck (Figma)",
+          "url": "https://www.figma.com/design/jJ8SGyCAXkq56cGvjDthZM/Labs-deck-Presentation-in-English?node-id=1101-3590&t=up0ZPdDG7KcZKv2H-1"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Proposal Creation",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/proposal-agent.html"
+        },
+        {
+          "name": "Brief Challenger",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/brief-challenger-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "A client asks for 'a one-day workshop to redesign our staff canteen menu'. Budget set, date booked.",
+        "questions": [
+          "What is the client really asking for, and what might the real challenge be?",
+          "Which two questions would you ask before agreeing?",
+          "Would you propose the workshop as requested? If not, what instead, and how do you justify it commercially?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Real challenge is likely participation or experience, not the menu. Questions: 'What would success look like in 6 months?' and 'What do you already know about why people do or do not use the canteen?'. Keep the date but propose 2-3 weeks of light Discover before it, so the workshop works on evidence.",
+        "success_criteria": "Challenge statement names a user, a moment and an outcome; justification links approach to risk avoided."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134901"
+    },
+    {
+      "id": "02.02",
+      "name": "Credentials Examples",
+      "phase": "02 Presales",
+      "sub": "Build credibility",
+      "lvl": "N1",
+      "primary": "HEAL",
+      "obj": "Select the few credentials that prove we can solve this client's challenge.",
+      "who": "Business/Sales shares the opportunity · CoDesign team selects and adapts the story · Client reacts to what resonates.",
+      "acc": "CoDesign lead checks every claim against the credential source and confidentiality rules.",
+      "when": "During Presales, once the challenge is understood.",
+      "inputs": "Client context and challenge; credential library; previous deliverables. Minimum evidence: each credential has an approved source file.",
+      "steps": [
+        "Understand what needs to be proven",
+        "Search the credential library",
+        "Select 2-4 relevant examples",
+        "Extract the strongest proof point",
+        "Adapt the story to the client",
+        "Integrate into the proposal"
+      ],
+      "output": "A short tailored selection: challenge, approach, outputs and, where documented, impact.",
+      "std": "Every proof point traces to an approved document; confidential details removed.",
+      "quality": "Relevant over exhaustive, recent, visual, connected to the client's challenge.",
+      "mistakes": "Showing 15 logos · quoting impact figures nobody can source · using a confidential client name without approval.",
+      "handoff": "Selection embedded in the proposal (02.01).",
+      "example": "HEAL: for St Aldric, shortlist Clariane (dining model, care homes) and explain the transfer limits: care homes are not acute wards, so lead with the method and the resident journey, not the numbers. [credential listed in S06; impact figures to verify]",
+      "var": {
+        "WORK": "Microsoft and Santander for workplace dining; show the persona and roadmap outputs.",
+        "PLAY": "Arsenal FC or Roland-Garros for matchday F&B; check which artifacts are approved.",
+        "LEARN": "No verified education credential: use a cross-sector case and say so openly."
+      },
+      "cred": "A listing proves a project is referenced; it does not prove a deliverable or quantified impact exists.",
+      "tools": "Credential library · SharePoint · PowerPoint",
+      "deck": "[S03, slides 10-13] · [S06, slides 4 and 7] · [S07, slide 8]",
+      "prompt": "No selection agent exists. Generic Claude prompt: 'From this credential list [paste], shortlist 3 for a [segment] client whose challenge is [x]. For each: why it is relevant, the one proof point to lead with, and what must be verified before use.'",
+      "verify": "Every figure and client name against SharePoint; sharing permission.",
+      "fallback": "Filter the credential grid by segment and challenge, then apply the 3 questions: relevant? sourced? shareable?",
+      "l_obj": "Shortlist 3 credentials with an explicit relevance rationale and one sourced proof point each.",
+      "explain": "Don't show everything we have done. Show what proves we can solve this client's challenge.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Credentials folder (SharePoint)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        },
+        {
+          "label": "Credentials New version.pptx",
+          "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/08_Success%20Stories%20-%20Credentials/Credentials/Credentials%20New%20version.pptx?d=wdec7a35cadfb4331909ca400547a1436&csf=1&web=1&e=SgUMPG"
+        },
+        {
+          "label": "Digital & AI - Credentials.pptx",
+          "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/08_Success%20Stories%20-%20Credentials/Digital%20%26%20AI%20-%20Credentials.pptx?d=wd09506418eda4fd9a130f8d42c0dc80a&csf=1&web=1&e=dRKuQV"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Credential Writer (post-project)",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/credential-writer-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "You are pitching to a hospital group that wants to improve the patient meal experience. The library holds 40 credentials.",
+        "questions": [
+          "On which criteria do you shortlist three?",
+          "Your strongest case is an airport lounge. Do you show it, and how?",
+          "For your best credential, which single proof point do you lead with?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Criteria: similar user moment, similar constraint (safety, time), approved artifacts. Show the lounge as 'how we redesign a time-pressured service moment', not as a sector match. Lead with a method proof (journey + pilot) unless an impact figure is sourced.",
+        "success_criteria": "Shortlist justified on user moment and constraint, not on sector logo alone."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134902"
+    },
+    {
+      "id": "02.03",
+      "name": "Client Intelligence",
+      "phase": "02 Presales",
+      "sub": "Client understanding & opportunity framing",
+      "lvl": "N1",
+      "primary": "WORK",
+      "obj": "Understand the client's context, priorities, stakeholders and signals before engaging further.",
+      "who": "Business/Sales shares account knowledge · CoDesign team researches and formulates hypotheses · Internal experts add sector knowledge.",
+      "acc": "Account owner validates facts; CoDesign lead validates hypotheses.",
+      "when": "At the very start of Presales, before or alongside first meetings.",
+      "inputs": "Account information, previous proposals, public reports, CRM notes. Minimum evidence: sources listed for every fact.",
+      "steps": [
+        "Gather internal knowledge",
+        "Research the client and ecosystem",
+        "Identify priorities, pain points, changes",
+        "Map key stakeholders",
+        "Highlight trends and signals",
+        "Formulate opportunities and questions"
+      ],
+      "output": "A concise Client Intelligence Brief: context, priorities, challenges, stakeholders, signals, hypotheses, questions to validate.",
+      "std": "Facts and assumptions are visibly separated; 3 questions ready for the first meeting.",
+      "quality": "Relevant, recent, actionable; analysis produces better questions.",
+      "mistakes": "A 30-page dossier nobody reads · presenting assumptions as facts · skipping the account team.",
+      "handoff": "Brief shared with Sales and used in 02.01.",
+      "example": "WORK: Northbridge annual report mentions 'return-to-office cost discipline' [fictional]. Fact: real-estate budget frozen. Assumption: employees dislike the restaurant. Question: 'What would make Tuesday worth coming in for?'",
+      "var": {
+        "PLAY": "Riverside: season-ticket renewal rate, new stand opening, local transport works.",
+        "HEAL": "St Aldric: patient experience scores, waste targets, nurse staffing pressure.",
+        "LEARN": "Lakeshore: enrolment trends, commuter ratio, affordability commitments."
+      },
+      "cred": "Previous work with the same client or sector (search 02.02 library).",
+      "tools": "Account documentation, annual reports, CRM/SharePoint, stakeholder map",
+      "deck": "[S03, slides 14-17]",
+      "prompt": "'Prepare a pre-Discovery briefing on [client] for a first meeting with [role]. Separate [EVIDENCE] from [ASSUMPTION], list stakeholders and 3 questions to ask.'",
+      "verify": "Every fact has a source; nothing confidential from CRM pasted into external tools beyond approved use.",
+      "fallback": "Use the 9-heading template: Who → Context → Priorities → Challenges → Stakeholders → Trends → Relationship → Opportunities → Questions.",
+      "l_obj": "Sort statements into facts and assumptions and write 3 open meeting questions.",
+      "explain": "Client Intelligence is not Discovery. It prepares Discovery.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — Client Intelligence brief template: MISSING, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Client Intelligence",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/client-intelligence-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "You have 45 minutes to prepare a first meeting with the Head of Workplace of a global bank.",
+        "questions": [
+          "Where do you look first, and for what?",
+          "Sort: they are cutting real-estate costs · employees dislike the current offer · the CEO mentioned hybrid work in the annual report.",
+          "Write the three questions you would ask."
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Fact: CEO mention in annual report (sourced). Assumptions: cost cutting (unless sourced), employee dislike (needs evidence). Good questions are open and about outcomes: 'What does a good office day look like for you?'",
+        "success_criteria": "Correct fact/assumption sort with a reason; questions are open, not leading."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287134903"
+    },
+    {
+      "id": "03.01",
+      "name": "Kick-off & Planning",
+      "phase": "03 Discover",
+      "sub": "Project launch & discovery planning",
+      "lvl": "N3",
+      "primary": "HEAL",
+      "obj": "Launch the project, align everyone on challenge, scope and roles, and turn the proposal into a Discovery plan.",
+      "who": "CoDesign team prepares and facilitates · Client project team shares context and constraints · Account team ensures continuity with Presales.",
+      "acc": "CoDesign lead owns the plan; client sponsor approves scope and governance.",
+      "when": "Right after project confirmation, before any research.",
+      "inputs": "Signed proposal, Client Intelligence, existing data, stakeholder list, timeline. Minimum evidence: named sponsor, decision owner and dates.",
+      "steps": [
+        "Reconnect with context and ambition",
+        "Align on the initial challenge",
+        "Share what is known",
+        "Identify what must be learned",
+        "Define research questions",
+        "Select Discovery activities",
+        "Identify stakeholders and users",
+        "Define roles, governance (RACI) and planning",
+        "Agree next steps"
+      ],
+      "output": "A shared Project & Discovery Plan with RACI (Responsible, Accountable, Consulted, Informed).",
+      "std": "Every research question has an activity, an owner and a date.",
+      "quality": "Explicit scope and roles; learning-focused plan; realistic activities.",
+      "mistakes": "Presenting conclusions at kick-off · no decision owner · research questions that are really solutions.",
+      "handoff": "Plan approved → 03.02 and 03.03 start.",
+      "example": "HEAL: St Aldric kick-off lists known (waste audit) vs unknown (why families feel excluded); research questions lead to ward shadowing and family interviews; RACI names the dietitian as Consulted for every concept. [fictional]",
+      "var": {
+        "WORK": "Northbridge: research questions on anchor-day behaviour; badge data owner named.",
+        "PLAY": "Riverside: matchday observation slots booked around fixtures.",
+        "LEARN": "Lakeshore: timetable data request and student union as Consulted."
+      },
+      "cred": "Cincinnati Children's materials are internal working documents; confirm sharing rules before showing outside the team.",
+      "tools": "Kick-off deck, RACI, planning board",
+      "deck": "[S03, slides 19-22] · [S05, slide 27] typical 13-week plan",
+      "prompt": "'From this signed proposal [paste], draft the kick-off agenda, a Know / Don't know / Assume table and 6 research questions mapped to Discovery activities.'",
+      "verify": "Dates, names, scope; remove any 'finding' the AI presents before research.",
+      "fallback": "Use the 12-heading template: Context → Ambition → Challenge → Know/Don't know → Assumptions → Questions → Activities → Stakeholders → Roles → Governance → Timeline → Next steps.",
+      "l_obj": "Reframe a kick-off from 'conclusions' to 'learning plan' and match 3 activities to questions.",
+      "explain": "Presales says what we propose to do; Kick-off turns it into how we will actually do it.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Example RACI — Cincinnati Children's (SharePoint, internal)",
+          "url": "https://sodexo.sharepoint.com/:x:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/07_Projects%20-%20Credentials/US_Cicinnati%20Childrens%20Hospital/00_Governance/CCH_RACI_v4_2026-07.xlsx?d=wf98867a5070d4d298c836ee15fcd2b3b&csf=1&web=1&e=5x8Kc7"
+        },
+        {
+          "label": "Example SOW — Cincinnati Children's (internal)",
+          "url": "https://sodexo.sharepoint.com/:w:/r/sites/DesignCommunityHub/_layouts/15/Doc.aspx?sourcedoc=%7B83FB8ADE-63CE-442D-AD23-63AF99B8B946%7D&file=CCH_SOW_v5_2026-06.docx&action=default&mobileredirect=true"
+        },
+        {
+          "label": "CyberCampus 2040 deck (example)",
+          "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/07_Projects%20-%20Credentials/Cyber%20Campus/Sodexo%20CoDesign%20Services%20-%20CyberCampus%202040.pptx?d=w16d61730d81a40fc8cc3d8491d3e782e&csf=1&web=1&e=jT514w"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Kickoff Deck",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/kickoff-agent.html"
+        },
+        {
+          "name": "Planning & RACI",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/planning-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "The proposal is signed. The client team arrives expecting you to present conclusions.",
+        "questions": [
+          "How do you reframe the session in the first five minutes?",
+          "List what is known and what must be learned.",
+          "Which three Discovery activities would you choose, and what does each answer?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Open with the ambition and 'what we must learn to decide well'. Activities: observation (what people do), interviews (why), data review (how often). Each tied to one research question.",
+        "success_criteria": "Each activity answers a named question; nothing presented as a finding."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287501286"
+    },
+    {
+      "id": "03.02",
+      "name": "Research & Context Base",
+      "phase": "03 Discover",
+      "sub": "Existing knowledge & context",
+      "lvl": "N1",
+      "primary": "LEARN",
+      "obj": "Build a shared knowledge base before field research: what is known, assumed and missing.",
+      "who": "CoDesign team collects and structures · Client provides data and documents · Account team adds history.",
+      "acc": "CoDesign lead reviews the fact/assumption split.",
+      "when": "After kick-off, before interviews and visits.",
+      "inputs": "Kick-off outputs, client studies, surveys, operational data, old personas/journeys. Minimum evidence: each fact cites a document and date.",
+      "steps": [
+        "Collect existing material",
+        "Review and structure",
+        "Understand ecosystem and current experience",
+        "Identify signals and constraints",
+        "Separate facts from assumptions",
+        "Identify contradictions and gaps",
+        "Turn gaps into research questions"
+      ],
+      "output": "A Context & Knowledge Base: facts, data, users, stakeholders, constraints, assumptions, gaps, questions.",
+      "std": "Traceable to source; gaps written as research questions.",
+      "quality": "Focused, evidence-based, connected to the challenge.",
+      "mistakes": "Copying the whole survey · treating old personas as current · ignoring contradictions.",
+      "handoff": "Gaps → interview and observation guides (03.03).",
+      "example": "LEARN: Lakeshore's survey says 'affordable' is the top driver; the dashboard shows rising uptake of the cheapest item; the old persona says students 'want healthy options'. Contradiction flagged; question: 'What does affordable mean for a commuter on a work day?' [fictional]",
+      "var": {
+        "WORK": "Badge data vs 'nobody comes in on Mondays' assumption.",
+        "PLAY": "Kiosk sales by minute vs complaints by stand.",
+        "HEAL": "Plate-waste audit vs patient satisfaction comments."
+      },
+      "cred": "Not applicable (internal working output).",
+      "tools": "Miro, SharePoint, AI synthesis tools",
+      "deck": "[S03, slides 23-26]",
+      "prompt": "Generic Claude prompt: 'Read these documents [attach]. Build a table Fact / Source / Date / Confidence, then list assumptions, contradictions and 5 research questions. Do not invent data.'",
+      "verify": "Each fact against its source; no figure without a source.",
+      "fallback": "Five questions on one Miro frame: What do we know? What evidence? What do we assume? What is missing? What do we investigate?",
+      "l_obj": "Classify material into fact, assumption and contradiction, and convert the largest gap into a research question.",
+      "explain": "Know what you know before you go into the field.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — 01_Discover folder; Context Base template: MISSING, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Interview Synthesis (for existing studies)",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/interview-synthesis-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "The client sends a 90-page satisfaction survey, two old personas and an operations dashboard.",
+        "questions": [
+          "How do you decide what is worth keeping?",
+          "Give one fact, one assumption and one contradiction.",
+          "Turn the biggest gap into a research question."
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Keep what links to the challenge and is recent. A good research question is open and behavioural ('How do commuters decide where to eat between classes?').",
+        "success_criteria": "Fact cites source; research question is open and behavioural."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287501287"
+    },
+    {
+      "id": "03.03",
+      "name": "Visit & Interviews",
+      "phase": "03 Discover",
+      "sub": "Primary research & field immersion",
+      "lvl": "N2",
+      "primary": "WORK",
+      "obj": "Understand real experience by combining what people say, what they do and what they experience.",
+      "who": "CoDesign team researches and captures evidence · Client opens access to sites and people · Users and frontline staff share experience.",
+      "acc": "CoDesign lead approves guides and consent approach; client confirms site rules.",
+      "when": "Once context and knowledge gaps are known.",
+      "inputs": "Context Base, research questions, stakeholder map, guides, visit plan. Minimum evidence: at least 2 user types and 1 frontline role; consent recorded.",
+      "steps": [
+        "Define research targets",
+        "Prepare interview and observation guides",
+        "Recruit participants",
+        "Visit and observe on site",
+        "Interview users and stakeholders",
+        "Capture evidence",
+        "Debrief as a team",
+        "Consolidate findings"
+      ],
+      "output": "Field findings: observations, notes, quotes, behaviours, needs, pain points, workarounds, constraints, emerging insights.",
+      "std": "Each finding is tagged observed / said / interpreted.",
+      "quality": "Diverse perspectives; open, non-leading questions; real behaviour captured.",
+      "mistakes": "Leading questions · only interviewing managers · mixing interpretation into notes · no consent.",
+      "handoff": "Debriefed findings → 04.01 Personas and 04.02 Journey Map.",
+      "example": "WORK: at Northbridge 12:30, observe that teams split into two queues and regroup at tables 15 min later (observed). Team lead says 'lunch is our team meeting' (said). Interpretation: the queue breaks the social moment. [fictional]",
+      "var": {
+        "PLAY": "Observe half-time from the concourse; interview a steward and a family.",
+        "HEAL": "Shadow a ward host round; interview a family member with consent and ward approval.",
+        "LEARN": "Observe the library annex at 13:00; interview commuters in the car park area."
+      },
+      "cred": "Cooper / Cincinnati site-visit playbook referenced on V1 board; confirm shareable version.",
+      "tools": "Site Visit Playbook, interview guide, observation guide, Plaud/transcription, Miro",
+      "deck": "[S03, slides 27-30]",
+      "prompt": "'Draft a 45-minute interview guide for [user] on [research question]. Open questions only, with 2 follow-ups each, and an observation checklist for [site, time].'",
+      "verify": "No leading questions; consent and anonymisation; transcripts are not pasted into tools without approval.",
+      "fallback": "Paper guide: 5 open questions + 'tell me about the last time…' + observation grid (time, place, action, workaround).",
+      "l_obj": "Rewrite leading questions and record observation, statement and interpretation separately.",
+      "explain": "Don't only ask people what they need. Observe what they actually do.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — interview/observation guides and Site Visit Playbook: location TO CONFIRM (Cooper playbook requested in Diane's V1 comment)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Interview Guide",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/interview-guide-agent.html"
+        },
+        {
+          "name": "Interview Synthesis",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/interview-synthesis-agent.html"
+        },
+        {
+          "name": "Site Visit",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/site-visit-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "You are observing a staff restaurant at 12:30, with one hour on site and one interview slot with a frontline manager.",
+        "questions": [
+          "What do you watch for that people would never tell you?",
+          "Rewrite: 'Don't you think the queue is too long?'",
+          "How do you record observation vs statement vs interpretation?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Watch workarounds, waiting, who eats alone, trays left. Rewrite: 'Tell me about the last time you had lunch here.' Use three columns or tags: O / S / I.",
+        "success_criteria": "Rewritten question is open and neutral; notes are tagged O/S/I."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287501288"
+    },
+    {
+      "id": "03.04",
+      "name": "Benchmark",
+      "phase": "03 Discover",
+      "sub": "Market exploration & inspiration",
+      "lvl": "N1",
+      "primary": "PLAY",
+      "obj": "Learn how others, inside and outside the sector, address similar challenges, and extract transferable principles.",
+      "who": "CoDesign team researches and curates · Experts suggest references · Client reacts.",
+      "acc": "CoDesign lead checks sources and the 'so what' of each example.",
+      "when": "In parallel with field research.",
+      "inputs": "Research questions, themes, trend reports. Minimum evidence: every example has a source link and date.",
+      "steps": [
+        "Define investigation topics",
+        "Select categories",
+        "Explore competitors and leaders",
+        "Look outside the industry",
+        "Compare approaches",
+        "Identify patterns and signals",
+        "Extract transferable principles"
+      ],
+      "output": "A curated Benchmark & Inspiration Landscape with examples, principles and transferable learnings.",
+      "std": "Each example answers 'so what for this client?'",
+      "quality": "Focused, diverse, recent, sourced.",
+      "mistakes": "A competitor list with no insight · copying features instead of principles · unsourced examples.",
+      "handoff": "Principles → 04.03 Inspiration Idea Sheets.",
+      "example": "PLAY: to cut half-time queues, look at airport fast lanes and theme-park virtual queues; principle: 'move the wait out of the peak'. Benchmark is evidence from elsewhere, not proof it works here.",
+      "var": {
+        "WORK": "Co-working spaces' booking of team tables.",
+        "HEAL": "Hotel room-service ordering windows.",
+        "LEARN": "Public libraries that allow food zones."
+      },
+      "cred": "Not applicable.",
+      "tools": "Benchmark agent, inspiration library, trend reports, web research",
+      "deck": "[S03, slides 31-34]",
+      "prompt": "'Find 8 examples (4 outside [sector]) addressing [challenge]. For each: what they do, why it works, transferable principle, source link and date. Flag anything you could not verify.'",
+      "verify": "Open every link; check dates; remove examples without a live source.",
+      "fallback": "Template row: Question → Theme → Example → What they do → Why it works → Principle → Transferability → Opportunity.",
+      "l_obj": "Extract a transferable principle from an out-of-sector example and defend it to a sceptical client.",
+      "explain": "Benchmark is not a collection of competitors. Always answer 'So what?'",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — Benchmark template: MISSING, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        },
+        {
+          "label": "Experience Catalogue",
+          "url": "https://xpcatalogue.vercel.app/login"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Benchmark Scout",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/benchmark-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "You need inspiration to reduce waiting time in a corporate restaurant.",
+        "questions": [
+          "Name one example from outside food service and why.",
+          "What is the transferable principle, not the feature?",
+          "How do you answer 'but we are not a theme park'?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "E.g. airport security lanes: principle 'separate quick and complex transactions'. Answer: 'We are not copying the park, we are borrowing the idea of moving the wait.'",
+        "success_criteria": "Principle stated without the original feature; source named."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287501289"
+    },
+    {
+      "id": "04.01",
+      "name": "Personas",
+      "phase": "04 Define",
+      "sub": "Who we design for",
+      "lvl": "N2",
+      "primary": "HEAL",
+      "obj": "Turn research findings into a few evidence-based user profiles built on behaviours, needs and pain points.",
+      "who": "CoDesign team clusters research and drafts personas · Client challenges them · Users or frontline staff can validate.",
+      "acc": "CoDesign lead checks each trait against evidence.",
+      "when": "After field research is debriefed.",
+      "inputs": "Field findings, quotes, observations, data. Minimum evidence: each persona draws on at least 3 interviews or observations.",
+      "steps": [
+        "Consolidate research",
+        "Cluster patterns",
+        "Identify meaningful differences",
+        "Define profiles",
+        "Build personas",
+        "Connect each trait to evidence",
+        "Challenge and validate"
+      ],
+      "output": "2-4 personas: context, behaviours, goals, needs, motivations, pain points, quote, key journey moments, design implications.",
+      "std": "Every trait links to evidence or is marked as an assumption.",
+      "quality": "Behaviour-led, differentiated, actionable, not stereotypical.",
+      "mistakes": "Demographic personas ('Sophie, 34, loves yoga') · invented quotes · too many personas.",
+      "handoff": "Personas agreed → 04.02 Journey Map.",
+      "example": "HEAL: 'Ruth, the worried visitor' is defined by behaviour (visits at lunch, asks nurses whether Dad ate) and need (to know and help), not by age. Quote is from interview F02 [fictional dataset].",
+      "var": {
+        "WORK": "Maya, the anchor-day coordinator.",
+        "PLAY": "Dev, the half-time sprinter.",
+        "LEARN": "Leila, the between-classes commuter."
+      },
+      "cred": "Eli Lilly persona examples cited in S05 slide 25 ('Night-shift Marie') — confirm approved artifact.",
+      "tools": "Persona Studio (link missing), Miro, Figma",
+      "deck": "[S03, slides 36-39]",
+      "prompt": "'From this interview synthesis [paste], propose 3 behaviour-based personas. For each trait cite the evidence ID or tag [ASSUMPTION]. No invented quotes.'",
+      "verify": "Trait-to-evidence links; remove stereotypes and any quote not in transcripts.",
+      "fallback": "Cluster stickies by behaviour on Miro, name each cluster with a verb phrase, fill the 11-field template.",
+      "l_obj": "Rewrite a demographic persona into a behaviour-based one with evidence for each trait.",
+      "explain": "A persona is discovered, not invented.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Standard Personae Profiles (SharePoint)",
+          "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/01_Insights%20-%20Research/02_Personae/Standard%20Personae%20Profiles.pptx?d=w0c52804928d847e48018fde55e5e7b25&csf=1&web=1&e=LwIiXL"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Persona Builder",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/persona-builder-agent.html"
+        },
+        {
+          "name": "Brief-to-Persona (proto, before research)",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/brief-to-persona-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "Your team proposes: 'Sophie, 34, marketing manager, loves yoga and healthy food.'",
+        "questions": [
+          "What is wrong with this persona?",
+          "Which evidence would you need to keep or drop each trait?",
+          "Rewrite it around a behaviour."
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "It is demographic and unsourced; traits do not change design decisions. Rewrite: 'The 15-minute luncher: eats at her desk on meeting-heavy days, wants food she can trust without queuing.'",
+        "success_criteria": "Persona named by behaviour; each trait tagged evidence or assumption."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287885196"
+    },
+    {
+      "id": "04.02",
+      "name": "Journey Map",
+      "phase": "04 Define",
+      "sub": "Experience mapping & synthesis",
+      "lvl": "N2",
+      "primary": "WORK",
+      "obj": "Show the end-to-end experience across key moments, to understand what users do, think, feel and need, and where it breaks.",
+      "who": "CoDesign team synthesises research, structures the journey and facilitates validation · Client/project team brings operational knowledge and challenges the map · Users and frontline staff provide the evidence and can validate key moments.",
+      "acc": "CoDesign lead (N2+) signs off that every pain point carries evidence.",
+      "when": "During Define, once personas and research findings exist. After or alongside 04.01, before How Might We questions and workshop challenges.",
+      "inputs": "Personas; interview findings, observations, quotes; existing processes; touchpoints; Context Base; operational data. Minimum evidence: each stage supported by at least one observation or interview; each pain point by 2+ sources or marked [TO VALIDATE].",
+      "steps": [
+        "Define the persona and the journey scope (start and end)",
+        "Identify 5-7 stages from the user's point of view",
+        "Map actions and touchpoints (physical, human, digital, printed)",
+        "Add thoughts, emotions and needs",
+        "Position evidence and pain points",
+        "Identify moments that matter",
+        "Highlight gaps and patterns",
+        "Extract opportunity areas and How Might We questions"
+      ],
+      "output": "An evidence-based Journey Map: stages, actions, touchpoints, thoughts, emotions, needs, pain points, moments that matter, evidence and opportunities.",
+      "std": "Readable by a non-attendee in 2 minutes; each pain point shows its evidence; 3-6 opportunity areas written as How Might We questions.",
+      "quality": "Maps the real experience, not the ideal process; end-to-end; usable for decisions and co-creation.",
+      "mistakes": "Mapping the operator's process ('service phase 2') · starting at the restaurant door instead of the decision to come · emotions without evidence · 15 stages · opportunities written as solutions.",
+      "handoff": "Agreed map + top pain points + HMW questions → 04.03 Inspiration, 04.05 Pre-read and 05.04 Future Journey. Exploratory only: it does not decide solutions.",
+      "example": "WORK, Northbridge (fictional): 7 stages from 'Decide to come in' to 'Leave'. Moment that matters 1: 'Lunch' — team splits in two queues (observed, median wait 11 min) and loses the shared moment. Moment that matters 2: 'Find a place to work' — 34% of service tickets are about quiet space. HMW: 'How might we make the team lunch a 20-minute moment instead of a 45-minute logistics task?'",
+      "var": {
+        "PLAY": "Dev's matchday: the valley is half-time (62% of kiosk sales in 9 minutes); journey starts at 'plan the day', ends at 'travel home'.",
+        "HEAL": "Ruth and Arthur's meal journey: the pain is between ordering (24 h before) and delivery, not the food; family is invisible. Clinical sign-off needed for any change.",
+        "LEARN": "Leila's campus day: the 3-hour gap is the valley; the journey starts at 'plan the day' and includes the car."
+      },
+      "cred": "OS Journey Map agent page lists Microsoft (6-stage hybrid worker), Roland-Garros (7-stage spectator) and Clariane (5-stage resident dining) as past outputs — source claims, artifacts to verify in SharePoint before showing.",
+      "tools": "Miro journey widget, Figma templates, Illustrator A0 print",
+      "deck": "[S03, slides 40-43] · [S05, slide 25] Eli Lilly journey (Arrival → food → workspace → break → departure)",
+      "prompt": "Journey Map agent, Research-grounded mode: 'Persona: Maya, anchor-day coordinator (Northbridge, Corporate Services, North America). Journey type: daily journey, 7 stages. Layers: actions, thoughts, emotions, touchpoints, opportunities. Research data: [paste interview synthesis + observation notes]. Tag each row [EVIDENCE], [ASSUMPTION] or [TO VALIDATE]. No invented quotes. Output: stage table, emotion curve, top 5 pain points, 4-6 HMW opportunity zones.'",
+      "verify": "Every [EVIDENCE] tag against the synthesis; stage names from the user's point of view; delete any verbatim not in the transcript; check the emotion curve has real highs and lows; decide which opportunities go to the workshop (human decision).",
+      "fallback": "Draw the map on paper or Miro with stickies: columns = stages, rows = Actions / Touchpoints / Thoughts / Feelings / Pain points / Opportunities. Add a red dot on each pain point and write its source on the sticky.",
+      "l_obj": "Given a persona and an evidence pack, build a 5-7 stage journey with at least 2 evidenced moments that matter and 3 How Might We questions.",
+      "explain": "A journey map is a picture of what really happens to one person, over time, with proof. It is a decision tool, not decoration. Start where the user's experience starts (often before arrival) and stop where it really ends.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Journey templates (Figma)",
+          "url": "https://www.figma.com/design/l0UdS4pULaFSt2rp4rp3Cf/Journey-templates?node-id=2-477&t=C8W5zAnaB6APRgq9-1"
+        },
+        {
+          "label": "Journey print template A0 (.ai, SharePoint 02_Define/02_Consumer Journeys)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?viewid=51b22cf7%2D4c9a%2D4775%2Daca6%2Dddce294c24bf&id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE%2F02%5FDefine%2F02%5FConsumer%20Journeys"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Journey Map",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/journey-map-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "You are mapping the lunch journey of a hybrid worker on a corporate campus (Northbridge pack).",
+        "questions": [
+          "Where does the journey really start and end?",
+          "Name two moments that matter and say why.",
+          "For one pain point, what evidence would you attach?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Start: the evening before or morning decision to come in (the lunch plan starts there); end: back at the desk or leaving. Moments that matter: queue at 12:20 (observed, 11-min wait) and 'regroup at the table' (team lead quote). Evidence: observation log + interview P07 + service-desk ticket data. Weak answer: starts at 'enter restaurant', lists 'menu boring' with no source.",
+        "success_criteria": "Starts before the service touchpoint; 2 moments that matter each with a source; HMW is a question, not a solution."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689286165894"
+    },
+    {
+      "id": "04.03",
+      "name": "Inspiration Idea Sheets",
+      "phase": "04 Define",
+      "sub": "Inspiration for co-creation",
+      "lvl": "N1",
+      "primary": "PLAY",
+      "obj": "Turn opportunity areas into tangible inspiration that widens thinking before the workshop, without prescribing solutions.",
+      "who": "CoDesign team selects and designs the sheets · Experts suggest references.",
+      "acc": "CoDesign lead checks each sheet links to a real need.",
+      "when": "After the journey and opportunity areas, before the workshop.",
+      "inputs": "Opportunity areas, benchmark principles, trends. Minimum evidence: each sheet cites its source example.",
+      "steps": [
+        "Select opportunities",
+        "Identify trends and examples",
+        "Look outside the industry",
+        "Extract principles",
+        "Translate into provocations",
+        "Connect to needs and the journey",
+        "Build visual sheets",
+        "Use as workshop stimuli"
+      ],
+      "output": "Inspiration Idea Sheets: example, principle, related need, 'What if…?' provocation.",
+      "std": "One sheet = one principle + one 'What if…?' + source.",
+      "quality": "Visual, concise, diverse, provocative, connected to insights.",
+      "mistakes": "Sheets that are finished solutions · all examples from one sector · no link to the journey.",
+      "handoff": "Sheets printed or on Miro for 05.06 and 05.04.",
+      "example": "PLAY: sheet 'Move the wait' — airport fast-track principle; 'What if half-time food was ready before the whistle?' Linked to Dev's half-time valley.",
+      "var": {
+        "WORK": "'Restaurant as team table' from co-working spaces.",
+        "HEAL": "'Room-service window' from hotels; check clinical fit.",
+        "LEARN": "'Library cafés' from public libraries."
+      },
+      "cred": "Not applicable.",
+      "tools": "Benchmark, Experience Catalogue, trend reports",
+      "deck": "[S03, slides 44-47]",
+      "prompt": "'For opportunity [HMW], create 3 inspiration sheets: 1 in-sector, 2 out-of-sector. Each: example + source, principle in one sentence, What if…? Do not propose a final solution.'",
+      "verify": "Sources live; provocations open, not prescriptive.",
+      "fallback": "Use benchmark principles; one A4 per principle with a photo, a sentence and a 'What if…?'.",
+      "l_obj": "Write one principle and one 'What if…?' provocation from two examples.",
+      "explain": "Inspiration opens the field of possibilities; it does not replace ideation.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — Inspiration sheet template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        },
+        {
+          "label": "Experience Catalogue",
+          "url": "https://xpcatalogue.vercel.app/login"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Inspiration Sheets (OS lists it under Co-create)",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/inspiration-sheets-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "Opportunity area: 'make the last ten minutes of the break feel restful'.",
+        "questions": [
+          "Find two inspirations, one inside and one outside the sector.",
+          "Write each key principle in one sentence.",
+          "Turn one into a 'What if…?' provocation."
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Principle example: 'Signal the end of a break gently so people stop checking the time.' What if…? 'What if the space told you when it was time to go?'",
+        "success_criteria": "Principle is transferable; provocation is open."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287885197"
+    },
+    {
+      "id": "04.04",
+      "name": "Concept Sheets",
+      "phase": "04 Define",
+      "sub": "Exploratory concept directions",
+      "lvl": "N2",
+      "primary": "WORK",
+      "obj": "Make 3-5 promising directions tangible enough to be challenged and enriched in the workshop.",
+      "who": "CoDesign team drafts directions · Client experts challenge feasibility.",
+      "acc": "CoDesign lead checks each concept traces to a need and lists assumptions.",
+      "when": "Before the workshop, after opportunity areas.",
+      "inputs": "Opportunity areas, personas, journey, inspiration. Minimum evidence: each concept cites a pain point.",
+      "steps": [
+        "Select opportunities",
+        "Generate directions",
+        "Connect to user needs",
+        "Define the value proposition",
+        "Describe the experience",
+        "Visualise",
+        "Identify components",
+        "Challenge desirability, feasibility, viability",
+        "Prepare for enrichment"
+      ],
+      "output": "Visual Concept Sheets: ambition, need, value, experience before/during/after, components, assumptions.",
+      "std": "Each sheet lists its riskiest assumption.",
+      "quality": "Research-backed, experience-led, tangible but open.",
+      "mistakes": "Presenting concepts as decided · no assumptions · concepts that ignore operations.",
+      "handoff": "Define concept sheets are EXPLORATORY directions for the workshop. Participants' contributions are captured on 05.07 Idea Sheets; selected ideas are strengthened after the workshop in 06.X1 Concept Development.",
+      "example": "WORK: 'Team Table' — book a table and pre-order as a team; riskiest assumption: teams will commit to a time the day before. [fictional]",
+      "var": {
+        "PLAY": "'Whistle-ready' order-ahead lockers.",
+        "HEAL": "'Choose closer to the meal' same-day ordering.",
+        "LEARN": "'Gap-day bundle' for commuters."
+      },
+      "cred": "Santander: '20 concept sheets' (S06 slide 4) — confirm artifacts before reuse.",
+      "tools": "Miro, Figma, PowerPoint",
+      "deck": "[S03, slides 48-51]",
+      "prompt": "'Draft 3 concept directions for [HMW] for persona [x]. For each: one-line idea, need + evidence, before/during/after, components (space/service/people/ways of working/tech), riskiest assumption.'",
+      "verify": "Need and evidence links; feasibility flags; remove anything presented as validated.",
+      "fallback": "Fill the 12-field template by hand; sketch the 'during' moment.",
+      "l_obj": "State the need, the before/during/after experience and the killer assumption of a concept.",
+      "explain": "A Concept Sheet makes an idea tangible enough to challenge, not finished enough to prevent change.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — Concept sheet template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Concept Sheets (OS lists it under Co-create)",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/concept-sheets-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "The team has an idea: 'an app that lets you pre-order your lunch'.",
+        "questions": [
+          "Which need does it answer, and what is the evidence?",
+          "Describe before, during, after.",
+          "Which assumption would kill it if false?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Need: save time at peak (observed queue). Killer assumption: people will decide what to eat before 11:00.",
+        "success_criteria": "Need is evidenced; killer assumption is testable."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287885198"
+    },
+    {
+      "id": "04.05",
+      "name": "Pre-read J-7",
+      "phase": "04 Define",
+      "sub": "Participant preparation (D-7)",
+      "lvl": "N1",
+      "primary": "HEAL",
+      "obj": "Prepare participants one week before the workshop with the essential context, users and opportunities.",
+      "who": "CoDesign team writes · Client sponsor sends or co-signs.",
+      "acc": "CoDesign lead approves content; sponsor approves sharing and anonymisation.",
+      "when": "Sent at D-7 (seven days before the workshop).",
+      "inputs": "Journey highlights, personas, insights, opportunities, workshop objective. Minimum evidence: every finding is in the approved Define outputs.",
+      "steps": [
+        "Define must-know content",
+        "Select key insights",
+        "Simplify the story",
+        "Add evidence, personas, journey",
+        "Introduce opportunities",
+        "Add a call to action",
+        "Send at D-7"
+      ],
+      "output": "A short pre-read (6-15 light slides or ≤10 pages) consumable in 10-15 minutes.",
+      "std": "Reading time tested at ≤15 min by someone outside the project; no exercise answers or predetermined concepts revealed.",
+      "quality": "Short, clear, visual, actionable.",
+      "mistakes": "Sending the full Discovery report · revealing the concepts the team prefers · no ask of participants.",
+      "handoff": "Pre-read approved → 04.06 Mini Podcast script derives only from it.",
+      "example": "HEAL: St Aldric pre-read — why we are here, Ruth and Arthur, the meal journey in one picture, 3 insights, 2 HMW questions, 'Bring one story of a meal that went well'. [fictional]",
+      "var": {
+        "WORK": "Northbridge: one-page journey with the lunch valley.",
+        "PLAY": "Riverside: half-time heat map.",
+        "LEARN": "Lakeshore: Leila's day in 6 frames."
+      },
+      "cred": "Cooper pre-read is an internal working example; check sharing rules.",
+      "tools": "Word/PowerPoint, Miro slide container 'PreRead_Template_CoDesign.pptx' on V1 board",
+      "deck": "[S03, slides 52-55]",
+      "prompt": "No dedicated agent. Generic Claude prompt: 'From these approved Define outputs [paste], draft a 10-15 minute pre-read: Why → Ambition → What we learned → Personas → Journey highlights → Insights → Opportunities → Workshop objective → Preparation. Do not reveal exercise answers or concepts.'",
+      "verify": "Every fact appears in approved outputs; anonymisation; reading time.",
+      "fallback": "Use the 10-heading template in the SharePoint folder.",
+      "l_obj": "Select the 3 must-know messages and a pre-workshop ask.",
+      "explain": "The pre-read should prepare people to think, not ask them to study.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Pre-read J-7 folder (SharePoint template)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE%2F02%5FDefine%2FPre%20read%20J%2D7&viewid=51b22cf7%2D4c9a%2D4775%2Daca6%2Dddce294c24bf"
+        },
+        {
+          "label": "Example: Cooper PRE-READ v1 (internal)",
+          "url": "https://sodexo.sharepoint.com/:w:/r/sites/DesignCommunityHub/_layouts/15/Doc.aspx?sourcedoc=%7B458489ED-FBCE-48E3-8CE7-F9B8F2DD131B%7D&file=Cooper_PRE-READ_v1_2026-08.docx&action=default&mobileredirect=true"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "You have six slides and ten minutes of attention, seven days before the workshop.",
+        "questions": [
+          "What are the three things they must know?",
+          "What do you leave out, and why?",
+          "What do you ask them to do before arriving?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Who we design for, the moment that hurts most, the question we will work on. Leave out methods and solutions. Ask for one personal story.",
+        "success_criteria": "3 messages are about users and the challenge; the ask is concrete."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287885199"
+    },
+    {
+      "id": "04.06",
+      "name": "Mini Podcast",
+      "phase": "04 Define",
+      "sub": "Audio story (D-5 to D-3)",
+      "lvl": "N1",
+      "primary": "LEARN",
+      "obj": "Turn the approved pre-read into a short two-voice audio story that makes users and tensions memorable.",
+      "who": "CoDesign team scripts and reviews · Recording by team or approved audio tool.",
+      "acc": "CoDesign lead reviews accuracy and confidentiality before sharing.",
+      "when": "Shared D-5 to D-3.",
+      "inputs": "Approved pre-read only. Minimum evidence: every statement traceable to the pre-read; quotes cleared under sharing rules.",
+      "steps": [
+        "Select key messages",
+        "Build the narrative",
+        "Include user stories and cleared quotes",
+        "Transform into a conversation",
+        "Record",
+        "Review accuracy and confidentiality",
+        "Share"
+      ],
+      "output": "A 5-8 minute podcast (target 6 min, ≤900 spoken words) ending with the questions for co-creation.",
+      "std": "Word count and duration recorded; nothing beyond the pre-read; no exercise answers.",
+      "quality": "Short, engaging, accurate, human-reviewed.",
+      "mistakes": "Adding findings not in the pre-read · reconstructed quotes · labelling a script as audio.",
+      "handoff": "Podcast + pre-read sent; participants arrive with stories.",
+      "example": "LEARN: two hosts walk through Leila's 3-hour gap, play a cleared paraphrase, and end with 'Bring one place on campus where you wish you could stay'. [fictional]",
+      "var": {
+        "WORK": "Open on 12:20 at Northbridge.",
+        "PLAY": "Open on the half-time whistle.",
+        "HEAL": "Open on Ruth asking 'did he eat?'"
+      },
+      "cred": "Not applicable.",
+      "tools": "Script template, audio recording tool (approved)",
+      "deck": "[S03, slides 56-59]",
+      "prompt": "Generic Claude prompt: 'Using only this approved pre-read [paste], write a two-voice script of max 900 words in 6 timed sections: opening tension, why this session, essential context, what the evidence says, unresolved tensions, what to bring. Mark pauses. Do not add facts or reveal exercises.'",
+      "verify": "Line-by-line check against pre-read; quotes attribution; word count.",
+      "fallback": "Record a 5-minute voice memo reading the pre-read story with two voices.",
+      "l_obj": "Choose an opening story and protect confidentiality while keeping the human voice.",
+      "explain": "Don't make participants listen to a report. Make them experience the story behind the research.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Pre-read J-7 folder (podcast script template: MISSING, owner Gabriel)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE%2F02%5FDefine%2FPre%20read%20J%2D7&viewid=51b22cf7%2D4c9a%2D4775%2Daca6%2Dddce294c24bf"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "Turn twelve interviews into a six-minute audio story.",
+        "questions": [
+          "Which user story do you open with, and why?",
+          "How do you protect confidentiality but keep quotes alive?",
+          "Which question do you leave the listener with?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Open with the most typical, not the most extreme, story. Paraphrase or use cleared quotes with role, not name. End with the workshop question.",
+        "success_criteria": "Opening story is representative; no identifiable person."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287885200"
+    },
+    {
+      "id": "04.07",
+      "name": "Ice Breaker — Preparation",
+      "phase": "04 Define",
+      "sub": "Preparing the opening activity",
+      "lvl": "N1",
+      "primary": "PLAY",
+      "obj": "Design a short activity that creates a safe, collaborative and user-focused mood for the workshop.",
+      "who": "CoDesign team designs · Facilitator rehearses.",
+      "acc": "Lead facilitator approves.",
+      "when": "Designed in Define; run at the start of Co-create (05.02).",
+      "inputs": "Participant list, workshop objective, persona. Minimum: group size and mix known.",
+      "steps": [
+        "Clarify the mindset needed",
+        "Choose a relevant activity",
+        "Define rules",
+        "Ensure inclusive participation",
+        "Connect to the challenge",
+        "Prepare the transition"
+      ],
+      "output": "A ready-to-run ice breaker card: objective, duration, group size, materials, instructions, prompt, tips, transition.",
+      "std": "5-10 minutes; everyone contributes; ends on the challenge.",
+      "quality": "Short, inclusive, professional, relevant, accessible.",
+      "mistakes": "Games unrelated to the topic · activities that embarrass people · no transition.",
+      "handoff": "Card handed to the facilitator → 05.02.",
+      "example": "PLAY: 'My best and worst half-time' — each person writes one of each on two stickies in 2 minutes; the facilitator clusters them live and says 'this is what Dev lives every match'.",
+      "var": {
+        "WORK": "'The best lunch I had with my team' story in 60 seconds.",
+        "HEAL": "'A meal someone cared about' — avoid personal medical stories.",
+        "LEARN": "'Where I hid on campus between classes.'"
+      },
+      "cred": "Not applicable.",
+      "tools": "Miro, stickies, timer",
+      "deck": "[S03, slides 60-63]",
+      "prompt": "Generic Claude prompt: 'Propose 3 seven-minute ice breakers for [group mix] on [challenge] that activate [behaviour]. Each with instructions, prompt and transition to the first activity.'",
+      "verify": "Inclusive, accessible, culturally appropriate for the US audience.",
+      "fallback": "Default: 'one word for how users feel at [moment]' round.",
+      "l_obj": "Design a 7-minute ice breaker that activates a named behaviour and transitions to the first activity.",
+      "explain": "The best ice breaker already starts the workshop.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — ice breaker card: TO CREATE, owner Diane",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "Your workshop mixes a site manager, two dietitians, a CFO and three end users.",
+        "questions": [
+          "Which behaviour do you need to activate first?",
+          "Design a seven-minute activity.",
+          "How do you connect it to the first real activity?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Equal voice and user focus. Silent writing first, then round-robin. Transition: 'These stories are the journey we'll map now.'",
+        "success_criteria": "Behaviour named; silent-first design; explicit transition."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287885201"
+    },
+    {
+      "id": "05.01",
+      "name": "Workshop Preparation",
+      "phase": "05 Co-create",
+      "sub": "Design the session",
+      "lvl": "N3",
+      "primary": "WORK",
+      "obj": "Translate Define outputs into a workshop with the right activities, sequence, materials and roles.",
+      "who": "Lead facilitator designs · Co-facilitators own groups · Client sponsor confirms objectives and participants.",
+      "acc": "Lead facilitator (N3).",
+      "when": "2-3 weeks before the workshop; groups (05.05) set before the day.",
+      "inputs": "Personas, journey, HMW, concept sheets, participant list. Minimum: one stated outcome per activity.",
+      "steps": [
+        "Clarify objective and outcomes",
+        "Define participant journey and agenda",
+        "Select exercises",
+        "Prepare prompts and canvases",
+        "Assign roles",
+        "Set timing and transitions",
+        "Anticipate risks",
+        "Prepare the space",
+        "Dry run",
+        "Finalise the pack"
+      ],
+      "output": "Workshop Facilitation Pack: agenda, run-of-show, roles, canvases, prompts, timing, logistics, expected outputs.",
+      "std": "Agenda adds up to the slot (Format A = 240 min, Format B = 480 min); every activity has an output; plan B exists.",
+      "quality": "Purposeful activities; balance of divergence and convergence; clear roles; contingency.",
+      "mistakes": "Planning activities instead of outcomes · no buffer · no dry run.",
+      "handoff": "Pack approved → 05.02-05.07 on the day.",
+      "example": "WORK: Northbridge Format A half-day — outcome: improved future lunch journey + 6 idea sheets + owners. [fictional]",
+      "var": {
+        "PLAY": "Format B full day at the stadium with stewards.",
+        "HEAL": "Format A on ward time; nurses join for 60 minutes only.",
+        "LEARN": "Format A with students; evening slot."
+      },
+      "cred": "Not applicable.",
+      "tools": "Miro, PowerPoint, timer",
+      "deck": "[S03, slides 65-68]",
+      "prompt": "'Design a Format A (09:00-13:00) run-of-show for [objective] with [participants]. Each activity: purpose, output, timing, facilitator role, plan B.'",
+      "verify": "Timing sums; feasibility with real participants; accessibility.",
+      "fallback": "Copy the Format A / B agenda on the Start Here frame and adapt.",
+      "l_obj": "Commit to an outcome and sequence activities that produce it, with a plan B.",
+      "explain": "Don't prepare activities. Prepare outcomes.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Workshop Prep",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/workshop-prep-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "Three hours, sixteen participants, a client who wants 'lots of ideas'.",
+        "questions": [
+          "What outcome would you commit to instead?",
+          "Sketch the sequence and what each step produces.",
+          "Plan B if only half show up?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Outcome: 6-8 developed idea sheets on 2 priority moments, with owners. Plan B: merge groups, keep personas, cut one ideation round.",
+        "success_criteria": "Each activity names its output; plan B keeps the outcome."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288247382"
+    },
+    {
+      "id": "05.02",
+      "name": "Ice Breaker — Facilitation",
+      "phase": "05 Co-create",
+      "sub": "Open the session",
+      "lvl": "N2",
+      "primary": "HEAL",
+      "obj": "Run the opening activity so everyone contributes and moves into co-creation mode.",
+      "who": "Facilitator runs it · Co-facilitators model participation.",
+      "acc": "Lead facilitator.",
+      "when": "First 5-10 minutes of the workshop.",
+      "inputs": "Ice breaker card from 04.07.",
+      "steps": [
+        "Introduce the purpose",
+        "Explain instructions",
+        "Give thinking time",
+        "Invite contribution",
+        "Encourage interaction",
+        "Connect to the challenge",
+        "Transition"
+      ],
+      "output": "An activated group where everyone has spoken.",
+      "std": "Every participant contributed at least once; time kept.",
+      "quality": "Short, inclusive, energising, purposeful.",
+      "mistakes": "Letting one senior voice dominate · overrunning · no link to the challenge.",
+      "handoff": "Energy and stories carried into 05.04.",
+      "example": "HEAL: 'A meal someone cared about' — silent writing 2 min, then round-robin; facilitator links stories to Ruth's journey.",
+      "var": {
+        "WORK": "Lunch-with-my-team stories.",
+        "PLAY": "Best/worst half-time.",
+        "LEARN": "Hiding places on campus."
+      },
+      "cred": "Not applicable.",
+      "tools": "Timer, stickies",
+      "deck": "[S03, slides 69-72]",
+      "prompt": "Generic Claude prompt (prep only): 'Give me 3 facilitation moves if one senior person dominates the ice breaker.'",
+      "verify": "Not used live; facilitator judgement.",
+      "fallback": "Round-robin with a talking object.",
+      "l_obj": "Use silent-first and round-robin techniques to balance voices.",
+      "explain": "The ice breaker should activate the behaviours you need for the rest of the workshop.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "Two participants stay silent while a senior director answers everything.",
+        "questions": [
+          "What do you do in the moment?",
+          "Which instruction would have prevented it?",
+          "How do you close so energy carries on?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Thank, then go round the room; ask the director to listen first. Prevent with silent writing. Close by naming the patterns heard.",
+        "success_criteria": "Intervention is respectful and restores balance."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288247383"
+    },
+    {
+      "id": "05.03",
+      "name": "Workshop PowerPoint",
+      "phase": "05 Co-create",
+      "sub": "Navigation support",
+      "lvl": "N2",
+      "primary": "LEARN",
+      "obj": "Build a clear deck that guides participants through context, activities, timing and transitions.",
+      "who": "CoDesign team builds · Facilitator rehearses with it.",
+      "acc": "Lead facilitator.",
+      "when": "After the run-of-show is final.",
+      "inputs": "Facilitation pack, insights, canvases.",
+      "steps": [
+        "Build the storyline",
+        "Structure by activity",
+        "Introduce context and objectives",
+        "Present need-to-know",
+        "Add instructions and timing",
+        "Add transitions and recaps",
+        "Align with canvases",
+        "Review",
+        "Facilitate live"
+      ],
+      "output": "Workshop deck: welcome, context, objectives, agenda, insights, instructions, inspiration, transitions, recap, next steps.",
+      "std": "Each activity slide lets a group start without asking: task, time, output, materials.",
+      "quality": "Simple, visual, one purpose per slide.",
+      "mistakes": "45 slides for 3 hours · instructions only spoken · insights repeated from pre-read in full.",
+      "handoff": "Deck used live; final version filed with 06.01.",
+      "example": "LEARN: 18 slides for a half-day; activity slides show 'Task / Time / Output / Where'.",
+      "var": {
+        "WORK": "Lunch-journey canvas mirrored on slide.",
+        "PLAY": "Stadium map as recurring visual.",
+        "HEAL": "Clinical safety reminder slide."
+      },
+      "cred": "Not applicable.",
+      "tools": "PowerPoint, sodexo-pptx skill",
+      "deck": "[S03, slides 73-76]",
+      "prompt": "Generic Claude prompt: 'Turn this run-of-show into a slide list: one slide per activity with Task, Time, Output, Materials.'",
+      "verify": "Brand, timing, accessibility (font size, contrast).",
+      "fallback": "Printed agenda + activity cards.",
+      "l_obj": "Cut a deck to the slides that move the workshop forward and write a self-explanatory activity slide.",
+      "explain": "The PowerPoint is not the workshop. It is its navigation system.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Example credentials folder (V1 link)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        },
+        {
+          "label": "XP Design for Client template",
+          "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/08_Codesign%20Process%20Templates/TEMPLATE_Sodexo%20CoDesign%20Services%20-%20XP%20Design%20for%20Client%20.pptx?d=wf795306586174afdbd429f8888f91bd5&csf=1&web=1&e=DMqySv"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "Your deck has 45 slides for a three-hour workshop.",
+        "questions": [
+          "Which slides do you keep, and why?",
+          "What must an activity slide contain?",
+          "What belongs on the wall instead?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Keep welcome, objective, agenda, 1 insight per activity, activity slides, recap. Activity slide = task, time, output, materials. Personas and journey belong on the wall.",
+        "success_criteria": "Activity slide has the 4 elements."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288247384"
+    },
+    {
+      "id": "05.04",
+      "name": "CoCreation Journey Map / Future Journey",
+      "phase": "05 Co-create",
+      "sub": "Design the future experience",
+      "lvl": "N3",
+      "primary": "WORK",
+      "obj": "Use the current journey as a canvas to imagine and structure a better end-to-end experience.",
+      "who": "Facilitator guides · Participants ideate and position ideas · CoDesign team captures.",
+      "acc": "Lead facilitator.",
+      "when": "Core workshop activity, after evidence immersion.",
+      "inputs": "Current journey (04.02), HMW, inspiration sheets.",
+      "steps": [
+        "Reconnect with the current journey",
+        "Focus on priority moments",
+        "Explore opportunities",
+        "Generate ideas (humans first)",
+        "Position ideas on the journey",
+        "Combine and enrich",
+        "Imagine the future experience",
+        "Highlight promising directions",
+        "Identify concepts"
+      ],
+      "output": "Future Journey Map with ideas, improved touchpoints, new services and priority directions.",
+      "std": "Shows what changes, where, and why, versus the current journey.",
+      "quality": "Linked to real needs; end-to-end; exploratory.",
+      "mistakes": "Jumping to an app · ideas floating off the journey · no current/future contrast.",
+      "handoff": "Promising ideas → 05.07 Idea Sheets.",
+      "example": "WORK: under 'Lunch', ideas 'team table' and 'pre-order by 11:00' replace the two-queue pain; 'Find a place' gets 'quiet hours zone'.",
+      "var": {
+        "PLAY": "Half-time ideas: lockers, family bundle.",
+        "HEAL": "Ordering moves to same day; family update added.",
+        "LEARN": "Gap stage becomes 'home base'."
+      },
+      "cred": "See 04.02.",
+      "tools": "Miro journey widget, stickies",
+      "deck": "[S03, slides 77-80]",
+      "prompt": "After the session: 'Cluster these future-journey stickies [paste] by stage and theme; flag duplicates; do not add new ideas.'",
+      "verify": "Clusters keep participants' words.",
+      "fallback": "Facilitator clusters live on the wall.",
+      "l_obj": "Bring a solution-first group back to the journey and show current-vs-future difference.",
+      "explain": "Don't ideate in isolation. Design the experience as a journey.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Journey templates (Figma)",
+          "url": "https://www.figma.com/design/l0UdS4pULaFSt2rp4rp3Cf/Journey-templates?node-id=2-477&t=C8W5zAnaB6APRgq9-1"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Journey Map (reuse in future mode)",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/journey-map-agent.html"
+        },
+        {
+          "name": "Post-it Clustering",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/clustering-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "A group starts inventing a mobile app before looking at the journey.",
+        "questions": [
+          "How do you bring them back?",
+          "Where should their idea sit, and what changes?",
+          "How do you show current vs future?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Ask 'which moment does this fix, for whom?'. Place it on the stage; write the before/after on two colours.",
+        "success_criteria": "Idea anchored to a stage and a need."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288247385"
+    },
+    {
+      "id": "05.05",
+      "name": "Participants & Group Separation",
+      "phase": "05 Co-create",
+      "sub": "Composing groups",
+      "lvl": "N3",
+      "primary": "HEAL",
+      "obj": "Create balanced groups mixing perspectives, expertise and seniority. Set up before the workshop day.",
+      "who": "Lead facilitator composes · Client sponsor confirms the list.",
+      "acc": "Lead facilitator.",
+      "when": "2 days to 1 week before; it is an input to 05.01 even though it is taught after 05.04.",
+      "inputs": "Participant list with role, function, seniority, user proximity.",
+      "steps": [
+        "Map participants and expertise",
+        "Identify complementary perspectives",
+        "Consider hierarchy and dynamics",
+        "Define group size",
+        "Mix functions",
+        "Assign challenges/personas",
+        "Balance facilitators",
+        "Review gaps",
+        "Adjust"
+      ],
+      "output": "Group setup: allocation, challenge or persona, facilitator per group.",
+      "std": "Every group has at least one end user or user-proximate person; no function dominates.",
+      "quality": "Diverse, balanced, intentional.",
+      "mistakes": "Grouping by department · director in every group · no end user.",
+      "handoff": "Setup feeds the facilitation pack.",
+      "example": "HEAL: 3 groups of 5, each with a nurse or ward host, a dietitian or kitchen lead, a family representative; the director floats as 'challenger' in the share-back.",
+      "var": {
+        "WORK": "Mix team leads and occasional attendees.",
+        "PLAY": "Each group gets a steward.",
+        "LEARN": "Commuters and residents mixed."
+      },
+      "cred": "Not applicable.",
+      "tools": "Spreadsheet, Miro",
+      "deck": "[S03, slides 81-84]",
+      "prompt": "Generic Claude prompt: 'Allocate these 15 participants [table] into 3 balanced groups by function, seniority and user proximity; explain trade-offs.'",
+      "verify": "Interpersonal dynamics the AI cannot know.",
+      "fallback": "Sort cards by function, deal them round-robin, then swap for balance.",
+      "l_obj": "Compose groups with an explicit logic and place senior people deliberately.",
+      "explain": "Group people to create complementary perspectives, not by function.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "List received 2 days before: 4 managers, 3 dietitians, 5 employees, 2 IT, 1 director.",
+        "questions": [
+          "How do you build groups, on which logic?",
+          "Where does the director go, and why?",
+          "What if a group has no end user?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "3 groups of 5 mixing roles; director as share-back challenger or in a group with a strong facilitator; swap an employee in, or give that group user evidence cards.",
+        "success_criteria": "Logic explicit; every group has user voice."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288247386"
+    },
+    {
+      "id": "05.06",
+      "name": "Give Inspiration — AI Ideas",
+      "phase": "05 Co-create",
+      "sub": "Creative stimulus",
+      "lvl": "N2",
+      "primary": "PLAY",
+      "obj": "Use AI as a creative stimulus to widen and challenge ideas, after humans have ideated first.",
+      "who": "Facilitator prepares and introduces stimuli · Participants react, challenge, remix.",
+      "acc": "Lead facilitator; approved AI use only.",
+      "when": "After a first human ideation round, when a group is stuck or converging too early.",
+      "inputs": "Persona, moment, need, HMW, existing ideas, constraints.",
+      "steps": [
+        "Ideate with humans first",
+        "Spot where inspiration is needed",
+        "Feed AI with research context",
+        "Generate diverse directions",
+        "Share selected stimuli",
+        "React, challenge, remix",
+        "Combine human and AI thinking",
+        "Capture directions"
+      ],
+      "output": "AI inspiration prompts and directions, selected and enriched by participants.",
+      "std": "AI ideas labelled as AI; participants decide what stays.",
+      "quality": "Diverse, relevant, critically evaluated, compliant.",
+      "mistakes": "Showing AI ideas first · presenting them as answers · unapproved tools.",
+      "handoff": "Selected directions → 05.07 Idea Sheets.",
+      "example": "PLAY: group stuck on half-time; facilitator shows 5 AI directions incl. 'reverse the queue: food comes to the seat'; the group remixes it into section lockers. AI inspiration is a creative stimulus, not evidence.",
+      "var": {
+        "WORK": "AI directions on team rituals.",
+        "HEAL": "AI directions screened for clinical safety first.",
+        "LEARN": "AI directions on affordability."
+      },
+      "cred": "Not applicable.",
+      "tools": "Approved Claude workspace",
+      "deck": "[S03, slides 85-88]",
+      "prompt": "'Persona [x] at moment [y] needs [z]. HMW [q]. Existing ideas: [list]. Constraints: [list]. Give 8 directions that are different from the existing ideas, 2 deliberately provocative. One line each.'",
+      "verify": "Remove unsafe or off-brief ideas before showing; label as AI.",
+      "fallback": "Pre-printed inspiration sheets from 04.03.",
+      "l_obj": "Brief an AI with useful context and present its output without shutting down the group.",
+      "explain": "Human first. AI second. Human decides.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Inspiration Sheets (pre-generated stimuli)",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/inspiration-sheets-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "A group is stuck after twenty minutes of ideation.",
+        "questions": [
+          "What do you give the AI so the output is useful?",
+          "How do you present AI ideas without shutting down thinking?",
+          "What do you do with a brilliant but infeasible idea?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Persona, moment, need, constraints, existing ideas. Present as 'provocations to react to'. Keep the principle, park the feature.",
+        "success_criteria": "Prompt includes constraints and existing ideas."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288247387"
+    },
+    {
+      "id": "05.07",
+      "name": "Idea Sheet",
+      "phase": "05 Co-create",
+      "sub": "Capture participant contributions",
+      "lvl": "N1",
+      "primary": "LEARN",
+      "obj": "Turn promising workshop ideas into clear sheets that can be compared, combined and prioritised.",
+      "who": "Participants write · Facilitators coach.",
+      "acc": "Group facilitator checks completeness.",
+      "when": "End of ideation in the workshop.",
+      "inputs": "Future journey ideas, HMW, persona.",
+      "steps": [
+        "Select the idea",
+        "Name it",
+        "Link to need and HMW",
+        "Describe the core idea",
+        "Explain how it works",
+        "Detail before/during/after",
+        "Identify components",
+        "Sketch",
+        "Clarify user and business value",
+        "Share and challenge"
+      ],
+      "output": "Completed Idea Sheets ready to compare and prioritise.",
+      "std": "Readable in 30 seconds; need and HMW filled.",
+      "quality": "Simple, visual, connected to a need, open.",
+      "mistakes": "'Better communication' as an idea · finished solutions · no user value.",
+      "handoff": "Idea Sheets capture participants' contributions → 06.01 Summary and 06.02 Prioritisation. Selected ideas are strengthened later in 06.X1.",
+      "example": "LEARN: 'Gap Base' — commuters book a study pod with a meal bundle; need: a place for the 3-hour gap. [fictional]",
+      "var": {
+        "WORK": "'Team Table'.",
+        "PLAY": "'Section Lockers'.",
+        "HEAL": "'Same-day Choice'."
+      },
+      "cred": "Santander '45 ideas' (S06 slide 4) — confirm artifact.",
+      "tools": "Printed or Miro idea sheet",
+      "deck": "[S03, slides 89-92]",
+      "prompt": "After the workshop only: 'Transcribe these idea sheet photos [attach] into a table; keep participants' words; flag missing fields.'",
+      "verify": "No rewriting of participant ideas.",
+      "fallback": "Paper idea sheet with 11 fields.",
+      "l_obj": "Coach a group from a vague idea to a one-line description linked to a need.",
+      "explain": "Make the idea tangible enough to discuss, not so finished that it cannot change.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "A post-it reads 'better communication'.",
+        "questions": [
+          "What do you ask to make it tangible?",
+          "Write the one-line description and the need.",
+          "What stays open?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "'Who, about what, at which moment?' → 'Text families when the patient has eaten' / need: reassurance. Open: channel, privacy rules.",
+        "success_criteria": "One-liner names user, moment, action."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288247388"
+    },
+    {
+      "id": "06.01",
+      "name": "Workshop Summary Report",
+      "phase": "06 Test & Deliver",
+      "sub": "Translate the workshop into action",
+      "lvl": "N2",
+      "primary": "HEAL",
+      "obj": "Turn workshop outputs into a concise synthesis of what was explored, created and decided, with next steps.",
+      "who": "CoDesign team writes · Sponsor validates.",
+      "acc": "CoDesign lead; sponsor validates decisions.",
+      "when": "Within 5 working days of the workshop.",
+      "inputs": "Photos, Miro boards, idea sheets, notes.",
+      "steps": [
+        "Collect outputs",
+        "Consolidate",
+        "Cluster by meaning",
+        "Identify themes and decisions",
+        "Highlight priorities",
+        "Capture open questions",
+        "Define next steps and owners",
+        "Build a visual story",
+        "Validate with the team",
+        "Share"
+      ],
+      "output": "Summary report: ambition, discussions, insights, ideas, priorities, decisions, open questions, action plan.",
+      "std": "Page 1 answers 'what did we decide, who does what, by when'; discussion vs decision vs to-validate visibly separated.",
+      "quality": "Concise, visual, decision-oriented, readable by non-attendees.",
+      "mistakes": "A photo dump · decisions not marked · no owners.",
+      "handoff": "Decisions and owners → 06.02 / 06.03.",
+      "example": "HEAL: page 1 — Decided: test protected mealtimes on Ward 4 (owner: ward manager, by 15 Jan) · To validate: same-day ordering with dietitians · Discussed: family updates (privacy review). [fictional]",
+      "var": {
+        "WORK": "Decided: team-table trial on floor 6.",
+        "PLAY": "To validate: lockers with safety officer.",
+        "LEARN": "Discussed: club partnerships."
+      },
+      "cred": "Not applicable.",
+      "tools": "PowerPoint/Word",
+      "deck": "[S03, slides 94-97]",
+      "prompt": "'From these workshop outputs [paste], draft a summary: page 1 = Decided / To validate / Discussed with owners and dates (leave [TBC] where unknown). Do not invent decisions.'",
+      "verify": "Every 'Decided' item was decided in the room; owners confirmed.",
+      "fallback": "12-heading template from S03.",
+      "l_obj": "Write a first page that separates decisions, validations and discussions with owners.",
+      "explain": "Don't report the workshop. Translate it into action.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Workshop Summary",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/workshop-summary-agent.html"
+        },
+        {
+          "name": "Post-it Clustering",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/clustering-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "Two days later, a sponsor who missed it asks 'so what did we decide?'",
+        "questions": [
+          "What goes on page 1?",
+          "How do you separate discussion, decision, to-validate?",
+          "What makes it actionable?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Three labelled blocks with owner and date; actions have verbs and deadlines.",
+        "success_criteria": "Three categories visible; every action has owner + date or TBC."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288534865"
+    },
+    {
+      "id": "06.02",
+      "name": "Prioritising Ideas Workshop",
+      "phase": "06 Test & Deliver",
+      "sub": "Collective decision",
+      "lvl": "N3",
+      "primary": "WORK",
+      "obj": "Decide which ideas move forward using agreed criteria: user value, impact, feasibility, strategic fit.",
+      "who": "Facilitator runs · Client decision-makers decide · Operations and tech assess feasibility.",
+      "acc": "Client sponsor owns decisions; facilitator owns the process.",
+      "when": "After the summary, with decision-makers present.",
+      "inputs": "Comparable idea sheets, evidence, criteria.",
+      "steps": [
+        "Prepare comparable ideas",
+        "Agree criteria",
+        "Review against user needs",
+        "Score and position",
+        "Discuss differences",
+        "Challenge feasibility and impact",
+        "Identify quick wins and strategic bets",
+        "Select",
+        "Define actions and owners"
+      ],
+      "output": "Prioritised portfolio: move forward, test, combine, refine, postpone or stop — with rationale.",
+      "std": "Criteria agreed before scoring; rationale written for each decision.",
+      "quality": "Not voting alone; desirability visible next to feasibility.",
+      "mistakes": "Dot-vote only · criteria after the vote · no owners.",
+      "handoff": "Selected ideas → 06.03 and 06.X1.",
+      "example": "WORK: team-table = quick win (standard offer, adapted); anchor-day planner = strategic bet (needs app capability); quiet zone = test.",
+      "var": {
+        "PLAY": "Family bundle quick win; lockers strategic bet.",
+        "HEAL": "Protected mealtimes quick win; same-day ordering bet pending clinical review.",
+        "LEARN": "Commuter bundle quick win."
+      },
+      "cred": "Not applicable.",
+      "tools": "Miro matrix (impact/effort)",
+      "deck": "[S03, slides 98-101] · [S05, slide 28] 70/20/10 lens",
+      "prompt": "'Score these ideas [table] against criteria [list with weights]. Show the score breakdown and the 3 biggest uncertainties per idea. Do not decide.'",
+      "verify": "Scores reflect the group's judgement; AI scores are a discussion aid only.",
+      "fallback": "Impact/effort 2x2 on the wall with agreed definitions.",
+      "l_obj": "Handle a popular-but-infeasible idea without dismissing the group, using pre-agreed criteria.",
+      "explain": "Prioritisation is not voting. It is collective decision-making.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Prioritization",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/prioritization-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "The group dot-votes; the most popular idea is the least feasible.",
+        "questions": [
+          "How do you handle it?",
+          "Which criteria should have been agreed first?",
+          "Quick win vs strategic bet vs parked idea?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Acknowledge the desirability signal; ask what would make it feasible; classify as strategic bet with a test. Criteria: user value, feasibility, cost, strategic fit.",
+        "success_criteria": "Criteria named and weighted before scoring."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288534866"
+    },
+    {
+      "id": "06.03",
+      "name": "Value Proposition Workshop",
+      "phase": "06 Test & Deliver",
+      "sub": "Why it matters",
+      "lvl": "N3",
+      "primary": "PLAY",
+      "obj": "Clarify the value of each selected concept for users, the client and Sodexo before further investment.",
+      "who": "Facilitator runs · Client and account team contribute business value.",
+      "acc": "CoDesign lead; account owner for business value.",
+      "when": "After prioritisation.",
+      "inputs": "Selected concepts, persona needs, evidence.",
+      "steps": [
+        "Select the concept",
+        "Clarify the target",
+        "Reconnect with needs and pains",
+        "Define benefits",
+        "Articulate the proposition",
+        "Identify differentiation",
+        "Explore client/business value",
+        "List assumptions",
+        "Refine"
+      ],
+      "output": "Value proposition per concept: target, need, experience, benefits, differentiation, business value, assumptions to test.",
+      "std": "Written as benefits, not features; assumptions listed for 06.X3.",
+      "quality": "Specific, evidence-based, explicit about assumptions.",
+      "mistakes": "Feature lists · invented business figures.",
+      "handoff": "Assumptions → 06.X2 test plan and 06.X4 pilot.",
+      "example": "PLAY: 'Family bundle: parents get the kids fed before the whistle with one tap, so the family watches the second half together.' Assumption: families will buy before match day.",
+      "var": {
+        "WORK": "Team table: 'lunch becomes the team meeting, in 20 minutes'.",
+        "HEAL": "Protected mealtimes: 'patients eat with help at the right time'.",
+        "LEARN": "Commuter bundle: 'a predictable price for a whole campus day'."
+      },
+      "cred": "Not applicable.",
+      "tools": "Value proposition canvas",
+      "deck": "[S03, slides 102-105]",
+      "prompt": "'For concept [x] and persona [y], write the value proposition as benefits, list differentiation and the 3 assumptions to test first. No figures unless supplied.'",
+      "verify": "Business value claims; numbers.",
+      "fallback": "Canvas: Target → Jobs → Pains → Gains → Concept → Benefits → Assumptions.",
+      "l_obj": "Rewrite a feature-led concept into a benefit for a named user and pick the first assumption to test.",
+      "explain": "Don't describe what the concept does. Explain why it matters.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Value Proposition",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/value-proposition-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "A concept reads 'a digital platform that centralises all services'.",
+        "questions": [
+          "For whom, for which job?",
+          "Rewrite as a benefit.",
+          "Which assumption first, and how?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "'For the team lead organising an office day, book room, table and lunch in one step.' Test: will team leads plan the day before? 2-week trial.",
+        "success_criteria": "Benefit names user and job; test is concrete."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288534867"
+    },
+    {
+      "id": "06.04",
+      "name": "Annexes",
+      "phase": "06 Test & Deliver",
+      "sub": "Evidence repository",
+      "lvl": "N1",
+      "primary": "LEARN",
+      "obj": "Package the evidence behind the deliverable so it is traceable, safe to share and reusable.",
+      "who": "CoDesign team curates.",
+      "acc": "CoDesign lead approves anonymisation.",
+      "when": "At project close.",
+      "inputs": "All project material.",
+      "steps": [
+        "Collect",
+        "Select useful evidence",
+        "Remove duplicates",
+        "Structure by topic and phase",
+        "Ensure traceability",
+        "Protect confidential information",
+        "Link to conclusions",
+        "Package in the repository"
+      ],
+      "output": "Annex pack / evidence repository.",
+      "std": "Each key finding links to its evidence ID; personal data removed.",
+      "quality": "Structured, navigable, curated.",
+      "mistakes": "Dumping 400 photos · names in transcripts · no index.",
+      "handoff": "Repository filed in SharePoint; feeds 06.X6 credential.",
+      "example": "LEARN: index by phase; finding 'the gap is the valley' links to interviews St04, St11 and timetable analysis. [fictional]",
+      "var": {
+        "WORK": "Badge-data extract anonymised.",
+        "PLAY": "Crowd photos with faces blurred.",
+        "HEAL": "No patient-identifiable data, ever."
+      },
+      "cred": "Not applicable.",
+      "tools": "SharePoint",
+      "deck": "[S03, slides 106-109]",
+      "prompt": "Generic Claude prompt: 'Propose an index for these files [list] by phase and topic, and flag files likely to contain personal data.'",
+      "verify": "Personal data review is human.",
+      "fallback": "Use the 13-heading annex template.",
+      "l_obj": "Decide what goes in the annex and make one finding traceable.",
+      "explain": "Keep the main story simple. Keep the evidence accessible.",
+      "type": "source_block",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Final Restitution",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/final-restitution-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "400 photos, 18 transcripts, 60 post-it walls.",
+        "questions": [
+          "What goes in, what stays out?",
+          "How do you make a finding traceable?",
+          "What do you remove or anonymise?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Selected, indexed evidence; evidence IDs on findings; remove names, faces, health data.",
+        "success_criteria": "Traceability via IDs; anonymisation explicit."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288534868"
+    },
+    {
+      "id": "06.X1",
+      "name": "Concept Development (post-workshop)",
+      "phase": "06 Test & Deliver",
+      "sub": "PROPOSED EXTENSION · strengthen selected ideas",
+      "lvl": "N2",
+      "primary": "WORK",
+      "obj": "Strengthen the ideas selected in prioritisation into robust concepts, combining participants' idea sheets with evidence and constraints.",
+      "who": "CoDesign team develops · Operations, tech, dietitians or safety as relevant review.",
+      "acc": "CoDesign lead.",
+      "when": "After 06.02.",
+      "inputs": "Selected idea sheets, value propositions, constraints.",
+      "steps": [
+        "Merge related idea sheets",
+        "Re-check need and evidence",
+        "Detail the service blueprint (front and back stage)",
+        "List components and dependencies",
+        "Update assumptions",
+        "Review with operations"
+      ],
+      "output": "Developed concept + service blueprint + assumption list.",
+      "std": "Every component has an owner hypothesis; assumptions ranked.",
+      "quality": "Faithful to participants' intent; operationally credible.",
+      "mistakes": "Replacing participant ideas with the team's favourite.",
+      "handoff": "Developed concept → 06.X2 / 06.X3.",
+      "example": "WORK: Team Table merges 3 idea sheets; blueprint shows booking, kitchen batch timing and table signage.",
+      "var": {
+        "PLAY": "Lockers blueprint incl. restock.",
+        "HEAL": "Same-day choice incl. diet check step.",
+        "LEARN": "Gap Base incl. space owner."
+      },
+      "cred": "Not applicable.",
+      "tools": "Service blueprint",
+      "deck": "Proposed — no source slide",
+      "prompt": "'Merge these idea sheets [paste] into one concept, keeping participants' wording; add a front/back-stage blueprint and dependencies.'",
+      "verify": "Participant intent preserved.",
+      "fallback": "Blueprint on Miro: user actions / frontline / back stage / systems.",
+      "l_obj": "Merge idea sheets into a concept with a blueprint and ranked assumptions.",
+      "explain": "Workshop ideas become concepts only after evidence and operations have had their say.",
+      "type": "proposed_extension",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Concept Sheets",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/concept-sheets-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "Three idea sheets overlap on 'team lunch'.",
+        "questions": [
+          "What do you keep from each?",
+          "What does the back stage need?",
+          "Which assumption is riskiest?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Keep each sheet's user benefit; back stage needs kitchen batch timing; riskiest: teams commit the day before.",
+        "success_criteria": "Blueprint includes back stage."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288795507"
+    },
+    {
+      "id": "06.X2",
+      "name": "Solution & Capability Mapping (Spark / Standard Offer)",
+      "phase": "06 Test & Deliver",
+      "sub": "PROPOSED EXTENSION · from need to capability",
+      "lvl": "N2",
+      "primary": "HEAL",
+      "obj": "Start from the user and operational capability each concept needs, then check product fit, availability, dependencies and ownership.",
+      "who": "CoDesign + tech pre-sales/BRM + operations.",
+      "acc": "Tech owner validates fit; CoDesign lead keeps the user need visible.",
+      "when": "After concept development, before pilot design.",
+      "inputs": "Developed concepts, Standard Offer and Innovation Catalogue.",
+      "steps": [
+        "Write the required capability in user terms",
+        "List candidate solutions (standard, adapted, innovation)",
+        "Check availability and dependencies",
+        "Name owners",
+        "Classify with the 70/20/10 lens",
+        "Flag what still needs validation"
+      ],
+      "output": "Capability map per concept: capability → candidate solution → status → owner → validation needed.",
+      "std": "Capability written before product; every 'standard' item still has a validation note.",
+      "quality": "Need-first; honest on availability.",
+      "mistakes": "Starting from the catalogue · assuming standard means validated · forcing exact 70/20/10 ratios.",
+      "handoff": "Map → 06.X4 pilot and roadmap.",
+      "example": "HEAL: 'choose closer to the meal' needs bedside ordering + diet check; candidate: existing ordering tablet (adapted standard), dependency: diet data feed (owner TBC).",
+      "var": {
+        "WORK": "Team booking: workplace app (standard) + group pre-order (adapted).",
+        "PLAY": "Lockers: innovation/pilot.",
+        "LEARN": "Bundle: meal-plan system (adapted)."
+      },
+      "cred": "Not applicable.",
+      "tools": "Standard Offer, D&I Catalogue",
+      "deck": "[S05, slide 28] 70/20/10 · [S06, slide 5] Tech role",
+      "prompt": "Solution Intelligence Engine: 'Map these prioritised concepts [paste] to Standard Offer and Innovation Catalogue; for each, capability needed, candidate, availability, dependencies, owner [TBC if unknown].'",
+      "verify": "Availability and ownership with the tech owner; no capability claimed without confirmation.",
+      "fallback": "Table: Capability / Candidate / Standard-Adapted-Innovation / Status / Owner / Validation.",
+      "l_obj": "Write a capability before naming a product and classify it with the 70/20/10 lens.",
+      "explain": "Start with what the user and operation need. Then find what we have.",
+      "type": "proposed_extension",
+      "templates": [
+        {
+          "label": "Experience Catalogue",
+          "url": "https://xpcatalogue.vercel.app/login"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Solution Intelligence Engine",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/solutioning-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "A concept needs 'families notified when the patient has eaten'.",
+        "questions": [
+          "What capability, in user terms?",
+          "Standard, adapted or innovation?",
+          "What must still be validated?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Capability: 'confirmed meal status shared with consented family'. Likely innovation/pilot. Validate privacy, consent, nurse workload.",
+        "success_criteria": "Capability before product; validation named."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288795508"
+    },
+    {
+      "id": "06.X3",
+      "name": "Prototype & User Test",
+      "phase": "06 Test & Deliver",
+      "sub": "PROPOSED EXTENSION · user evidence",
+      "lvl": "N2",
+      "primary": "PLAY",
+      "obj": "Test the riskiest assumptions with real users using the cheapest prototype that can answer the question.",
+      "who": "CoDesign team designs the test · Site team hosts · Users take part.",
+      "acc": "CoDesign lead; site manager approves on-site tests.",
+      "when": "Before investing in a pilot.",
+      "inputs": "Assumptions from 06.03 / 06.X1.",
+      "steps": [
+        "Pick the riskiest assumption",
+        "Write the test question and success signal",
+        "Choose the prototype (paper, role-play, mock-up)",
+        "Recruit 5-8 users",
+        "Run and observe",
+        "Record evidence",
+        "Decide: keep, change, drop"
+      ],
+      "output": "Test plan + results: assumption, method, participants, signal, result, decision.",
+      "std": "Success signal defined before testing.",
+      "quality": "Small, fast, honest.",
+      "mistakes": "Asking 'would you use this?' · testing everything at once.",
+      "handoff": "Tested concepts → 06.X4. Tested concepts require user evidence; benchmark and AI ideas do not count as validation.",
+      "example": "PLAY: paper menu + mock locker at one gate for one match; signal: 30% of families in that stand pre-order.",
+      "var": {
+        "WORK": "Role-play team-table booking with 6 teams.",
+        "HEAL": "Tablet mock-up with 5 patients, nurse present.",
+        "LEARN": "Pop-up 'gap base' for one week."
+      },
+      "cred": "Not applicable.",
+      "tools": "Paper prototypes, Miro, Labs Garage (Paris)",
+      "deck": "Proposed · [S06, slides 5-6] Labs 'Garage: prototype, test, learn'",
+      "prompt": "Generic Claude prompt: 'For assumption [x], propose 3 low-cost tests with method, participants, success signal and risks.'",
+      "verify": "Ethics, consent, site safety.",
+      "fallback": "Assumption / Test / Signal / Result / Decision table.",
+      "l_obj": "Turn an assumption into a test with a pre-defined success signal.",
+      "explain": "Test the riskiest thing first, as cheaply as possible.",
+      "type": "proposed_extension",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [],
+      "exercise": {
+        "situation": "Assumption: families will pre-order before match day.",
+        "questions": [
+          "Cheapest test?",
+          "Success signal?",
+          "What would make you drop it?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Offer the bundle on the ticket page for one match; signal ≥ X% (agreed beforehand); drop if near zero after 2 matches.",
+        "success_criteria": "Signal set before the test."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288795509"
+    },
+    {
+      "id": "06.X4",
+      "name": "Pilot Design, Business Case & Measures",
+      "phase": "06 Test & Deliver",
+      "sub": "PROPOSED EXTENSION · prove it in operation",
+      "lvl": "N3",
+      "primary": "LEARN",
+      "obj": "Design a time-boxed pilot with baseline, measures, costs and decision rules.",
+      "who": "CoDesign + site operations + finance/account.",
+      "acc": "Client sponsor and account owner approve the pilot.",
+      "when": "After successful user tests.",
+      "inputs": "Tested concept, capability map, baseline data.",
+      "steps": [
+        "Define pilot scope and site",
+        "Set baseline",
+        "Choose 3-5 measures (experience, operations, cost)",
+        "Estimate costs and benefits with sources",
+        "Set decision rules (scale, adapt, stop)",
+        "Plan governance"
+      ],
+      "output": "Pilot plan + measurement plan + draft business case.",
+      "std": "Baseline exists; no benefit figure without a source or 'to measure'.",
+      "quality": "Measurable, time-boxed, owned.",
+      "mistakes": "Pilot with no baseline · invented ROI.",
+      "handoff": "Pilot results → 06.X5 roadmap.",
+      "example": "LEARN: one-semester commuter bundle pilot; measures: uptake, dwell time, affordability perception vs baseline survey; decision rule agreed with dining director.",
+      "var": {
+        "WORK": "Floor-6 team-table pilot, 2 weeks.",
+        "PLAY": "3-match pilot in two stands.",
+        "HEAL": "4-week ward pilot with safety log."
+      },
+      "cred": "Not applicable.",
+      "tools": "Measurement plan",
+      "deck": "Proposed · [S06, slide 4] 'pilot KPIs against a baseline'",
+      "prompt": "Impact Map agent: 'Build an impact map for pilot [x]: activities → outputs → outcomes → measures, marking which measures have a baseline.'",
+      "verify": "Every figure sourced or marked 'to measure'.",
+      "fallback": "Pilot canvas: Scope / Baseline / Measures / Cost / Decision rule / Owner.",
+      "l_obj": "Write a pilot decision rule with a baseline and 3 measures.",
+      "explain": "A pilot without a baseline proves nothing.",
+      "type": "proposed_extension",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Impact Map",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/impact-map-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "The sponsor wants 'to see if it works'.",
+        "questions": [
+          "Which 3 measures?",
+          "What baseline?",
+          "What decision rule?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Experience, operational and cost measures; baseline from pre-pilot weeks; rule: scale if ≥ agreed threshold on 2 of 3.",
+        "success_criteria": "Decision rule written before launch."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288795510"
+    },
+    {
+      "id": "06.X5",
+      "name": "Roadmap & Implementation Handover",
+      "phase": "06 Test & Deliver",
+      "sub": "PROPOSED EXTENSION · Now / Next / Later",
+      "lvl": "N3",
+      "primary": "WORK",
+      "obj": "Sequence initiatives into a roadmap and hand them over to the people who will run them, with decisions, owners, assumptions and measures.",
+      "who": "CoDesign + account team + operations + tech.",
+      "acc": "Account owner owns the roadmap after handover.",
+      "when": "Final phase; then reviewed in QBRs (quarterly business reviews).",
+      "inputs": "Pilot results, capability map, priorities.",
+      "steps": [
+        "Sequence Now / Next / Later",
+        "Check dependencies",
+        "Assign owners",
+        "Write the handover note: decisions, assumptions, measures, risks",
+        "Present final restitution",
+        "Schedule the first review"
+      ],
+      "output": "Roadmap + handover note + final restitution deck.",
+      "std": "Each initiative: owner, date, measure, open assumption.",
+      "quality": "Owned, realistic, linked to evidence.",
+      "mistakes": "Roadmap without owners · handover by email only.",
+      "handoff": "Owners accept in writing; first review date set.",
+      "example": "WORK: Now team-table (floor 6 → all floors), Next anchor-day planner (app capability), Later quiet zones; owners named; review at next QBR.",
+      "var": {
+        "PLAY": "Season plan around fixtures.",
+        "HEAL": "Ward-by-ward roll-out with clinical governance.",
+        "LEARN": "Semester-based roll-out."
+      },
+      "cred": "Eli Lilly 5-year roadmap cited in S05 slide 25 — confirm artifact.",
+      "tools": "Roadmap template, QBR",
+      "deck": "Proposed · [S05, slides 11, 24, 28]",
+      "prompt": "'Build a Now/Next/Later roadmap from these initiatives [table] with owner, dependency, measure, open assumption; mark unknown owners [TBC].'",
+      "verify": "Owners and dates confirmed by people, not inferred.",
+      "fallback": "Roadmap table + handover checklist.",
+      "l_obj": "Produce a handover note that names decisions, owners, assumptions and measures.",
+      "explain": "A roadmap nobody owns is a poster.",
+      "type": "proposed_extension",
+      "templates": [
+        {
+          "label": "Project template root (SharePoint) — specific template: TO LOCATE, owner Gabriel",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Final Restitution",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/final-restitution-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "The project ends Friday; the account manager inherits 5 initiatives.",
+        "questions": [
+          "What goes in the handover note?",
+          "Who signs?",
+          "When is the first review?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Decisions, owners, assumptions, measures, risks; account owner signs; first review at next QBR.",
+        "success_criteria": "All four elements present."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288795511"
+    },
+    {
+      "id": "06.X6",
+      "name": "Credential Capture",
+      "phase": "06 Test & Deliver",
+      "sub": "PROPOSED EXTENSION · make the proof reusable",
+      "lvl": "N1",
+      "primary": "HEAL",
+      "obj": "Capture an approved credential the week after close-out, stating what it actually demonstrates.",
+      "who": "CoDesign team drafts · Account owner and client approve.",
+      "acc": "Account owner approves external use.",
+      "when": "Week after close-out; update after pilot results.",
+      "inputs": "Annexes, restitution, measured results.",
+      "steps": [
+        "Draft challenge, approach, outputs",
+        "Add only measured results",
+        "State what it proves and what it does not",
+        "Get approvals",
+        "File in the credential repository"
+      ],
+      "output": "Credential card + 1-slide + approval record.",
+      "std": "Each claim has a source; sharing level stated (internal / client-shareable / public).",
+      "quality": "Honest, reusable, approved.",
+      "mistakes": "Claiming impact before measurement · no approval.",
+      "handoff": "Credential available to 02.02.",
+      "example": "HEAL: 'St Aldric meal journey: method and pilot design. Impact: to be measured (pilot ends Feb).' [fictional]",
+      "var": {
+        "WORK": "Proves workplace journey + pilot design.",
+        "PLAY": "Proves matchday F&B redesign.",
+        "LEARN": "First education credential once real."
+      },
+      "cred": "This block creates credentials.",
+      "tools": "Credential repository",
+      "deck": "Proposed · [S02] Credential Writer",
+      "prompt": "Credential Writer: 'From this restitution [paste], draft a credential card; mark every unmeasured outcome as \"to be measured\".'",
+      "verify": "Approvals and figures.",
+      "fallback": "Template: Client context → Challenge → Approach → Outputs → Results (measured) → What it proves.",
+      "l_obj": "Write a credential that separates delivered outputs from measured impact.",
+      "explain": "A credential listing proves we did the project, not that it worked.",
+      "type": "proposed_extension",
+      "templates": [
+        {
+          "label": "Credentials folder (SharePoint)",
+          "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+        }
+      ],
+      "os_agents": [
+        {
+          "name": "Credential Writer",
+          "url": "https://sodexo-codesign-os.vercel.app/agents/credential-writer-agent.html"
+        }
+      ],
+      "exercise": {
+        "situation": "The project just closed; results are not measured yet.",
+        "questions": [
+          "What can you claim?",
+          "What must wait?",
+          "Who approves?"
+        ]
+      },
+      "answer_key": {
+        "sample_answer": "Claim approach and outputs; impact waits for measurement; account owner + client approve.",
+        "success_criteria": "No unmeasured impact claimed."
+      },
+      "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689288795512"
+    }
+  ],
+  "case_packs": {
+    "WORK": {
+      "name": "Northbridge HQ — the hybrid office day",
+      "client": "Northbridge Financial (fictional global bank, regional HQ, 3,800 badge holders)",
+      "challenge": "Attendance has settled at 2.4 days a week. Leaders want the office to be 'worth the commute' without adding cost.",
+      "users": "Hybrid employees, team leads, visitors, front-of-house and restaurant staff.",
+      "constraints": "Real-estate budget frozen; restaurant contract renewal in 16 months; union consultation for any change to service hours.",
+      "evidence": [
+        "Badge data: Tuesday-Thursday peaks at 78% of desks, Monday and Friday below 30% [fictional]",
+        "Restaurant queue observed at 12:20-12:45: median wait 11 min [fictional observation]",
+        "Interview P07: 'I come in to see my team, then spend half the day on calls I could take at home.' [fictional quote]",
+        "Service desk: 34% of tickets are room booking or 'cannot find a quiet space' [fictional]"
+      ],
+      "persona": "Maya, the 'anchor-day coordinator' — team lead who books the room, orders lunch and loses 40 minutes a week organising her team's office day.",
+      "journey": [
+        "Decide to come in",
+        "Commute and arrive",
+        "Find a place to work",
+        "Collaborate with the team",
+        "Lunch",
+        "Afternoon focus",
+        "Leave"
+      ],
+      "insights": [
+        "People come for each other, not for the desk",
+        "Lunch is the main social anchor but the queue breaks the team moment",
+        "Quiet space is the missing ingredient on peak days"
+      ],
+      "hmw": [
+        "How might we make the team lunch a 20-minute moment instead of a 45-minute logistics task?",
+        "How might we help a team lead plan an anchor day in two minutes?"
+      ],
+      "workshop_inputs": "Persona Maya, current journey, 4 evidence cards, 3 HMW questions, 6 inspiration sheets.",
+      "ideas": [
+        "Team-table pre-booking with group pre-order",
+        "Anchor-day planner in the existing workplace app",
+        "Quiet-hours zone on peak days"
+      ],
+      "priorities": "Now: team-table pre-booking (standard offer, adapted). Next: anchor-day planner (needs app capability check). Later: zoning pilot.",
+      "test": "2-week pilot on one floor, 6 teams; measures: queue time, team-lunch attendance, booking time, satisfaction pulse vs. baseline.",
+      "credentials": "Microsoft (Future of Workplace & Community, 2026), Eli Lilly (The Cell, 2026), Santander (Campus Dining & Well-being, 2025), Colgate-Palmolive (Blue-collar co-creation, 2024) — listed in S06/S07; artifacts to verify in SharePoint."
+    },
+    "PLAY": {
+      "name": "Riverside Arena — the matchday fan journey",
+      "client": "Riverside Arena (fictional 42,000-seat stadium)",
+      "challenge": "Fans miss the first minutes of the second half because of half-time queues; per-cap food spend is flat.",
+      "users": "Season-ticket holders, families, fans with access needs, kiosk staff, stewards.",
+      "constraints": "15-minute half-time; fixed kiosk footprint; safety rules on crowd flow; seasonal staff with 1-day training.",
+      "evidence": [
+        "Observation: 62% of kiosk transactions happen in a 9-minute window at half-time [fictional]",
+        "Accessible seating sections are 140 m from the nearest step-free kiosk [fictional site measure]",
+        "Fan survey: 'I give up on food if the queue is longer than the walk back' (verbatim theme, n=412) [fictional]",
+        "Staff interview S03: 'We pre-pour, but we run out of the popular items first.' [fictional quote]"
+      ],
+      "persona": "Dev, the 'half-time sprinter' — season-ticket holder with two kids who wants food and the toilet in 15 minutes without missing kick-off.",
+      "journey": [
+        "Plan the day",
+        "Travel and arrive",
+        "Entry and security",
+        "Find seat",
+        "Half-time",
+        "Second half",
+        "Leave and travel home"
+      ],
+      "insights": [
+        "Half-time is a 15-minute logistics race, not a dining moment",
+        "Accessibility gaps concentrate at the same pinch point",
+        "Families decide before the match whether they will buy food"
+      ],
+      "hmw": [
+        "How might we let fans get food at half-time without missing the restart?",
+        "How might we make the step-free route the easiest route?"
+      ],
+      "workshop_inputs": "Persona Dev, current matchday journey, half-time heat map, 3 HMW, 6 inspiration sheets.",
+      "ideas": [
+        "Order-ahead to collection lockers by section",
+        "Family bundle pre-sold with the ticket",
+        "Roaming sellers for accessible sections"
+      ],
+      "priorities": "Now: family bundle (adapted standard). Next: section lockers (capability check). Later: roaming sellers pilot.",
+      "test": "3-match pilot in two stands; measures: half-time transactions, queue length, fans back in seat at restart, accessible-section feedback.",
+      "credentials": "Arsenal FC (Emirates Stadium Experience, 2025), Roland-Garros (F&B Experience, 2026), Edinburgh Zoo (Visitor Experience Redesign, 2024) — listed in S06/S07; artifacts to verify."
+    },
+    "HEAL": {
+      "name": "St Aldric Hospital — the inpatient meal journey",
+      "client": "St Aldric Regional Hospital (fictional 600-bed acute hospital)",
+      "challenge": "Patient meal satisfaction is low and food waste on wards is high; families feel excluded from mealtimes.",
+      "users": "Inpatients (incl. dietary constraints), families, nurses, ward hosts, dietitians, kitchen team.",
+      "constraints": "Clinical diets and allergen rules; infection control; meal ordering 24 h ahead; nurse workload.",
+      "evidence": [
+        "Ward audit: 31% of trays returned more than half full [fictional]",
+        "Ordering happens 24 h before; 1 in 5 patients changed ward or diet in between [fictional]",
+        "Interview F02 (daughter of patient): 'Nobody tells me when Dad has eaten.' [fictional quote]",
+        "Ward host shadowing: 18 min per round spent finding the right tray [fictional observation]"
+      ],
+      "persona": "Ruth, the 'worried visitor' — daughter visiting her father after surgery, who wants to know he is eating and to help with choice.",
+      "journey": [
+        "Admission",
+        "Order the meal",
+        "Wait",
+        "Delivery to bedside",
+        "Eat (or not)",
+        "Tray collection",
+        "Discharge"
+      ],
+      "insights": [
+        "The 24-hour order breaks when the patient's situation changes",
+        "Families are an unused ally at mealtimes",
+        "Waste is a signal of choice failure, not only appetite"
+      ],
+      "hmw": [
+        "How might we let patients choose closer to the meal without breaking clinical safety?",
+        "How might we involve families in mealtimes without adding nurse workload?"
+      ],
+      "workshop_inputs": "Persona Ruth (+ patient persona Arthur), current meal journey, 4 evidence cards, 3 HMW, 6 inspiration sheets.",
+      "ideas": [
+        "Same-day bedside ordering with diet check",
+        "Family meal update by text",
+        "'Protected mealtimes' with ward hosts"
+      ],
+      "priorities": "Now: protected mealtimes (process change). Next: same-day ordering (capability + clinical validation). Later: family updates (privacy review).",
+      "test": "4-week ward pilot; measures: plate waste, meal satisfaction, missed meals, host time per round, incident log (safety).",
+      "credentials": "Clariane (Repensons — care-home food XP, 2025, care homes not acute hospitals: transfer limits apply). Cincinnati Children's / Cooper materials exist on the V1 board (RACI, SOW, pre-read) — use only after confirming sharing rules."
+    },
+    "LEARN": {
+      "name": "Lakeshore State University — the student campus day",
+      "client": "Lakeshore State University (fictional, 24,000 students) — FICTIONAL until a verified education credential is supplied",
+      "challenge": "Students leave campus after classes; dining participation is falling and students report food is unaffordable.",
+      "users": "Commuter students, residents, international students, students with dietary or financial constraints, library and dining staff.",
+      "constraints": "Meal-plan pricing set annually; diverse dietary and cultural needs; spaces owned by different departments.",
+      "evidence": [
+        "Meal-plan uptake down 9 points in 2 years [fictional]",
+        "Timetable analysis: 40% of students have a gap of 2+ hours between classes [fictional]",
+        "Interview St11: 'I eat in my car because the library doesn't allow food and the cafeteria is full.' [fictional quote]",
+        "Survey: 'affordable' is the top driver, ahead of 'healthy' [fictional]"
+      ],
+      "persona": "Leila, the 'between-classes commuter' — part-time worker on a tight budget who needs a place to eat, study and recharge for 3 hours.",
+      "journey": [
+        "Plan the day",
+        "Commute and park",
+        "Morning classes",
+        "The 3-hour gap",
+        "Eat",
+        "Study",
+        "Evening and leave"
+      ],
+      "insights": [
+        "The real need is a 'home base' for the gap, not a meal",
+        "Affordability is about predictability as much as price",
+        "Food rules in study spaces push students out"
+      ],
+      "hmw": [
+        "How might we make the 3-hour gap the best part of a commuter's day?",
+        "How might we make eating on campus predictable for a tight budget?"
+      ],
+      "workshop_inputs": "Persona Leila, current campus-day journey, 4 evidence cards, 3 HMW, 6 inspiration sheets.",
+      "ideas": [
+        "Flexible meal bundles for commuters",
+        "Eat-and-study zones in the library annex",
+        "Gap-time events with student clubs"
+      ],
+      "priorities": "Now: commuter bundle (adapted standard). Next: eat-and-study zone (space owner approval). Later: club partnerships.",
+      "test": "One-semester pilot; measures: bundle uptake, dwell time, zone occupancy, affordability perception survey vs. baseline.",
+      "credentials": "No education credential verified in the supplied decks (S05 lists a BRM for Education & Government; Cyber Campus is an innovation hub). Use as fictional case."
+    }
+  },
+  "workshop_formats": {
+    "A": {
+      "name": "Experience Design — half day",
+      "agenda": [
+        {
+          "start": "09:00",
+          "end": "09:15",
+          "activity": "Welcome, purpose and icebreaker",
+          "minutes": 15
+        },
+        {
+          "start": "09:15",
+          "end": "09:35",
+          "activity": "Evidence and persona immersion",
+          "minutes": 20
+        },
+        {
+          "start": "09:35",
+          "end": "10:15",
+          "activity": "Current journey, needs and pain points",
+          "minutes": 40
+        },
+        {
+          "start": "10:15",
+          "end": "10:25",
+          "activity": "Break",
+          "minutes": 10
+        },
+        {
+          "start": "10:25",
+          "end": "11:05",
+          "activity": "Priority moments and How Might We questions",
+          "minutes": 40
+        },
+        {
+          "start": "11:05",
+          "end": "11:50",
+          "activity": "Future journey and human-led ideation",
+          "minutes": 45
+        },
+        {
+          "start": "11:50",
+          "end": "12:25",
+          "activity": "Idea sheets and initial selection",
+          "minutes": 35
+        },
+        {
+          "start": "12:25",
+          "end": "12:50",
+          "activity": "Share-back and challenge",
+          "minutes": 25
+        },
+        {
+          "start": "12:50",
+          "end": "13:00",
+          "activity": "Owners and next steps",
+          "minutes": 10
+        }
+      ],
+      "learning_route": {
+        "study": [
+          "01.*",
+          "04.01",
+          "04.02",
+          "04.07",
+          "05.01",
+          "05.02",
+          "05.04",
+          "05.07",
+          "06.01"
+        ],
+        "practise": [
+          "04.02",
+          "05.04",
+          "05.07"
+        ],
+        "observe": [
+          "05.01",
+          "05.02",
+          "05.05",
+          "06.01"
+        ],
+        "defer": [
+          "02.01",
+          "03.01",
+          "03.03",
+          "06.02",
+          "06.03",
+          "06.X1-X6"
+        ]
+      }
+    },
+    "B": {
+      "name": "Experience & Opportunities — full day",
+      "agenda": [
+        {
+          "start": "09:00",
+          "end": "09:20",
+          "activity": "Welcome and ambition",
+          "minutes": 20
+        },
+        {
+          "start": "09:20",
+          "end": "09:50",
+          "activity": "Evidence and persona immersion",
+          "minutes": 30
+        },
+        {
+          "start": "09:50",
+          "end": "10:35",
+          "activity": "Journey, pain points and priority moments",
+          "minutes": 45
+        },
+        {
+          "start": "10:35",
+          "end": "10:50",
+          "activity": "Break",
+          "minutes": 15
+        },
+        {
+          "start": "10:50",
+          "end": "11:30",
+          "activity": "Opportunity framing and How Might We",
+          "minutes": 40
+        },
+        {
+          "start": "11:30",
+          "end": "12:15",
+          "activity": "Future journey and ideation",
+          "minutes": 45
+        },
+        {
+          "start": "12:15",
+          "end": "12:30",
+          "activity": "Share-back",
+          "minutes": 15
+        },
+        {
+          "start": "12:30",
+          "end": "13:15",
+          "activity": "Lunch",
+          "minutes": 45
+        },
+        {
+          "start": "13:15",
+          "end": "13:30",
+          "activity": "Re-entry and inspiration",
+          "minutes": 15
+        },
+        {
+          "start": "13:30",
+          "end": "14:15",
+          "activity": "Concept development",
+          "minutes": 45
+        },
+        {
+          "start": "14:15",
+          "end": "15:00",
+          "activity": "Prioritisation and value proposition",
+          "minutes": 45
+        },
+        {
+          "start": "15:00",
+          "end": "15:15",
+          "activity": "Break",
+          "minutes": 15
+        },
+        {
+          "start": "15:15",
+          "end": "16:00",
+          "activity": "Capability mapping and feasibility questions",
+          "minutes": 45
+        },
+        {
+          "start": "16:00",
+          "end": "16:40",
+          "activity": "Draft pilots, roadmap and measures",
+          "minutes": 40
+        },
+        {
+          "start": "16:40",
+          "end": "17:00",
+          "activity": "Decisions, owners and next steps",
+          "minutes": 20
+        }
+      ],
+      "learning_route": {
+        "study": [
+          "01.*",
+          "04.01-04.07",
+          "05.01-05.07",
+          "06.01-06.03",
+          "06.X1",
+          "06.X3",
+          "06.X4"
+        ],
+        "practise": [
+          "04.02",
+          "05.04",
+          "05.07",
+          "06.02",
+          "06.03"
+        ],
+        "observe": [
+          "05.01",
+          "05.05",
+          "06.X1",
+          "06.X3"
+        ],
+        "defer": [
+          "02.01",
+          "03.01",
+          "03.03",
+          "06.X2",
+          "06.X5",
+          "06.X6"
+        ]
+      }
+    }
+  },
+  "rehearsal_template": [
+    {
+      "segment": "Objective",
+      "minutes": 5
+    },
+    {
+      "segment": "Explanation",
+      "minutes": 10
+    },
+    {
+      "segment": "Worked example",
+      "minutes": 10
+    },
+    {
+      "segment": "Claude / OS demonstration in Miro",
+      "minutes": 10
+    },
+    {
+      "segment": "Participant practice",
+      "minutes": 15
+    },
+    {
+      "segment": "Debrief and corrections",
+      "minutes": 10
+    }
+  ],
+  "maturity_scale": [
+    {
+      "step": 1,
+      "title": "Not yet",
+      "text": "I would need to see it done before trying it myself.",
+      "maps_to": "N0"
+    },
+    {
+      "step": 2,
+      "title": "With support",
+      "text": "I could contribute if someone else leads the activity.",
+      "maps_to": "N1"
+    },
+    {
+      "step": 3,
+      "title": "On my own",
+      "text": "I could run this on a real engagement without help.",
+      "maps_to": "N2-N3"
+    },
+    {
+      "step": 4,
+      "title": "I could coach",
+      "text": "I could train someone else on it and guarantee the quality.",
+      "maps_to": "N4"
+    }
+  ],
+  "rubric_dimensions": [
+    "Evidence traceability",
+    "User focus",
+    "Method application",
+    "Facilitation",
+    "Artifact quality",
+    "Clear next decisions"
+  ],
+  "proposed_calendar": [
+    {
+      "when": "3-6 Nov 2026",
+      "what": "Inventory, source conflicts, campus blueprint, Journey Map exemplar",
+      "owner": "Diane + Claude",
+      "status": "In progress"
+    },
+    {
+      "when": "9-13 Nov 2026",
+      "what": "Populate method cards, four case packs, initial learning assets; Noël quality pass",
+      "owner": "Diane, Noël, Gabriel",
+      "status": "Proposed"
+    },
+    {
+      "when": "Mon 16 Nov 2026, 15:00-16:00 CET (09:00-10:00 ET)",
+      "what": "Rehearsal R1 — 01 Our approach",
+      "owner": "Arnaud (owner), Diane",
+      "status": "Proposed"
+    },
+    {
+      "when": "Tue 17 Nov 2026, 15:00-16:00 CET",
+      "what": "Rehearsal R2 — 02 Presales; training pre-read sent (D-7 of pilot)",
+      "owner": "Arnaud, Gabriel",
+      "status": "Proposed"
+    },
+    {
+      "when": "Wed 18 Nov 2026, 15:00-16:00 CET",
+      "what": "Rehearsal R3 — 03 Discover",
+      "owner": "Noël",
+      "status": "Proposed"
+    },
+    {
+      "when": "Thu 19 Nov 2026, 15:00-16:00 CET",
+      "what": "Rehearsal R4 — 04 Define (Journey Map exemplar); podcast shared (D-5)",
+      "owner": "Diane, Gabriel",
+      "status": "Proposed"
+    },
+    {
+      "when": "Fri 20 Nov 2026, 15:00-16:00 CET",
+      "what": "Rehearsal R5 — 05 Co-create",
+      "owner": "Noël",
+      "status": "Proposed"
+    },
+    {
+      "when": "Mon 23 Nov 2026, 15:00-16:00 CET",
+      "what": "Rehearsal R6 — 06 Test & Deliver; final revisions",
+      "owner": "Noël, Gabriel",
+      "status": "Proposed"
+    },
+    {
+      "when": "Tue 24 Nov 2026, 09:00-13:00 ET (15:00-19:00 CET)",
+      "what": "Regional pilot — Format A learning route with US colleagues (subject to availability; avoid Thu 26-Fri 27 Nov, US Thanksgiving)",
+      "owner": "Arnaud (sponsor), Diane, Noël",
+      "status": "Proposed — not booked"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "name": "Miro board 'V3 new approach codesign template kit' (existing campus, V1)",
+      "version": "live, read 2026-11-03",
+      "status": "Accessible (read + write)",
+      "parts": "Frames Start Here, How to read, Why CoDesign, End-to-end approach, Global links; frame 'CoDesign Method Campus'",
+      "reused": "Row structure, V1 copy per block, verified SharePoint/Figma/OS links",
+      "url": "https://miro.com/app/board/uXjVH3p2QFs=/",
+      "gap": "Several 'Mettre un exemple' placeholders; V1 order puts 05.05 before 05.04",
+      "owner": "Diane"
+    },
+    {
+      "id": "S02",
+      "name": "CoDesign OS — Agent Explorer",
+      "version": "Methodology V1.0 · Apr 2026; read live 2026-11-03",
+      "status": "Accessible (read, via Chrome)",
+      "parts": "Home agent map, phase grouping, prompts page",
+      "reused": "23 live agent names + URLs, phase mapping, Journey Map agent spec",
+      "url": "https://sodexo-codesign-os.vercel.app/",
+      "gap": "Header says 21 agents, footer 23; template download buttons point to '#'",
+      "owner": "Gabriel"
+    },
+    {
+      "id": "S03",
+      "name": "Codesign-methodology V2_Training (1).pptx",
+      "version": "V2, 109 slides, undated",
+      "status": "Attached",
+      "parts": "Slides 3-4 overview; 4 slides per block",
+      "reused": "25-block inventory, method cards, exercises, target levels",
+      "url": "SharePoint location not supplied",
+      "gap": "All 25 visual-example slides are placeholders",
+      "owner": "Noël"
+    },
+    {
+      "id": "S04",
+      "name": "CoDesignOS_Framing_v1_2026-08.pptx",
+      "version": "v1 · Aug 2026 · 11 slides",
+      "status": "Attached",
+      "parts": "Objective, horizons, ecosystem, principles, method card, N0-N4",
+      "reused": "Standard card, canonical-location rule, readable-without-AI principle",
+      "url": "-",
+      "gap": "Philadelphia 9 Sept pilot is historical context only",
+      "owner": "Arnaud"
+    },
+    {
+      "id": "S05",
+      "name": "CoDesignInt_Deck-USBRM_v1_2026-09.pptx",
+      "version": "v1 · Sep 2026 · 41 slides",
+      "status": "Attached",
+      "parts": "US BRM session, TDDI, OS, 70/20/10",
+      "reused": "US audience context, engagement triggers, phase durations",
+      "url": "-",
+      "gap": "Slide 39 ideas are proposals; slide 40 actions mostly TBC",
+      "owner": "Arnaud"
+    },
+    {
+      "id": "S06",
+      "name": "CoDesign_COEU-OVERVIEW-LIGHT_v2_2026-10 (2).pptx",
+      "version": "v2 · Oct 2026 · 8 slides",
+      "status": "Attached",
+      "parts": "Offers, outputs, proof, when to engage, credential grid",
+      "reused": "4 offers, engagement triggers, Labs formats",
+      "url": "-",
+      "gap": "Figures differ from other decks",
+      "owner": "Arnaud"
+    },
+    {
+      "id": "S07",
+      "name": "CoDesign_Client_Introduction - SHORT.pptx",
+      "version": "2026 · 10 slides",
+      "status": "Attached",
+      "parts": "Mission, promise, approach, credential grid",
+      "reused": "Client-facing approach wording",
+      "url": "-",
+      "gap": "-",
+      "owner": "Arnaud"
+    },
+    {
+      "id": "S08",
+      "name": "Texte collé(9).txt",
+      "version": "-",
+      "status": "MISSING — not attached",
+      "parts": "-",
+      "reused": "Pre-read and podcast specs taken from the brief",
+      "url": "-",
+      "gap": "Re-attach to enrich prompts and idea-card guidance",
+      "owner": "Diane"
+    },
+    {
+      "id": "S09",
+      "name": "image(20261103-134056).png",
+      "version": "2026-11-03",
+      "status": "MISSING — not attached",
+      "parts": "-",
+      "reused": "Six-column structure taken from the brief and V1 headers",
+      "url": "-",
+      "gap": "Re-attach for visual check",
+      "owner": "Diane"
+    },
+    {
+      "id": "S10",
+      "name": "Sales deck V4",
+      "version": "-",
+      "status": "MISSING — not connected",
+      "parts": "-",
+      "reused": "None",
+      "url": "-",
+      "gap": "Supply file or SharePoint link",
+      "owner": "Arnaud"
+    },
+    {
+      "id": "S11",
+      "name": "Current scale plan / current training plan",
+      "version": "-",
+      "status": "MISSING",
+      "parts": "-",
+      "reused": "None",
+      "url": "-",
+      "gap": "Supply if they exist",
+      "owner": "Arnaud"
+    },
+    {
+      "id": "S12",
+      "name": "SharePoint templates & approved project outputs",
+      "version": "links read from S01",
+      "status": "Links verified on board; contents not opened",
+      "parts": "Project template, credentials, process templates",
+      "reused": "Canonical template and credential links",
+      "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/",
+      "gap": "Per-block templates not individually confirmed",
+      "owner": "Gabriel"
+    },
+    {
+      "id": "S13",
+      "name": "Persona Studio · Experience Catalogue · Figma journey templates",
+      "version": "links read from S01",
+      "status": "XP Catalogue + Figma verified; Persona Studio URL missing",
+      "parts": "Global links frame",
+      "reused": "Specialised tool links",
+      "url": "https://xpcatalogue.vercel.app/login",
+      "gap": "Persona Studio URL missing",
+      "owner": "Gabriel"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "OS agent count",
+      "sources_say": "S04: 23 agents · S05 slides 13 & 15: 24 agents · S02 live: header '21 agents', footer '23 agents', 23 live cards",
+      "proposed_resolution": "Teach agent names, not a count. If a number is needed, quote '23 live agents (OS, 3 Nov 2026)'. Ask Gabriel to fix the OS header.",
+      "owner": "Gabriel"
+    },
+    {
+      "topic": "Engagement count",
+      "sources_say": "S04: 28 engagements and '30 yearly' · S05: 25 strategic clients/yr, 200 pitched → 30 run · S06: 50+ clients, 7 COEU engagements · S07: 35 engagements 2021-26 · S02: 28 engagements",
+      "proposed_resolution": "Do not show a total on learner material. Use the credential grid (named projects) only. Arnaud to set one canonical figure with date.",
+      "owner": "Arnaud"
+    },
+    {
+      "topic": "Labs statistics",
+      "sources_say": "S05: NPS +53 across 82 sessions · S06: 87 sessions, NPS +53",
+      "proposed_resolution": "Use 'NPS +53 (Oct 2026, 87 sessions)' only on client material, marked as dated.",
+      "owner": "Arnaud"
+    },
+    {
+      "topic": "Engagement duration",
+      "sources_say": "S05/S06: 8-12 weeks · S05 slide 19: 2 weeks to 8 months · S05 slide 3 phase durations Discover 3-4w, Define 2-3w, Co-Create 2-3w, T&D 2-12w",
+      "proposed_resolution": "Teach 'typical 8-12 weeks elapsed for a standard engagement; scope ranges from a single workshop to 8 months'.",
+      "owner": "Noël"
+    },
+    {
+      "topic": "Phase of Inspiration & Concept Sheets",
+      "sources_say": "S03: Define (04.03, 04.04) · S02 OS: Co-create (steps 09-10)",
+      "proposed_resolution": "Keep method placement (Define) as the teaching standard; note the OS grouping on the enabler card. Gabriel to align OS labels or document the difference.",
+      "owner": "Noël + Gabriel"
+    },
+    {
+      "topic": "Phase of Journey Map",
+      "sources_say": "S03: Define · S05 slide 15: listed under Discover · S02: Define (step 08)",
+      "proposed_resolution": "Define. S05 slide 15 to be corrected in its next version.",
+      "owner": "Arnaud"
+    },
+    {
+      "topic": "Capability level labels",
+      "sources_say": "S03/S04: N0 Aware, N1 Contributor, N2 Facilitator, N3 Practitioner, N4 Lead/Faculty · S05 slide 40: 'contributor / creator / facilitator / practitioner' · S01 loose shape 'N3 : Facilitator'",
+      "proposed_resolution": "Use S03 labels everywhere. Retire 'creator'. Archive the V1 'N3 : Facilitator' shape.",
+      "owner": "Noël"
+    },
+    {
+      "topic": "Block order in Co-create",
+      "sources_say": "S03: 05.04 Future Journey before 05.05 Participants · S01 V1 board: Participants column before Journey Map",
+      "proposed_resolution": "Keep S03 IDs and order in V2. Note on 05.05: groups are set up before the workshop day, as an input to 05.01, even though the block is taught after 05.04.",
+      "owner": "Diane"
+    },
+    {
+      "topic": "Ice breaker naming",
+      "sources_say": "S03 splits 04.07 Preparation (Define) and 05.02 Facilitation (Co-create) · S01 labels both 'Ice breaker'",
+      "proposed_resolution": "Use full names with the split; preparation and facilitation are separate tasks.",
+      "owner": "Diane"
+    },
+    {
+      "topic": "Pre-read size",
+      "sources_say": "S03: consumable in 10-15 min, 'six slides' in exercise · brief: 13-15 slides spec · S04: ≤10 pages for US Tech team",
+      "proposed_resolution": "Complementary constraints: 10-15 min reading time is the binding rule; test 6-15 light slides for readability.",
+      "owner": "Gabriel"
+    },
+    {
+      "topic": "Mini podcast length",
+      "sources_say": "S03: 5-8 min · brief: 6 min, ≤ 900 words",
+      "proposed_resolution": "6 minutes target, 8 minutes maximum.",
+      "owner": "Gabriel"
+    },
+    {
+      "topic": "70/20/10 portfolio",
+      "sources_say": "S05 slide 28 presents 70% standard / 20% adapted / 10% innovation, with '70% … risk-free'",
+      "proposed_resolution": "Teach as a planning lens, not fixed proportions; standard solutions still need validation with users and operations.",
+      "owner": "Noël"
+    },
+    {
+      "topic": "Commercial figures (+3% renewal, €1B, Eli Lilly 12%→20%)",
+      "sources_say": "S05/S06 present as facts",
+      "proposed_resolution": "Not used in learner material. Client-facing use needs Arnaud's sign-off and dated source.",
+      "owner": "Arnaud"
+    },
+    {
+      "topic": "Philadelphia pilot dates",
+      "sources_say": "S04: pilot 9 Sept; S05: session held 9 Sept, healthcare visit 10 Sept, workshop October",
+      "proposed_resolution": "Historical. Not shown as a future plan. Current proposals use November 2026 dates labelled 'proposed'.",
+      "owner": "Diane"
+    }
+  ],
+  "miro_board": "https://miro.com/app/board/uXjVH3p2QFs=/"
+}
