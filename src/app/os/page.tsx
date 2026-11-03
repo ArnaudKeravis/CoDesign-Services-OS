@@ -24,7 +24,7 @@ export default function OsPage() {
           <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-white/75">CoDesign OS</p>
           <h1 className="mt-3 max-w-3xl text-4xl font-bold !text-white md:text-5xl">Human-led, AI-supported.</h1>
           <p className="mt-4 max-w-2xl text-lg text-white/85">
-            {osAgents.length} agents are wired into the method today. Each one drafts a CoDesign artefact; a person always checks it against the evidence.
+            Every agent below is wired into a method block. Each one drafts a CoDesign artefact; a person always checks it against the evidence.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={OS_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 font-semibold text-navy">

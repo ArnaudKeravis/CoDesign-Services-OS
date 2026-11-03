@@ -13,7 +13,7 @@ import { ProfileEditor } from "./profile-editor";
 import { useProgress } from "./progress-provider";
 
 export function MyProgress() {
-  const { state, badges, reset } = useProgress();
+  const { state, ready, badges, reset } = useProgress();
   const [confirmReset, setConfirmReset] = useState(false);
   const rank = rankFor(state.xp);
   const done = completedBlocks(state, campus.blocks.map((b) => b.id));
@@ -30,7 +30,7 @@ export function MyProgress() {
 
   return (
     <div className="space-y-10">
-      <div className="grid gap-6 lg:grid-cols-[1fr_1.2fr]">
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
         <section className="rounded-3xl border border-line bg-white p-6">
           <div className="flex items-center gap-4">
             <Avatar choice={state.profile.avatar} size={72} />
@@ -39,7 +39,7 @@ export function MyProgress() {
               <p className="text-sm text-muted">{state.profile.role || "Set your role below"}</p>
             </div>
           </div>
-          <div className="mt-6"><ProfileEditor /></div>
+          <div className="mt-6">{ready && <ProfileEditor key={state.profile.name} />}</div>
         </section>
 
         <section className="rounded-3xl border border-line bg-white p-6">

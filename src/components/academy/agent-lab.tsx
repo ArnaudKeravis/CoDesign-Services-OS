@@ -153,7 +153,7 @@ export function AgentLab() {
   const agents = block.os_agents;
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[320px_1fr]">
+    <div className="grid gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
       <aside className="space-y-4">
         <div className="rounded-2xl border border-line bg-white p-4">
           <label className="block text-sm font-semibold text-navy" htmlFor="lab-block">Block to practise</label>
@@ -274,7 +274,7 @@ export function AgentLab() {
         </div>
 
         {draft && (
-          <div className="grid animate-rise gap-5 xl:grid-cols-[1.4fr_1fr]">
+          <div className="grid animate-rise gap-5 xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
             <div className="rounded-3xl border border-line bg-white p-6">
               <div className="flex items-center justify-between">
                 <h2 className="flex items-center gap-2 text-xl font-bold"><Sparkles size={20} className="text-gold" /> 2 · Agent draft</h2>

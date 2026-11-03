@@ -354,6 +354,9 @@ export type PromptTemplate = {
   fields: string[];
 };
 
+/** Tags the agent must write into its answer, not blanks for the learner to fill. */
+const OUTPUT_MARKERS = /^(EVIDENCE|ASSUMPTION|TO VALIDATE|TO VERIFY|TBC.*)$/;
+
 export function promptTemplate(block: MethodBlock): PromptTemplate | null {
   if (!block.prompt || block.prompt === "See each block.") return null;
   const first = block.prompt.indexOf("'");
@@ -361,7 +364,9 @@ export function promptTemplate(block: MethodBlock): PromptTemplate | null {
   const hasQuote = first >= 0 && last > first;
   const template = hasQuote ? block.prompt.slice(first + 1, last) : block.prompt;
   const intro = hasQuote ? block.prompt.slice(0, first).replace(/[:\s]+$/, "") : "";
-  const fields = Array.from(new Set(Array.from(template.matchAll(/\[([^\]]+)\]/g), (m) => m[1])));
+  const fields = Array.from(new Set(Array.from(template.matchAll(/\[([^\]]+)\]/g), (m) => m[1]))).filter(
+    (field) => !OUTPUT_MARKERS.test(field),
+  );
   return { intro, template, fields };
 }
 

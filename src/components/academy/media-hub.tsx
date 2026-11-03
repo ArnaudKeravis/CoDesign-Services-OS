@@ -63,7 +63,7 @@ export function MediaHub({ items }: { items: MediaItem[] }) {
         </span>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]">
         <div key={`${kind}-${current.id}`}>
           {kind === "video" ? (
             <VideoPlayer

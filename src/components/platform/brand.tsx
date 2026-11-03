@@ -28,21 +28,22 @@ export function CoDesignLockup({ className, compact = false }: { className?: str
   );
 }
 
+/** Flowing vertical strands, like the CoDesign deck's right-hand panel. */
 function wavePaths(count: number, width: number, height: number, seed: number): string[] {
   const paths: string[] = [];
+  const steps = 48;
+  const freq = (Math.PI * 2 * 1.35) / height;
   for (let i = 0; i < count; i += 1) {
-    const base = (i / (count - 1)) * width * 1.2 - width * 0.1;
-    const amp = 40 + ((i * 37 + seed) % 50);
-    const phase = ((i * 53 + seed) % 100) / 100;
-    const segs = 4;
-    let d = `M ${base.toFixed(1)} -20`;
-    for (let s = 0; s < segs; s += 1) {
-      const y0 = -20 + (s * (height + 40)) / segs;
-      const y1 = -20 + ((s + 1) * (height + 40)) / segs;
-      const dir = (s + Math.round(phase * 2)) % 2 === 0 ? 1 : -1;
-      const c1x = base + dir * amp;
-      const c2x = base - dir * amp * 0.6;
-      d += ` C ${c1x.toFixed(1)} ${(y0 + (y1 - y0) * 0.33).toFixed(1)}, ${c2x.toFixed(1)} ${(y0 + (y1 - y0) * 0.66).toFixed(1)}, ${(base + dir * amp * 0.15).toFixed(1)} ${y1.toFixed(1)}`;
+    const t = i / (count - 1);
+    const base = t * width * 1.3 - width * 0.15;
+    const amp = 38 + 26 * Math.sin(seed + i * 0.7);
+    const phase = seed * 0.9 + t * 1.6;
+    const drift = 0.08 + 0.05 * Math.cos(seed + i);
+    let d = "";
+    for (let s = 0; s <= steps; s += 1) {
+      const y = -30 + (s / steps) * (height + 60);
+      const x = base + amp * Math.sin(y * freq + phase) + amp * 0.35 * Math.sin(y * freq * 2.1 + phase * 1.7) + drift * y;
+      d += `${s === 0 ? "M" : " L"} ${x.toFixed(1)} ${y.toFixed(1)}`;
     }
     paths.push(d);
   }

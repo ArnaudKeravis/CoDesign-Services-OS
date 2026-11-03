@@ -41,7 +41,7 @@ function QuestBoard({ quest, onExit }: { quest: Quest; onExit: () => void }) {
         <p className="mt-1 text-xs text-muted">The brief is fictional. The credentials are real — figures stay internal.</p>
       </div>
 
-      <div className="grid gap-5 lg:grid-cols-[1.3fr_1fr]">
+      <div className="grid gap-5 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
         <div>
           <label className="flex items-center gap-3 rounded-xl border border-line bg-white px-4 py-2.5 focus-within:border-sodexo">
             <Search size={18} className="text-muted" />

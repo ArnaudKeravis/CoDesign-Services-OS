@@ -39,7 +39,7 @@ export function AcademyHome() {
   return (
     <main>
       <BrandPanel className="pb-10 pt-10 md:pb-14 md:pt-14" seed={5}>
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 md:grid-cols-[1.4fr_1fr] md:px-6">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:px-6">
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-white/75">CoDesign Academy · v2</p>
             <h1 className="mt-3 text-4xl font-bold leading-tight !text-white md:text-5xl">
@@ -117,8 +117,8 @@ export function AcademyHome() {
           <CampusMap />
         </section>
 
-        <section className="grid gap-6 lg:grid-cols-[1fr_1.1fr]">
-          <div>
+        <section className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
+          <div className="min-w-0">
             <h2 className="mb-4 text-2xl font-bold">Up next for you</h2>
             <div className="space-y-3">
               {next.map((block) => {

@@ -57,6 +57,9 @@ describe("generated learning content", () => {
   it("extracts prompt placeholders and fills them", () => {
     const tpl = promptTemplate(blockById("02.02")!)!;
     expect(tpl.fields).toContain("paste");
+    const journey = promptTemplate(blockById("04.02")!)!;
+    expect(journey.fields).not.toContain("EVIDENCE");
+    expect(journey.fields).not.toContain("TO VALIDATE");
     expect(fillTemplate("For [segment] client", { segment: "HEAL" })).toBe("For HEAL client");
     expect(fillTemplate("Keep [unknown]", {})).toBe("Keep [unknown]");
   });
