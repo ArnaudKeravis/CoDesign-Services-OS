@@ -25,7 +25,8 @@ Optional environment variables (see `.env.example`):
 |---|---|
 | `/` | Landing page with the three entries |
 | `/codesign`, `/codesign/credentials` | Five phases, levels, credentials library |
-| `/os` | Agent map by phase, prompt library, links into the live OS |
+| `/os`, `/os/agents/[slug]` | Agent map, prompt library, and a guide per agent with a "how to train" checklist |
+| `/os-bridge.js` | Script for CoDesign OS pages: Academy tab in the OS header + "Train on this agent" card (see `docs/OS_INTEGRATION.md`) |
 | `/academy` | Dashboard: profile and avatar, XP/rank/streak, campus map, up next, daily challenge |
 | `/academy/learn`, `/academy/blocks/[id]` | 35 blocks; each lesson has six lanes: Method · Watch & listen · Practice · Examples & credentials · AI & tools · Self-check |
 | `/academy/challenges` | 12 scenario challenges |
@@ -44,6 +45,7 @@ Optional environment variables (see `.env.example`):
 - `src/lib/credentials/credentials.json` + `public/credentials/p01–p45.jpg` — imported from "Digital & AI — Credentials (GOOD VERSION)". Nine deck pages are empty placeholders and show as "To complete".
 - Quizzes, podcast scripts and motion explainers are generated from the method cards in `src/lib/academy/learning.ts`, so they stay in sync when the content changes.
 - `docs/BENCHMARK.md` — L&D platform benchmark behind the v2 design.
+- `docs/OS_INTEGRATION.md` + `integrations/codesign-os/start.html` — how to plug the Academy into the live CoDesign OS.
 
 ## Things to know
 

@@ -23,7 +23,7 @@ import { CopyButton } from "@/components/platform/copy-button";
 import { campus, SEGMENT_TONE, templateNeedsWork } from "@/lib/academy/campus";
 import { cn } from "@/lib/academy/cn";
 import { ACTIVITY_XP, activityKey, blockProgress, BLOCK_ACTIVITIES } from "@/lib/academy/gamification";
-import type { PodcastLine, PromptTemplate, QuizQuestion, VideoScene } from "@/lib/academy/learning";
+import { cleanAgentName, type PodcastLine, type PromptTemplate, type QuizQuestion, type VideoScene } from "@/lib/academy/learning";
 import type { MethodBlock, Segment } from "@/lib/academy/types";
 import { credentialImage, type Credential } from "@/lib/credentials";
 
@@ -33,6 +33,10 @@ import { useProgress } from "./progress-provider";
 import { Quiz, StepsOrder } from "./quiz";
 import { LevelBar, Panel, ProgressRing, SectionPill, TypeTag } from "./ui";
 import { VideoPlayer } from "./video-player";
+
+function agentSlug(url: string): string {
+  return url.match(/agents\/([^/]+?)(?:-agent)?(?:\.html)?$/)?.[1] ?? "";
+}
 
 type Tab = "method" | "media" | "practice" | "examples" | "ai" | "check";
 
@@ -143,6 +147,20 @@ function MethodTab({ block, tone }: { block: MethodBlock; tone: string }) {
         <span className="mr-3 text-xs font-bold uppercase tracking-wider text-sodexo">Principle</span>
         <span className="font-semibold italic text-navy">{block.explain}</span>
       </div>
+      {block.os_agents.length > 0 && (
+        <div className="flex flex-wrap items-center gap-3 rounded-2xl bg-navy px-5 py-4 text-white">
+          <Bot size={20} className="shrink-0" />
+          <p className="flex-1 text-sm">
+            <span className="font-semibold">Use it with CoDesign OS:</span>{" "}
+            {block.os_agents.map((a) => cleanAgentName(a.name)).join(" · ")} — train here first, then draft in the OS.
+          </p>
+          {block.os_agents.slice(0, 2).map((a) => (
+            <Link key={a.url} href={`/os/agents/${agentSlug(a.url)}`} className="rounded-lg bg-white px-3 py-1.5 text-xs font-semibold text-navy">
+              {cleanAgentName(a.name)} guide
+            </Link>
+          ))}
+        </div>
+      )}
       <div className="flex flex-wrap items-center gap-3">
         <button
           type="button"
@@ -274,6 +292,9 @@ function AiTab({ block, prompt, checks }: BlockLessonProps) {
                   <span className="flex gap-2">
                     <Link href={`/academy/lab?block=${block.id}`} className="inline-flex items-center gap-1 rounded-lg bg-sodexo px-2.5 py-1 text-xs font-semibold text-white">
                       <FlaskConical size={13} /> Try in Lab
+                    </Link>
+                    <Link href={`/os/agents/${agentSlug(a.url)}`} className="inline-flex items-center gap-1 rounded-lg border border-line px-2.5 py-1 text-xs font-semibold text-navy">
+                      Guide
                     </Link>
                     <a href={a.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 rounded-lg border border-line px-2.5 py-1 text-xs font-semibold text-navy">
                       OS <ArrowUpRight size={12} />

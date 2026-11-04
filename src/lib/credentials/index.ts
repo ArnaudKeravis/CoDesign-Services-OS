@@ -163,3 +163,8 @@ export function credentialsForSegment(segment: CredentialSegment, limit = 6): Cr
     .sort((a, b) => (a.format === b.format ? (b.year ?? 0) - (a.year ?? 0) : a.format === "case-study" ? -1 : 1))
     .slice(0, limit);
 }
+
+/** Reverse of credentialsForBlock: the method blocks a credential helps teach. */
+export function blocksForCredential(credential: Credential, blocks: MethodBlock[], limit = 4): MethodBlock[] {
+  return blocks.filter((b) => credentialsForBlock(b, 6).some((c) => c.id === credential.id)).slice(0, limit);
+}

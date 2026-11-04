@@ -2,14 +2,17 @@
 
 import { Check, Copy, ExternalLink, Search, ShieldAlert, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
+import { campus } from "@/lib/academy/campus";
 import { cn } from "@/lib/academy/cn";
 
 import { CredentialTile, SegmentTag } from "./credential-tile";
 import {
   allThemes,
+  blocksForCredential,
   credentialById,
   credentialImage,
   credentials,
@@ -128,6 +131,19 @@ export function CredentialDetail({ credential, onClose }: { credential: Credenti
                 </div>
               )}
             </div>
+          )}
+          {credential.status === "complete" && (
+            <section className="rounded-xl border border-line p-4">
+              <h3 className="text-xs font-bold uppercase tracking-wider !text-sodexo">Use it in training</h3>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {blocksForCredential(credential, campus.blocks).map((b) => (
+                  <Link key={b.id} href={`/academy/blocks/${b.id}#examples`} className="rounded-lg bg-panel px-2.5 py-1 text-xs font-semibold text-navy hover:bg-panel-2">
+                    {b.id} {b.name}
+                  </Link>
+                ))}
+                <Link href="/academy/credentials" className="rounded-lg bg-sodexo px-2.5 py-1 text-xs font-semibold text-white">Credential Quest →</Link>
+              </div>
+            </section>
           )}
           {credential.status === "complete" && (
             <button

@@ -1,4 +1,4 @@
-import { ArrowUpRight, FlaskConical, Lock } from "lucide-react";
+import { ArrowUpRight, FlaskConical, GraduationCap, Lock } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -51,7 +51,7 @@ export default function OsPage() {
                   .map((agent) => (
                     <article key={agent.slug} className="flex flex-col rounded-2xl border border-line bg-white p-5 transition hover:shadow-md">
                       <div className="flex items-start justify-between gap-3">
-                        <h3 className="text-lg font-bold">{agent.name}</h3>
+                        <Link href={`/os/agents/${agent.slug}`} className="text-lg font-bold text-navy hover:underline">{agent.name}</Link>
                         <span className="h-3 w-3 shrink-0 rounded-full" style={{ background: SECTION_TONE[s.code].bg }} aria-hidden />
                       </div>
                       {agent.notes.length > 0 && <p className="mt-1 text-xs italic text-muted">{agent.notes.join(" · ")}</p>}
@@ -64,7 +64,10 @@ export default function OsPage() {
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-4 flex gap-2">
+                      <Link href={`/os/agents/${agent.slug}`} className="mt-3 inline-flex items-center gap-1.5 rounded-lg bg-panel px-3 py-1.5 text-xs font-semibold text-navy hover:bg-panel-2">
+                        <GraduationCap size={14} /> How to train on it · guide
+                      </Link>
+                      <div className="mt-3 flex flex-wrap gap-2">
                         <Link href={`/academy/lab?agent=${agent.slug}`} className="inline-flex items-center gap-1.5 rounded-lg bg-sodexo px-3 py-1.5 text-sm font-semibold text-white">
                           <FlaskConical size={14} /> Try in Lab
                         </Link>

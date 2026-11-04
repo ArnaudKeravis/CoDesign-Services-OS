@@ -14,6 +14,7 @@ import {
 import { fillTemplate, podcastFor, promptTemplate, quizFor, shuffledSteps, videoFor } from "@/lib/academy/learning";
 import { credentialById, credentials, credentialsForBlock, searchCredentials } from "@/lib/credentials";
 import { osAgents } from "@/lib/os/agents";
+import { agentsForBlock, agentTrainings } from "@/lib/os/training";
 import { searchAll } from "@/lib/search";
 
 describe("generated learning content", () => {
@@ -141,6 +142,16 @@ describe("challenges, agents and search", () => {
   it("deduplicates OS agents by URL", () => {
     expect(new Set(osAgents.map((a) => a.url)).size).toBe(osAgents.length);
     expect(osAgents.find((a) => a.slug === "journey-map")?.blocks.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it("gives every OS agent a training path into real lessons", () => {
+    expect(agentTrainings).toHaveLength(osAgents.length);
+    for (const t of agentTrainings) {
+      expect(t.blocks.length).toBeGreaterThan(0);
+      expect(t.steps.map((s) => s.id)).toEqual(["learn", "watch", "practise", "lab", "use"]);
+      expect(t.steps.at(-1)?.href).toBe(osAgents.find((a) => a.slug === t.slug)?.url);
+    }
+    expect(agentsForBlock("04.02").map((t) => t.slug)).toContain("journey-map");
   });
 
   it("searches across blocks, credentials and agents", () => {
