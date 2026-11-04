@@ -1,0 +1,46 @@
+---
+description: CoDesign Method Campus Live — product, content and design rules
+globs:
+alwaysApply: true
+---
+
+# Product
+- App name: "CoDesign Method Campus — Live" (Sodexo CoDesign Services).
+- Two tools, one content model. MIRO is the canonical, persistent campus (board uXjVH3p2QFs=). THIS APP is the live, interactive layer used during training sessions and for self-study. Never rebuild Miro; link to it and export to it.
+- Taxonomy, word for word everywhere: "Six campus sections comprise an introduction plus five process sections. Presales precedes the four phases of the Double Diamond."
+- Sections: 01 Our approach · 02 Presales · 03 Discover · 04 Define · 05 Co-create · 06 Test & Deliver.
+- 35 blocks with stable IDs: 25 source blocks (02.01–06.04), 4 foundation blocks (01.01–01.04), 6 proposed extensions (06.X1–06.X6, always labelled "Proposed"). Block IDs never change and appear on every screen.
+- Six lanes per block: A Method · B Training · C Practice · D Examples & credentials · E Enablers · F Assessment & action.
+- Levels (cumulative): N0 Aware · N1 Contributor · N2 Facilitator · N3 Practitioner · N4 Lead / Faculty. Attending a session NEVER grants N3.
+
+# Content
+- Single source of content: `content/campus-content.json`. Import it as seed data. Never hard-code method content in components.
+- Never invent client names, figures, URLs, agent names, quantities or outcomes. Unknown = a visible "To add" state with an owner.
+- Case packs (WORK, PLAY, HEAL, LEARN) are FICTIONAL training data: always show the "Fictional training data" banner. No real client quotes.
+- A credential proves a project is referenced, not that a deliverable or impact exists. Show figures only when an admin marked them "approved for use" with a date and source.
+- Answer keys are facilitator-only and protected server-side (RLS + API) until unlocked.
+- AI drafts are never final: a human-check checklist must be completed before a draft can be copied into a group output.
+- Every content record shows version, owner, last updated and review status.
+
+# Tech stack (defaults)
+- Next.js 15 App Router, TypeScript strict, Tailwind CSS, shadcn/ui, Radix, lucide-react, dnd-kit, Recharts, Framer Motion (subtle only), next-intl (EN default, FR for facilitator/admin UI).
+- Supabase: Postgres + Row Level Security, Auth (magic link for staff, anonymous join-code for participants), Realtime for live sessions, Storage for images.
+- Miro REST API v2 (OAuth) for exports; iframe embed for viewing. Anthropic API only from server routes, behind a feature flag.
+- Tests: Vitest (unit), Playwright (e2e). Deploy: Vercel.
+
+# Code conventions
+- Server components by default; client components only for interactivity. Zod for every input and every JSON import. No `any`.
+- Folder layout: `app/` routes · `components/campus/*` (method UI) · `components/session/*` (live) · `components/exercises/*` · `lib/` (supabase, miro, ai, content) · `supabase/migrations` · `scripts/seed.ts`.
+- Each exercise component takes `blockId` and reads its config from the content model.
+- Write decisions in `DECISIONS.md`, progress in `CHANGELOG.md`. Stop at the end of each milestone for review.
+
+# Design system (match the V3 template kit)
+- White canvas, navy #293896 titles, Sodexo blue #1A6AFF accents and pills, panels #F3F6FC, borders #E1E4EA, 8-pt grid, cards rounded 12–16 px, generous whitespace.
+- Section colours: 01 #293896 · 02 #1A6AFF · 03 #8E5CC8 · 04 #EC6A1E · 05 #2EA36A · 06 #E0508F · proposed extensions #595959.
+- Level colours: N0 #8E5CC8 · N1 #1A6AFF · N2 #2EA36A · N3 #EC6A1E · N4 #E0508F. Never rely on colour alone; always print the label.
+- Core components: PhasePill, LevelBar, ProcessSteps, MethodColumns, ExampleBar, PrincipleBar, LaneTabs, SegmentSwitcher, ImageSlot, CasePackBanner, ProposedRibbon, MaturityCards, Timer, AgendaTimeline, GroupGrid, Poll, DotVote, ImpactEffortMatrix, JourneyMapBuilder, IdeaSheetForm, RubricScorer.
+- WCAG 2.1 AA, keyboard navigation, reduced motion. Projector view minimum 28 px body text. Participant view mobile-first and usable one-handed.
+- Copy: international English, short sentences, expand abbreviations on first use (HMW = How Might We, BRM = Business Relationship Manager, OS = CoDesign OS).
+
+# Privacy
+- Participants can join with a first name only. Delete session personal data after 90 days unless the person has a staff account. No tracking cookies. No client-confidential uploads in training sessions.

@@ -1,0 +1,273 @@
+[
+  {
+    "id": "03.01",
+    "name": "Kick-off & Planning",
+    "phase": "03 Discover",
+    "sub": "Project launch & discovery planning",
+    "lvl": "N3",
+    "primary": "HEAL",
+    "obj": "Launch the project, align everyone on challenge, scope and roles, and turn the proposal into a Discovery plan.",
+    "who": "CoDesign team prepares and facilitates · Client project team shares context and constraints · Account team ensures continuity with Presales.",
+    "acc": "CoDesign lead owns the plan; client sponsor approves scope and governance.",
+    "when": "Right after project confirmation, before any research.",
+    "inputs": "Signed proposal, Client Intelligence, existing data, stakeholder list, timeline. Minimum evidence: named sponsor, decision owner and dates.",
+    "steps": [
+      "Reconnect with context and ambition",
+      "Align on the initial challenge",
+      "Share what is known",
+      "Identify what must be learned",
+      "Define research questions",
+      "Select Discovery activities",
+      "Identify stakeholders and users",
+      "Define roles, governance (RACI) and planning",
+      "Agree next steps"
+    ],
+    "output": "A shared Project & Discovery Plan with RACI (Responsible, Accountable, Consulted, Informed).",
+    "std": "Every research question has an activity, an owner and a date.",
+    "quality": "Explicit scope and roles; learning-focused plan; realistic activities.",
+    "mistakes": "Presenting conclusions at kick-off · no decision owner · research questions that are really solutions.",
+    "handoff": "Plan approved → 03.02 and 03.03 start.",
+    "example": "HEAL: St Aldric kick-off lists known (waste audit) vs unknown (why families feel excluded); research questions lead to ward shadowing and family interviews; RACI names the dietitian as Consulted for every concept. [fictional]",
+    "var": {
+      "WORK": "Northbridge: research questions on anchor-day behaviour; badge data owner named.",
+      "PLAY": "Riverside: matchday observation slots booked around fixtures.",
+      "LEARN": "Lakeshore: timetable data request and student union as Consulted."
+    },
+    "cred": "Cincinnati Children's materials are internal working documents; confirm sharing rules before showing outside the team.",
+    "tools": "Kick-off deck, RACI, planning board",
+    "deck": "[S03, slides 19-22] · [S05, slide 27] typical 13-week plan",
+    "prompt": "'From this signed proposal [paste], draft the kick-off agenda, a Know / Don't know / Assume table and 6 research questions mapped to Discovery activities.'",
+    "verify": "Dates, names, scope; remove any 'finding' the AI presents before research.",
+    "fallback": "Use the 12-heading template: Context → Ambition → Challenge → Know/Don't know → Assumptions → Questions → Activities → Stakeholders → Roles → Governance → Timeline → Next steps.",
+    "l_obj": "Reframe a kick-off from 'conclusions' to 'learning plan' and match 3 activities to questions.",
+    "explain": "Presales says what we propose to do; Kick-off turns it into how we will actually do it.",
+    "type": "source_block",
+    "templates": [
+      {
+        "label": "Example RACI — Cincinnati Children's (SharePoint, internal)",
+        "url": "https://sodexo.sharepoint.com/:x:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/07_Projects%20-%20Credentials/US_Cicinnati%20Childrens%20Hospital/00_Governance/CCH_RACI_v4_2026-07.xlsx?d=wf98867a5070d4d298c836ee15fcd2b3b&csf=1&web=1&e=5x8Kc7"
+      },
+      {
+        "label": "Example SOW — Cincinnati Children's (internal)",
+        "url": "https://sodexo.sharepoint.com/:w:/r/sites/DesignCommunityHub/_layouts/15/Doc.aspx?sourcedoc=%7B83FB8ADE-63CE-442D-AD23-63AF99B8B946%7D&file=CCH_SOW_v5_2026-06.docx&action=default&mobileredirect=true"
+      },
+      {
+        "label": "CyberCampus 2040 deck (example)",
+        "url": "https://sodexo.sharepoint.com/:p:/r/sites/DesignCommunityHub/Documents%20partages/04_CoDesign%20Services/07_Projects%20-%20Credentials/Cyber%20Campus/Sodexo%20CoDesign%20Services%20-%20CyberCampus%202040.pptx?d=w16d61730d81a40fc8cc3d8491d3e782e&csf=1&web=1&e=jT514w"
+      }
+    ],
+    "os_agents": [
+      { "name": "Kickoff Deck", "url": "https://sodexo-codesign-os.vercel.app/agents/kickoff-agent.html" },
+      { "name": "Planning & RACI", "url": "https://sodexo-codesign-os.vercel.app/agents/planning-agent.html" }
+    ],
+    "exercise": {
+      "situation": "The proposal is signed. The client team arrives expecting you to present conclusions.",
+      "questions": [
+        "How do you reframe the session in the first five minutes?",
+        "List what is known and what must be learned.",
+        "Which three Discovery activities would you choose, and what does each answer?"
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "Open with the ambition and 'what we must learn to decide well'. Activities: observation (what people do), interviews (why), data review (how often). Each tied to one research question.",
+      "success_criteria": "Each activity answers a named question; nothing presented as a finding."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287501286"
+  },
+  {
+    "id": "03.02",
+    "name": "Research & Context Base",
+    "phase": "03 Discover",
+    "sub": "Existing knowledge & context",
+    "lvl": "N1",
+    "primary": "LEARN",
+    "obj": "Build a shared knowledge base before field research: what is known, assumed and missing.",
+    "who": "CoDesign team collects and structures · Client provides data and documents · Account team adds history.",
+    "acc": "CoDesign lead reviews the fact/assumption split.",
+    "when": "After kick-off, before interviews and visits.",
+    "inputs": "Kick-off outputs, client studies, surveys, operational data, old personas/journeys. Minimum evidence: each fact cites a document and date.",
+    "steps": [
+      "Collect existing material",
+      "Review and structure",
+      "Understand ecosystem and current experience",
+      "Identify signals and constraints",
+      "Separate facts from assumptions",
+      "Identify contradictions and gaps",
+      "Turn gaps into research questions"
+    ],
+    "output": "A Context & Knowledge Base: facts, data, users, stakeholders, constraints, assumptions, gaps, questions.",
+    "std": "Traceable to source; gaps written as research questions.",
+    "quality": "Focused, evidence-based, connected to the challenge.",
+    "mistakes": "Copying the whole survey · treating old personas as current · ignoring contradictions.",
+    "handoff": "Gaps → interview and observation guides (03.03).",
+    "example": "LEARN: Lakeshore's survey says 'affordable' is the top driver; the dashboard shows rising uptake of the cheapest item; the old persona says students 'want healthy options'. Contradiction flagged; question: 'What does affordable mean for a commuter on a work day?' [fictional]",
+    "var": {
+      "WORK": "Badge data vs 'nobody comes in on Mondays' assumption.",
+      "PLAY": "Kiosk sales by minute vs complaints by stand.",
+      "HEAL": "Plate-waste audit vs patient satisfaction comments."
+    },
+    "cred": "Not applicable (internal working output).",
+    "tools": "Miro, SharePoint, AI synthesis tools",
+    "deck": "[S03, slides 23-26]",
+    "prompt": "Generic Claude prompt: 'Read these documents [attach]. Build a table Fact / Source / Date / Confidence, then list assumptions, contradictions and 5 research questions. Do not invent data.'",
+    "verify": "Each fact against its source; no figure without a source.",
+    "fallback": "Five questions on one Miro frame: What do we know? What evidence? What do we assume? What is missing? What do we investigate?",
+    "l_obj": "Classify material into fact, assumption and contradiction, and convert the largest gap into a research question.",
+    "explain": "Know what you know before you go into the field.",
+    "type": "source_block",
+    "templates": [
+      {
+        "label": "Project template root (SharePoint) — 01_Discover folder; Context Base template: MISSING, owner Gabriel",
+        "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+      }
+    ],
+    "os_agents": [
+      { "name": "Interview Synthesis (for existing studies)", "url": "https://sodexo-codesign-os.vercel.app/agents/interview-synthesis-agent.html" }
+    ],
+    "exercise": {
+      "situation": "The client sends a 90-page satisfaction survey, two old personas and an operations dashboard.",
+      "questions": [
+        "How do you decide what is worth keeping?",
+        "Give one fact, one assumption and one contradiction.",
+        "Turn the biggest gap into a research question."
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "Keep what links to the challenge and is recent. A good research question is open and behavioural ('How do commuters decide where to eat between classes?').",
+      "success_criteria": "Fact cites source; research question is open and behavioural."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287501287"
+  },
+  {
+    "id": "03.03",
+    "name": "Visit & Interviews",
+    "phase": "03 Discover",
+    "sub": "Primary research & field immersion",
+    "lvl": "N2",
+    "primary": "WORK",
+    "obj": "Understand real experience by combining what people say, what they do and what they experience.",
+    "who": "CoDesign team researches and captures evidence · Client opens access to sites and people · Users and frontline staff share experience.",
+    "acc": "CoDesign lead approves guides and consent approach; client confirms site rules.",
+    "when": "Once context and knowledge gaps are known.",
+    "inputs": "Context Base, research questions, stakeholder map, guides, visit plan. Minimum evidence: at least 2 user types and 1 frontline role; consent recorded.",
+    "steps": [
+      "Define research targets",
+      "Prepare interview and observation guides",
+      "Recruit participants",
+      "Visit and observe on site",
+      "Interview users and stakeholders",
+      "Capture evidence",
+      "Debrief as a team",
+      "Consolidate findings"
+    ],
+    "output": "Field findings: observations, notes, quotes, behaviours, needs, pain points, workarounds, constraints, emerging insights.",
+    "std": "Each finding is tagged observed / said / interpreted.",
+    "quality": "Diverse perspectives; open, non-leading questions; real behaviour captured.",
+    "mistakes": "Leading questions · only interviewing managers · mixing interpretation into notes · no consent.",
+    "handoff": "Debriefed findings → 04.01 Personas and 04.02 Journey Map.",
+    "example": "WORK: at Northbridge 12:30, observe that teams split into two queues and regroup at tables 15 min later (observed). Team lead says 'lunch is our team meeting' (said). Interpretation: the queue breaks the social moment. [fictional]",
+    "var": {
+      "PLAY": "Observe half-time from the concourse; interview a steward and a family.",
+      "HEAL": "Shadow a ward host round; interview a family member with consent and ward approval.",
+      "LEARN": "Observe the library annex at 13:00; interview commuters in the car park area."
+    },
+    "cred": "Cooper / Cincinnati site-visit playbook referenced on V1 board; confirm shareable version.",
+    "tools": "Site Visit Playbook, interview guide, observation guide, Plaud/transcription, Miro",
+    "deck": "[S03, slides 27-30]",
+    "prompt": "'Draft a 45-minute interview guide for [user] on [research question]. Open questions only, with 2 follow-ups each, and an observation checklist for [site, time].'",
+    "verify": "No leading questions; consent and anonymisation; transcripts are not pasted into tools without approval.",
+    "fallback": "Paper guide: 5 open questions + 'tell me about the last time…' + observation grid (time, place, action, workaround).",
+    "l_obj": "Rewrite leading questions and record observation, statement and interpretation separately.",
+    "explain": "Don't only ask people what they need. Observe what they actually do.",
+    "type": "source_block",
+    "templates": [
+      {
+        "label": "Project template root (SharePoint) — interview/observation guides and Site Visit Playbook: location TO CONFIRM (Cooper playbook requested in Diane's V1 comment)",
+        "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+      }
+    ],
+    "os_agents": [
+      { "name": "Interview Guide", "url": "https://sodexo-codesign-os.vercel.app/agents/interview-guide-agent.html" },
+      { "name": "Interview Synthesis", "url": "https://sodexo-codesign-os.vercel.app/agents/interview-synthesis-agent.html" },
+      { "name": "Site Visit", "url": "https://sodexo-codesign-os.vercel.app/agents/site-visit-agent.html" }
+    ],
+    "exercise": {
+      "situation": "You are observing a staff restaurant at 12:30, with one hour on site and one interview slot with a frontline manager.",
+      "questions": [
+        "What do you watch for that people would never tell you?",
+        "Rewrite: 'Don't you think the queue is too long?'",
+        "How do you record observation vs statement vs interpretation?"
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "Watch workarounds, waiting, who eats alone, trays left. Rewrite: 'Tell me about the last time you had lunch here.' Use three columns or tags: O / S / I.",
+      "success_criteria": "Rewritten question is open and neutral; notes are tagged O/S/I."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287501288"
+  },
+  {
+    "id": "03.04",
+    "name": "Benchmark",
+    "phase": "03 Discover",
+    "sub": "Market exploration & inspiration",
+    "lvl": "N1",
+    "primary": "PLAY",
+    "obj": "Learn how others, inside and outside the sector, address similar challenges, and extract transferable principles.",
+    "who": "CoDesign team researches and curates · Experts suggest references · Client reacts.",
+    "acc": "CoDesign lead checks sources and the 'so what' of each example.",
+    "when": "In parallel with field research.",
+    "inputs": "Research questions, themes, trend reports. Minimum evidence: every example has a source link and date.",
+    "steps": [
+      "Define investigation topics",
+      "Select categories",
+      "Explore competitors and leaders",
+      "Look outside the industry",
+      "Compare approaches",
+      "Identify patterns and signals",
+      "Extract transferable principles"
+    ],
+    "output": "A curated Benchmark & Inspiration Landscape with examples, principles and transferable learnings.",
+    "std": "Each example answers 'so what for this client?'",
+    "quality": "Focused, diverse, recent, sourced.",
+    "mistakes": "A competitor list with no insight · copying features instead of principles · unsourced examples.",
+    "handoff": "Principles → 04.03 Inspiration Idea Sheets.",
+    "example": "PLAY: to cut half-time queues, look at airport fast lanes and theme-park virtual queues; principle: 'move the wait out of the peak'. Benchmark is evidence from elsewhere, not proof it works here.",
+    "var": {
+      "WORK": "Co-working spaces' booking of team tables.",
+      "HEAL": "Hotel room-service ordering windows.",
+      "LEARN": "Public libraries that allow food zones."
+    },
+    "cred": "Not applicable.",
+    "tools": "Benchmark agent, inspiration library, trend reports, web research",
+    "deck": "[S03, slides 31-34]",
+    "prompt": "'Find 8 examples (4 outside [sector]) addressing [challenge]. For each: what they do, why it works, transferable principle, source link and date. Flag anything you could not verify.'",
+    "verify": "Open every link; check dates; remove examples without a live source.",
+    "fallback": "Template row: Question → Theme → Example → What they do → Why it works → Principle → Transferability → Opportunity.",
+    "l_obj": "Extract a transferable principle from an out-of-sector example and defend it to a sceptical client.",
+    "explain": "Benchmark is not a collection of competitors. Always answer 'So what?'",
+    "type": "source_block",
+    "templates": [
+      {
+        "label": "Project template root (SharePoint) — Benchmark template: MISSING, owner Gabriel",
+        "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FDesignCommunityHub%2FDocuments%20partages%2F04%5FCoDesign%20Services%2F07%5FProjects%20%2D%20Credentials%2F00%5FCONTRY%5FCLIENTNAME%5FTEMPLATE&viewid=c6041da6%2Ddfcf%2D475b%2D829c%2Dc370dca41d40"
+      },
+      { "label": "Experience Catalogue", "url": "https://xpcatalogue.vercel.app/login" }
+    ],
+    "os_agents": [
+      { "name": "Benchmark Scout", "url": "https://sodexo-codesign-os.vercel.app/agents/benchmark-agent.html" }
+    ],
+    "exercise": {
+      "situation": "You need inspiration to reduce waiting time in a corporate restaurant.",
+      "questions": [
+        "Name one example from outside food service and why.",
+        "What is the transferable principle, not the feature?",
+        "How do you answer 'but we are not a theme park'?"
+      ]
+    },
+    "answer_key": {
+      "sample_answer": "E.g. airport security lanes: principle 'separate quick and complex transactions'. Answer: 'We are not copying the park, we are borrowing the idea of moving the wait.'",
+      "success_criteria": "Principle stated without the original feature; source named."
+    },
+    "miro_frame_url": "https://miro.com/app/board/uXjVH3p2QFs=/?moveToWidget=3458764689287501289"
+  }
+]

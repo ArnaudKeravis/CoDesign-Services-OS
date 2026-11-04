@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "version": "0.1",
+    "owner": "Diane",
+    "status": "draft for review",
+    "note": "New in Academy v2. Scenarios use fictional situations; no real client names or figures."
+  },
+  "challenges": [
+    {
+      "id": "c01",
+      "block": "01.01",
+      "title": "The account manager's email",
+      "situation": "A Business Relationship Manager (BRM) forwards a client email: 'Can you run a fun workshop for our staff next month?' No problem statement, no sponsor, no budget.",
+      "question": "What is your best first move?",
+      "options": [
+        { "text": "Book the date and send a workshop agenda template.", "correct": false, "feedback": "A workshop is a format, not an answer. You would be solving an unframed problem." },
+        { "text": "Call the BRM to find the trigger behind the request: what changed, who is asking, what decision must follow.", "correct": true, "feedback": "Yes. CoDesign starts from the trigger and the decision it should support. The format comes later." },
+        { "text": "Reply that CoDesign only works on large bids.", "correct": false, "feedback": "Small requests can hide real opportunities. Qualify before you decline." },
+        { "text": "Ask an AI agent to write a proposal straight away.", "correct": false, "feedback": "The agent can help once you know the challenge. Without it, the draft is generic." }
+      ]
+    },
+    {
+      "id": "c02",
+      "block": "02.01",
+      "title": "Reframe the brief",
+      "situation": "The client asks to 'reinvent the employee restaurant'. You learn attendance is down and teams no longer meet in person.",
+      "question": "Which reframed challenge is strongest?",
+      "options": [
+        { "text": "How might we redesign the restaurant menu?", "correct": false, "feedback": "Too narrow: it assumes the menu is the problem." },
+        { "text": "How might we make the office day worth the commute, with food as one lever?", "correct": true, "feedback": "Right. It widens to the experience while keeping food in scope, which is what Presales is for." },
+        { "text": "How might we increase restaurant revenue by 20%?", "correct": false, "feedback": "A business target is useful, but this framing loses the user and invents a figure." },
+        { "text": "How might we digitise everything?", "correct": false, "feedback": "Solution-first and vague. Reframe around a user moment." }
+      ]
+    },
+    {
+      "id": "c03",
+      "block": "02.02",
+      "title": "Forty logos, three slots",
+      "situation": "You pitch to a hospital group about the patient meal experience. Your most impressive credential is an airport lounge project.",
+      "question": "How do you use the lounge credential?",
+      "options": [
+        { "text": "Leave it out: it is not healthcare.", "correct": false, "feedback": "Possibly, but you may lose a strong method proof. Sector is not the only criterion." },
+        { "text": "Show it as 'how we redesign a time-pressured service moment' and say clearly what transfers and what does not.", "correct": true, "feedback": "Yes. Select on user moment and constraint, lead with a method proof, and be explicit about transfer limits." },
+        { "text": "Show it first with its contract value to impress.", "correct": false, "feedback": "Contract values are internal and unverified for external use. Impressive is not the same as relevant." },
+        { "text": "Rename it as a healthcare project.", "correct": false, "feedback": "Never. A credential must trace to an approved source." }
+      ]
+    },
+    {
+      "id": "c04",
+      "block": "03.03",
+      "title": "The leading question",
+      "situation": "Your interview guide includes: 'Don't you think the queue at lunch is too long?'",
+      "question": "What is wrong, and how do you fix it?",
+      "options": [
+        { "text": "Nothing; it confirms a known pain point.", "correct": false, "feedback": "It leads the answer. You will collect agreement, not insight." },
+        { "text": "Replace it with: 'Tell me about the last time you had lunch here. What happened?'", "correct": true, "feedback": "Open, past-behaviour questions surface real stories and pain points you did not expect." },
+        { "text": "Make it a 1–5 rating question.", "correct": false, "feedback": "A survey item can help, but it does not replace an open interview question." },
+        { "text": "Ask it twice to be sure.", "correct": false, "feedback": "Repetition does not fix bias." }
+      ]
+    },
+    {
+      "id": "c05",
+      "block": "04.01",
+      "title": "Persona or stereotype?",
+      "situation": "A draft persona reads: 'Paul, 45, male, likes football and burgers.'",
+      "question": "What would make this a useful persona?",
+      "options": [
+        { "text": "Add a stock photo and a fun quote.", "correct": false, "feedback": "Decoration, not evidence. The persona still says nothing about behaviour." },
+        { "text": "Base it on behaviours, goals and frictions seen in research, each trait traced to an interview or observation.", "correct": true, "feedback": "Yes. Behaviour-based and evidence-traced personas drive design decisions; demographics rarely do." },
+        { "text": "Create ten more personas to cover everyone.", "correct": false, "feedback": "More personas dilute focus. Three to five behaviour-based ones are usually enough." },
+        { "text": "Ask an AI to invent the details.", "correct": false, "feedback": "AI can structure a synthesis, but invented traits are fiction. Trace every trait." }
+      ]
+    },
+    {
+      "id": "c06",
+      "block": "04.02",
+      "title": "Where is the pain?",
+      "situation": "Your journey map has seven stages and lists every touchpoint, but the team cannot agree where to focus.",
+      "question": "What is missing?",
+      "options": [
+        { "text": "More stages.", "correct": false, "feedback": "Granularity is not the issue." },
+        { "text": "Evidence-backed pain points and emotions per stage, and a few marked priority moments.", "correct": true, "feedback": "Right. A journey map exists to show where it hurts and which moments matter most." },
+        { "text": "A nicer colour scheme.", "correct": false, "feedback": "Visual quality matters, but it will not create focus." },
+        { "text": "The future journey.", "correct": false, "feedback": "The future journey comes in Co-create, after you know the priority moments." }
+      ]
+    },
+    {
+      "id": "c07",
+      "block": "04.05",
+      "title": "Seven days before",
+      "situation": "Participants arrive at the workshop without having read anything, and the first hour is spent explaining context.",
+      "question": "Which block would have prevented this?",
+      "options": [
+        { "text": "Annexes (06.04)", "correct": false, "feedback": "Annexes archive outputs after the project." },
+        { "text": "Pre-read J-7 (04.05), possibly with the Mini Podcast (04.06)", "correct": true, "feedback": "Yes. A short pre-read seven days before, plus a podcast for busy people, lets the workshop start on decisions." },
+        { "text": "Benchmark (03.04)", "correct": false, "feedback": "Benchmarks inspire, but they do not brief participants." },
+        { "text": "Value Proposition Workshop (06.03)", "correct": false, "feedback": "That comes much later in the process." }
+      ]
+    },
+    {
+      "id": "c08",
+      "block": "05.02",
+      "title": "The senior voice",
+      "situation": "During ideation, a senior director talks for ten minutes and the group nods along.",
+      "question": "What is your best facilitation move?",
+      "options": [
+        { "text": "Let it run: they are the decision maker.", "correct": false, "feedback": "You lose the diversity of ideas that co-creation is for." },
+        { "text": "Switch to silent individual ideation for five minutes, then round-robin sharing.", "correct": true, "feedback": "Yes. 'Write before you speak' and structured turns protect quieter voices without confronting anyone." },
+        { "text": "Ask the director to leave.", "correct": false, "feedback": "Too confrontational. Use structure, not exclusion." },
+        { "text": "End the session early.", "correct": false, "feedback": "The problem is the format, not the session." }
+      ]
+    },
+    {
+      "id": "c09",
+      "block": "05.06",
+      "title": "AI ideas on the wall",
+      "situation": "You have 20 AI-generated ideas ready. The workshop starts in five minutes.",
+      "question": "When and how do you use them?",
+      "options": [
+        { "text": "Show all 20 first so people have a starting point.", "correct": false, "feedback": "This anchors the group on AI output and kills original thinking." },
+        { "text": "Run human ideation first, then bring a few AI ideas as stimuli to extend or challenge the wall, labelled as AI.", "correct": true, "feedback": "Right. Human-led, AI-supported: AI ideas widen the space after people have contributed." },
+        { "text": "Present them as the client team's ideas.", "correct": false, "feedback": "Never mislabel sources." },
+        { "text": "Don't mention they exist.", "correct": false, "feedback": "Prepared stimuli are useful. Use them transparently at the right moment." }
+      ]
+    },
+    {
+      "id": "c10",
+      "block": "06.01",
+      "title": "The summary nobody reads",
+      "situation": "Your workshop summary is a 40-slide photo dump of every sticky note.",
+      "question": "What should page one say?",
+      "options": [
+        { "text": "A thank-you message and the agenda.", "correct": false, "feedback": "Polite but useless for decisions." },
+        { "text": "Decided / To validate / Discarded, each with an owner and a date.", "correct": true, "feedback": "Yes. A summary turns workshop energy into owned decisions." },
+        { "text": "The full list of participants.", "correct": false, "feedback": "Useful in an annex, not on page one." },
+        { "text": "The best quotes from the day.", "correct": false, "feedback": "Quotes can bring colour, but decisions come first." }
+      ]
+    },
+    {
+      "id": "c11",
+      "block": "06.02",
+      "title": "Everything is a priority",
+      "situation": "After voting, 14 of 18 ideas are tagged 'high priority'.",
+      "question": "What do you do?",
+      "options": [
+        { "text": "Accept it: the client loves the ideas.", "correct": false, "feedback": "If everything is a priority, nothing is." },
+        { "text": "Score them against agreed, weighted criteria (impact, feasibility, effort) and show the breakdown, then let people challenge it.", "correct": true, "feedback": "Right. Transparent criteria make the trade-offs explicit and defensible." },
+        { "text": "Pick your own favourites.", "correct": false, "feedback": "Prioritisation must be shared and traceable, not imposed." },
+        { "text": "Ask an AI to choose.", "correct": false, "feedback": "AI can score against criteria you set, but people own the decision." }
+      ]
+    },
+    {
+      "id": "c12",
+      "block": "06.X6",
+      "title": "Capture the credential",
+      "situation": "The project ended last week. The final restitution deck is approved.",
+      "question": "What is the right credential capture move?",
+      "options": [
+        { "text": "Wait until someone asks for it in a bid.", "correct": false, "feedback": "Memory fades and files move. Capture while the evidence is fresh." },
+        { "text": "Draft a credential card with the Credential Writer agent, mark every unverified figure, and get sharing approval.", "correct": true, "feedback": "Yes. A credential proves a project is referenced; figures need a source and approval before reuse." },
+        { "text": "Copy the client's logo and the contract value into the library.", "correct": false, "feedback": "Logos and amounts need approval. The story is the challenge, approach and outputs." },
+        { "text": "Write it from memory in two lines.", "correct": false, "feedback": "Too thin to reuse, and not traceable." }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": "q-work",
+      "segment": "WORK",
+      "title": "The hybrid HQ",
+      "brief": "A fictional global bank (Northbridge Financial) wants its regional HQ to be 'worth the commute'. Attendance is 2.4 days a week; lunch queues break the team moment.",
+      "ask": "Shortlist three credentials for the first meeting.",
+      "strong": ["microsoft-2026-good-life", "santander-2026-hq", "jnj-2022-flexibility", "thales-2025-campus", "astrazeneca-2026-cambridge"],
+      "acceptable": ["eli-lilly-2026-the-cell", "abeille-assurance-2026-food", "coeur-defense-2024-campus", "gsk-2021-workplace", "sanofi-2022-hq", "msd-2022-playbook"],
+      "lesson": "Lead with hybrid rhythms and workplace dining (Microsoft, J&J, Santander, Thales). A greenfield factory is less relevant to a hybrid office."
+    },
+    {
+      "id": "q-play",
+      "segment": "PLAY",
+      "title": "Matchday under pressure",
+      "brief": "A fictional stadium (Riverside) loses fans at half-time: 15-minute queues for food and drinks, and families feel unwelcome.",
+      "ask": "Shortlist three credentials.",
+      "strong": ["newcastle-united-2024-fan", "roland-garros-2026-fnb", "arsenal-women-2025", "newcastle-2024-matchday"],
+      "acceptable": ["american-airlines-2024-lounge", "edinburgh-zoo-2024-visitor", "sodexo-live-2025-comex"],
+      "lesson": "Matchday and event F&B flows (Newcastle, Roland-Garros) prove the method directly. Arsenal Women adds a supporter-diversity angle."
+    },
+    {
+      "id": "q-heal",
+      "segment": "HEAL",
+      "title": "The patient meal",
+      "brief": "A fictional hospital group (St Aldric) wants to improve the patient meal experience: cold trays, little choice, meals at fixed times.",
+      "ask": "Shortlist three credentials.",
+      "strong": ["clariane-2025-dining", "hstv-moncontour-2026-food"],
+      "acceptable": ["jardins-arcadie-2025-senior", "saint-gatien-2030-csr", "american-airlines-2024-lounge"],
+      "lesson": "Clariane and HSTV Moncontour redesign mealtime in care settings. Say openly that care homes are not acute wards: lead with the method and the resident journey, not the numbers."
+    },
+    {
+      "id": "q-learn",
+      "segment": "LEARN",
+      "title": "The campus without a credential",
+      "brief": "A fictional university (Lakeshore) wants students to eat on campus rather than off-site. There is no verified education credential in the library.",
+      "ask": "Shortlist three cross-sector credentials and say why they transfer.",
+      "strong": ["thales-2025-campus", "astrazeneca-2026-cambridge", "seazon-food-experience", "european-parliament-2025-food"],
+      "acceptable": ["microsoft-2026-good-life", "scottish-parliament-2025-visitor", "abeille-assurance-2026-food"],
+      "lesson": "No education credential exists: say so. Use multi-site campus dining (Thales, AstraZeneca), multi-audience flows (European Parliament) and Seazon, whose co-design explicitly covered students."
+    }
+  ],
+  "glossary": [
+    { "term": "HMW", "definition": "How Might We — an opportunity question that frames a problem so it invites many solutions." },
+    { "term": "BRM", "definition": "Business Relationship Manager — the account owner who often brings the opportunity." },
+    { "term": "OS", "definition": "CoDesign OS — the agent platform that drafts CoDesign artefacts. Human-led, AI-supported." },
+    { "term": "Double Diamond", "definition": "Discover and Define (diverge then converge on the problem), then Co-create and Test & Deliver (diverge then converge on the solution). Presales precedes it." },
+    { "term": "Persona", "definition": "A behaviour-based archetype built from research evidence, not demographics." },
+    { "term": "Journey map", "definition": "Stages, actions, emotions and pain points of a persona over time, with priority moments marked." },
+    { "term": "Service blueprint", "definition": "A journey map extended with front-stage and back-stage processes, people and systems." },
+    { "term": "RACI", "definition": "Responsible, Accountable, Consulted, Informed — who does what on the engagement." },
+    { "term": "J-7 pre-read", "definition": "A short briefing sent seven days before a workshop so the session can start on decisions." },
+    { "term": "Format A / B", "definition": "Format A: half-day workshop (09:00–13:00, 240 min). Format B: full day (09:00–17:00, 480 min)." },
+    { "term": "N0–N4", "definition": "Cumulative competency levels: Aware, Contributor, Facilitator, Practitioner, Lead / Faculty. Attending a session never grants N3." },
+    { "term": "Credential", "definition": "A referenced past project. It proves the project exists, not that a deliverable or impact is approved for reuse." },
+    { "term": "Impact map", "definition": "Activities → outputs → outcomes → measures, used to design pilots and business cases." },
+    { "term": "Idea sheet", "definition": "A one-page description of an idea from the workshop, in participants' own words." },
+    { "term": "Inspiration sheet", "definition": "A stimulus card showing an in-sector or out-of-sector example to spark ideas." },
+    { "term": "Concept sheet", "definition": "A developed direction that links a need and evidence to an idea, value and next test." },
+    { "term": "JTBD", "definition": "Jobs To Be Done — what a person is trying to get done, independent of the solution." },
+    { "term": "XP rank", "definition": "Academy reward for learning activity (Spark → Faculty-ready). Separate from N-levels, which a coach certifies." }
+  ]
+}

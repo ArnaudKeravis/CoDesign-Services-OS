@@ -1,0 +1,48 @@
+{
+  "A": {
+    "name": "Experience Design — half day",
+    "agenda": [
+      { "start": "09:00", "end": "09:15", "activity": "Welcome, purpose and icebreaker", "minutes": 15 },
+      { "start": "09:15", "end": "09:35", "activity": "Evidence and persona immersion", "minutes": 20 },
+      { "start": "09:35", "end": "10:15", "activity": "Current journey, needs and pain points", "minutes": 40 },
+      { "start": "10:15", "end": "10:25", "activity": "Break", "minutes": 10 },
+      { "start": "10:25", "end": "11:05", "activity": "Priority moments and How Might We questions", "minutes": 40 },
+      { "start": "11:05", "end": "11:50", "activity": "Future journey and human-led ideation", "minutes": 45 },
+      { "start": "11:50", "end": "12:25", "activity": "Idea sheets and initial selection", "minutes": 35 },
+      { "start": "12:25", "end": "12:50", "activity": "Share-back and challenge", "minutes": 25 },
+      { "start": "12:50", "end": "13:00", "activity": "Owners and next steps", "minutes": 10 }
+    ],
+    "learning_route": {
+      "study": ["01.*", "04.01", "04.02", "04.07", "05.01", "05.02", "05.04", "05.07", "06.01"],
+      "practise": ["04.02", "05.04", "05.07"],
+      "observe": ["05.01", "05.02", "05.05", "06.01"],
+      "defer": ["02.01", "03.01", "03.03", "06.02", "06.03", "06.X1-X6"]
+    }
+  },
+  "B": {
+    "name": "Experience & Opportunities — full day",
+    "agenda": [
+      { "start": "09:00", "end": "09:20", "activity": "Welcome and ambition", "minutes": 20 },
+      { "start": "09:20", "end": "09:50", "activity": "Evidence and persona immersion", "minutes": 30 },
+      { "start": "09:50", "end": "10:35", "activity": "Journey, pain points and priority moments", "minutes": 45 },
+      { "start": "10:35", "end": "10:50", "activity": "Break", "minutes": 15 },
+      { "start": "10:50", "end": "11:30", "activity": "Opportunity framing and How Might We", "minutes": 40 },
+      { "start": "11:30", "end": "12:15", "activity": "Future journey and ideation", "minutes": 45 },
+      { "start": "12:15", "end": "12:30", "activity": "Share-back", "minutes": 15 },
+      { "start": "12:30", "end": "13:15", "activity": "Lunch", "minutes": 45 },
+      { "start": "13:15", "end": "13:30", "activity": "Re-entry and inspiration", "minutes": 15 },
+      { "start": "13:30", "end": "14:15", "activity": "Concept development", "minutes": 45 },
+      { "start": "14:15", "end": "15:00", "activity": "Prioritisation and value proposition", "minutes": 45 },
+      { "start": "15:00", "end": "15:15", "activity": "Break", "minutes": 15 },
+      { "start": "15:15", "end": "16:00", "activity": "Capability mapping and feasibility questions", "minutes": 45 },
+      { "start": "16:00", "end": "16:40", "activity": "Draft pilots, roadmap and measures", "minutes": 40 },
+      { "start": "16:40", "end": "17:00", "activity": "Decisions, owners and next steps", "minutes": 20 }
+    ],
+    "learning_route": {
+      "study": ["01.*", "04.01-04.07", "05.01-05.07", "06.01-06.03", "06.X1", "06.X3", "06.X4"],
+      "practise": ["04.02", "05.04", "05.07", "06.02", "06.03"],
+      "observe": ["05.01", "05.05", "06.X1", "06.X3"],
+      "defer": ["02.01", "03.01", "03.03", "06.X2", "06.X5", "06.X6"]
+    }
+  }
+}

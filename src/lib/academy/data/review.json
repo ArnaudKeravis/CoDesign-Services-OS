@@ -1,0 +1,67 @@
+{
+  "rehearsal_template": [
+    { "segment": "Objective", "minutes": 5 },
+    { "segment": "Explanation", "minutes": 10 },
+    { "segment": "Worked example", "minutes": 10 },
+    { "segment": "Claude / OS demonstration in Miro", "minutes": 10 },
+    { "segment": "Participant practice", "minutes": 15 },
+    { "segment": "Debrief and corrections", "minutes": 10 }
+  ],
+  "maturity_scale": [
+    { "step": 1, "title": "Not yet", "text": "I would need to see it done before trying it myself.", "maps_to": "N0" },
+    { "step": 2, "title": "With support", "text": "I could contribute if someone else leads the activity.", "maps_to": "N1" },
+    { "step": 3, "title": "On my own", "text": "I could run this on a real engagement without help.", "maps_to": "N2-N3" },
+    { "step": 4, "title": "I could coach", "text": "I could train someone else on it and guarantee the quality.", "maps_to": "N4" }
+  ],
+  "rubric_dimensions": [
+    "Evidence traceability",
+    "User focus",
+    "Method application",
+    "Facilitation",
+    "Artifact quality",
+    "Clear next decisions"
+  ],
+  "proposed_calendar": [
+    { "when": "3-6 Nov 2026", "what": "Inventory, source conflicts, campus blueprint, Journey Map exemplar", "owner": "Diane + Claude", "status": "In progress" },
+    { "when": "9-13 Nov 2026", "what": "Populate method cards, four case packs, initial learning assets; Noël quality pass", "owner": "Diane, Noël, Gabriel", "status": "Proposed" },
+    { "when": "Mon 16 Nov 2026, 15:00-16:00 CET (09:00-10:00 ET)", "what": "Rehearsal R1 — 01 Our approach", "owner": "Arnaud (owner), Diane", "status": "Proposed" },
+    { "when": "Tue 17 Nov 2026, 15:00-16:00 CET", "what": "Rehearsal R2 — 02 Presales; training pre-read sent (D-7 of pilot)", "owner": "Arnaud, Gabriel", "status": "Proposed" },
+    { "when": "Wed 18 Nov 2026, 15:00-16:00 CET", "what": "Rehearsal R3 — 03 Discover", "owner": "Noël", "status": "Proposed" },
+    { "when": "Thu 19 Nov 2026, 15:00-16:00 CET", "what": "Rehearsal R4 — 04 Define (Journey Map exemplar); podcast shared (D-5)", "owner": "Diane, Gabriel", "status": "Proposed" },
+    { "when": "Fri 20 Nov 2026, 15:00-16:00 CET", "what": "Rehearsal R5 — 05 Co-create", "owner": "Noël", "status": "Proposed" },
+    { "when": "Mon 23 Nov 2026, 15:00-16:00 CET", "what": "Rehearsal R6 — 06 Test & Deliver; final revisions", "owner": "Noël, Gabriel", "status": "Proposed" },
+    { "when": "Tue 24 Nov 2026, 09:00-13:00 ET (15:00-19:00 CET)", "what": "Regional pilot — Format A learning route with US colleagues (subject to availability; avoid Thu 26-Fri 27 Nov, US Thanksgiving)", "owner": "Arnaud (sponsor), Diane, Noël", "status": "Proposed — not booked" }
+  ],
+  "miro_board": "https://miro.com/app/board/uXjVH3p2QFs=/",
+  "conflicts": [
+    { "topic": "OS agent count", "sources_say": "S04: 23 agents · S05 slides 13 & 15: 24 agents · S02 live: header '21 agents', footer '23 agents', 23 live cards", "proposed_resolution": "Teach agent names, not a count. If a number is needed, quote '23 live agents (OS, 3 Nov 2026)'. Ask Gabriel to fix the OS header.", "owner": "Gabriel" },
+    { "topic": "Engagement count", "sources_say": "S04: 28 engagements and '30 yearly' · S05: 25 strategic clients/yr, 200 pitched → 30 run · S06: 50+ clients, 7 COEU engagements · S07: 35 engagements 2021-26 · S02: 28 engagements", "proposed_resolution": "Do not show a total on learner material. Use the credential grid (named projects) only. Arnaud to set one canonical figure with date.", "owner": "Arnaud" },
+    { "topic": "Labs statistics", "sources_say": "S05: NPS +53 across 82 sessions · S06: 87 sessions, NPS +53", "proposed_resolution": "Use 'NPS +53 (Oct 2026, 87 sessions)' only on client material, marked as dated.", "owner": "Arnaud" },
+    { "topic": "Engagement duration", "sources_say": "S05/S06: 8-12 weeks · S05 slide 19: 2 weeks to 8 months · S05 slide 3 phase durations Discover 3-4w, Define 2-3w, Co-Create 2-3w, T&D 2-12w", "proposed_resolution": "Teach 'typical 8-12 weeks elapsed for a standard engagement; scope ranges from a single workshop to 8 months'.", "owner": "Noël" },
+    { "topic": "Phase of Inspiration & Concept Sheets", "sources_say": "S03: Define (04.03, 04.04) · S02 OS: Co-create (steps 09-10)", "proposed_resolution": "Keep method placement (Define) as the teaching standard; note the OS grouping on the enabler card. Gabriel to align OS labels or document the difference.", "owner": "Noël + Gabriel" },
+    { "topic": "Phase of Journey Map", "sources_say": "S03: Define · S05 slide 15: listed under Discover · S02: Define (step 08)", "proposed_resolution": "Define. S05 slide 15 to be corrected in its next version.", "owner": "Arnaud" },
+    { "topic": "Capability level labels", "sources_say": "S03/S04: N0 Aware, N1 Contributor, N2 Facilitator, N3 Practitioner, N4 Lead/Faculty · S05 slide 40: 'contributor / creator / facilitator / practitioner' · S01 loose shape 'N3 : Facilitator'", "proposed_resolution": "Use S03 labels everywhere. Retire 'creator'. Archive the V1 'N3 : Facilitator' shape.", "owner": "Noël" },
+    { "topic": "Block order in Co-create", "sources_say": "S03: 05.04 Future Journey before 05.05 Participants · S01 V1 board: Participants column before Journey Map", "proposed_resolution": "Keep S03 IDs and order in V2. Note on 05.05: groups are set up before the workshop day, as an input to 05.01, even though the block is taught after 05.04.", "owner": "Diane" },
+    { "topic": "Ice breaker naming", "sources_say": "S03 splits 04.07 Preparation (Define) and 05.02 Facilitation (Co-create) · S01 labels both 'Ice breaker'", "proposed_resolution": "Use full names with the split; preparation and facilitation are separate tasks.", "owner": "Diane" },
+    { "topic": "Pre-read size", "sources_say": "S03: consumable in 10-15 min, 'six slides' in exercise · brief: 13-15 slides spec · S04: ≤10 pages for US Tech team", "proposed_resolution": "Complementary constraints: 10-15 min reading time is the binding rule; test 6-15 light slides for readability.", "owner": "Gabriel" },
+    { "topic": "Mini podcast length", "sources_say": "S03: 5-8 min · brief: 6 min, ≤ 900 words", "proposed_resolution": "6 minutes target, 8 minutes maximum.", "owner": "Gabriel" },
+    { "topic": "70/20/10 portfolio", "sources_say": "S05 slide 28 presents 70% standard / 20% adapted / 10% innovation, with '70% … risk-free'", "proposed_resolution": "Teach as a planning lens, not fixed proportions; standard solutions still need validation with users and operations.", "owner": "Noël" },
+    { "topic": "Commercial figures (+3% renewal, €1B, Eli Lilly 12%→20%)", "sources_say": "S05/S06 present as facts", "proposed_resolution": "Not used in learner material. Client-facing use needs Arnaud's sign-off and dated source.", "owner": "Arnaud" },
+    { "topic": "Philadelphia pilot dates", "sources_say": "S04: pilot 9 Sept; S05: session held 9 Sept, healthcare visit 10 Sept, workshop October", "proposed_resolution": "Historical. Not shown as a future plan. Current proposals use November 2026 dates labelled 'proposed'.", "owner": "Diane" }
+  ],
+  "sources": [
+    { "id": "S01", "name": "Miro board 'V3 new approach codesign template kit' (existing campus, V1)", "version": "live, read 2026-11-03", "status": "Accessible (read + write)", "parts": "Frames Start Here, How to read, Why CoDesign, End-to-end approach, Global links; frame 'CoDesign Method Campus'", "reused": "Row structure, V1 copy per block, verified SharePoint/Figma/OS links", "url": "https://miro.com/app/board/uXjVH3p2QFs=/", "gap": "Several 'Mettre un exemple' placeholders; V1 order puts 05.05 before 05.04", "owner": "Diane" },
+    { "id": "S02", "name": "CoDesign OS — Agent Explorer", "version": "Methodology V1.0 · Apr 2026; read live 2026-11-03", "status": "Accessible (read, via Chrome)", "parts": "Home agent map, phase grouping, prompts page", "reused": "23 live agent names + URLs, phase mapping, Journey Map agent spec", "url": "https://sodexo-codesign-os.vercel.app/", "gap": "Header says 21 agents, footer 23; template download buttons point to '#'", "owner": "Gabriel" },
+    { "id": "S03", "name": "Codesign-methodology V2_Training (1).pptx", "version": "V2, 109 slides, undated", "status": "Attached", "parts": "Slides 3-4 overview; 4 slides per block", "reused": "25-block inventory, method cards, exercises, target levels", "url": "SharePoint location not supplied", "gap": "All 25 visual-example slides are placeholders", "owner": "Noël" },
+    { "id": "S04", "name": "CoDesignOS_Framing_v1_2026-08.pptx", "version": "v1 · Aug 2026 · 11 slides", "status": "Attached", "parts": "Objective, horizons, ecosystem, principles, method card, N0-N4", "reused": "Standard card, canonical-location rule, readable-without-AI principle", "url": "-", "gap": "Philadelphia 9 Sept pilot is historical context only", "owner": "Arnaud" },
+    { "id": "S05", "name": "CoDesignInt_Deck-USBRM_v1_2026-09.pptx", "version": "v1 · Sep 2026 · 41 slides", "status": "Attached", "parts": "US BRM session, TDDI, OS, 70/20/10", "reused": "US audience context, engagement triggers, phase durations", "url": "-", "gap": "Slide 39 ideas are proposals; slide 40 actions mostly TBC", "owner": "Arnaud" },
+    { "id": "S06", "name": "CoDesign_COEU-OVERVIEW-LIGHT_v2_2026-10 (2).pptx", "version": "v2 · Oct 2026 · 8 slides", "status": "Attached", "parts": "Offers, outputs, proof, when to engage, credential grid", "reused": "4 offers, engagement triggers, Labs formats", "url": "-", "gap": "Figures differ from other decks", "owner": "Arnaud" },
+    { "id": "S07", "name": "CoDesign_Client_Introduction - SHORT.pptx", "version": "2026 · 10 slides", "status": "Attached", "parts": "Mission, promise, approach, credential grid", "reused": "Client-facing approach wording", "url": "-", "gap": "-", "owner": "Arnaud" },
+    { "id": "S08", "name": "Texte collé(9).txt", "version": "-", "status": "MISSING — not attached", "parts": "-", "reused": "Pre-read and podcast specs taken from the brief", "url": "-", "gap": "Re-attach to enrich prompts and idea-card guidance", "owner": "Diane" },
+    { "id": "S09", "name": "image(20261103-134056).png", "version": "2026-11-03", "status": "MISSING — not attached", "parts": "-", "reused": "Six-column structure taken from the brief and V1 headers", "url": "-", "gap": "Re-attach for visual check", "owner": "Diane" },
+    { "id": "S10", "name": "Sales deck V4", "version": "-", "status": "MISSING — not connected", "parts": "-", "reused": "None", "url": "-", "gap": "Supply file or SharePoint link", "owner": "Arnaud" },
+    { "id": "S11", "name": "Current scale plan / current training plan", "version": "-", "status": "MISSING", "parts": "-", "reused": "None", "url": "-", "gap": "Supply if they exist", "owner": "Arnaud" },
+    { "id": "S12", "name": "SharePoint templates & approved project outputs", "version": "links read from S01", "status": "Links verified on board; contents not opened", "parts": "Project template, credentials, process templates", "reused": "Canonical template and credential links", "url": "https://sodexo.sharepoint.com/sites/DesignCommunityHub/", "gap": "Per-block templates not individually confirmed", "owner": "Gabriel" },
+    { "id": "S13", "name": "Persona Studio · Experience Catalogue · Figma journey templates", "version": "links read from S01", "status": "XP Catalogue + Figma verified; Persona Studio URL missing", "parts": "Global links frame", "reused": "Specialised tool links", "url": "https://xpcatalogue.vercel.app/login", "gap": "Persona Studio URL missing", "owner": "Gabriel" }
+  ]
+}

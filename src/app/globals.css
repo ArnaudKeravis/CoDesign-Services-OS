@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme static {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter-tight), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy: #293896;
+  --color-navy-deep: #1b2569;
+  --color-sodexo: #1a6aff;
+  --color-sodexo-deep: #1238c4;
+  --color-panel: #f3f6fc;
+  --color-panel-2: #e8eefb;
+  --color-line: #e1e4ea;
+  --color-ink: #1d2433;
+  --color-muted: #5d6475;
+  --color-star: #ef3e42;
+
+  --color-s01: #293896;
+  --color-s02: #1a6aff;
+  --color-s03: #8e5cc8;
+  --color-s04: #ec6a1e;
+  --color-s05: #2ea36a;
+  --color-s06: #e0508f;
+  --color-proposed: #595959;
+
+  --color-n0: #8e5cc8;
+  --color-n1: #1a6aff;
+  --color-n2: #2ea36a;
+  --color-n3: #ec6a1e;
+  --color-n4: #e0508f;
+
+  --color-gold: #f5b700;
+
+  --animate-pop: pop 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-rise: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes pop {
+    0% { transform: scale(0.85); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes rise {
+    0% { transform: translateY(12px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-navy);
+  letter-spacing: -0.015em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sodexo);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.brand-gradient {
+  background: linear-gradient(160deg, #1238c4 0%, #1a5cf0 45%, #1a6aff 100%);
+}
+
+.brand-gradient-soft {
+  background: linear-gradient(160deg, #f3f6fc 0%, #e8eefb 100%);
+}
+
+.wave-line {
+  stroke-dasharray: 2400;
+  stroke-dashoffset: 2400;
+  animation: wave-draw 3.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes wave-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+.scene-enter {
+  animation: rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .wave-line {
+    stroke-dashoffset: 0;
+  }
+}

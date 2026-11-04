@@ -1,0 +1,118 @@
+{
+  "WORK": {
+    "name": "Northbridge HQ — the hybrid office day",
+    "client": "Northbridge Financial (fictional global bank, regional HQ, 3,800 badge holders)",
+    "challenge": "Attendance has settled at 2.4 days a week. Leaders want the office to be 'worth the commute' without adding cost.",
+    "users": "Hybrid employees, team leads, visitors, front-of-house and restaurant staff.",
+    "constraints": "Real-estate budget frozen; restaurant contract renewal in 16 months; union consultation for any change to service hours.",
+    "evidence": [
+      "Badge data: Tuesday-Thursday peaks at 78% of desks, Monday and Friday below 30% [fictional]",
+      "Restaurant queue observed at 12:20-12:45: median wait 11 min [fictional observation]",
+      "Interview P07: 'I come in to see my team, then spend half the day on calls I could take at home.' [fictional quote]",
+      "Service desk: 34% of tickets are room booking or 'cannot find a quiet space' [fictional]"
+    ],
+    "persona": "Maya, the 'anchor-day coordinator' — team lead who books the room, orders lunch and loses 40 minutes a week organising her team's office day.",
+    "journey": ["Decide to come in", "Commute and arrive", "Find a place to work", "Collaborate with the team", "Lunch", "Afternoon focus", "Leave"],
+    "insights": [
+      "People come for each other, not for the desk",
+      "Lunch is the main social anchor but the queue breaks the team moment",
+      "Quiet space is the missing ingredient on peak days"
+    ],
+    "hmw": [
+      "How might we make the team lunch a 20-minute moment instead of a 45-minute logistics task?",
+      "How might we help a team lead plan an anchor day in two minutes?"
+    ],
+    "workshop_inputs": "Persona Maya, current journey, 4 evidence cards, 3 HMW questions, 6 inspiration sheets.",
+    "ideas": ["Team-table pre-booking with group pre-order", "Anchor-day planner in the existing workplace app", "Quiet-hours zone on peak days"],
+    "priorities": "Now: team-table pre-booking (standard offer, adapted). Next: anchor-day planner (needs app capability check). Later: zoning pilot.",
+    "test": "2-week pilot on one floor, 6 teams; measures: queue time, team-lunch attendance, booking time, satisfaction pulse vs. baseline.",
+    "credentials": "Microsoft (Future of Workplace & Community, 2026), Eli Lilly (The Cell, 2026), Santander (Campus Dining & Well-being, 2025), Colgate-Palmolive (Blue-collar co-creation, 2024) — listed in S06/S07; artifacts to verify in SharePoint."
+  },
+  "PLAY": {
+    "name": "Riverside Arena — the matchday fan journey",
+    "client": "Riverside Arena (fictional 42,000-seat stadium)",
+    "challenge": "Fans miss the first minutes of the second half because of half-time queues; per-cap food spend is flat.",
+    "users": "Season-ticket holders, families, fans with access needs, kiosk staff, stewards.",
+    "constraints": "15-minute half-time; fixed kiosk footprint; safety rules on crowd flow; seasonal staff with 1-day training.",
+    "evidence": [
+      "Observation: 62% of kiosk transactions happen in a 9-minute window at half-time [fictional]",
+      "Accessible seating sections are 140 m from the nearest step-free kiosk [fictional site measure]",
+      "Fan survey: 'I give up on food if the queue is longer than the walk back' (verbatim theme, n=412) [fictional]",
+      "Staff interview S03: 'We pre-pour, but we run out of the popular items first.' [fictional quote]"
+    ],
+    "persona": "Dev, the 'half-time sprinter' — season-ticket holder with two kids who wants food and the toilet in 15 minutes without missing kick-off.",
+    "journey": ["Plan the day", "Travel and arrive", "Entry and security", "Find seat", "Half-time", "Second half", "Leave and travel home"],
+    "insights": [
+      "Half-time is a 15-minute logistics race, not a dining moment",
+      "Accessibility gaps concentrate at the same pinch point",
+      "Families decide before the match whether they will buy food"
+    ],
+    "hmw": [
+      "How might we let fans get food at half-time without missing the restart?",
+      "How might we make the step-free route the easiest route?"
+    ],
+    "workshop_inputs": "Persona Dev, current matchday journey, half-time heat map, 3 HMW, 6 inspiration sheets.",
+    "ideas": ["Order-ahead to collection lockers by section", "Family bundle pre-sold with the ticket", "Roaming sellers for accessible sections"],
+    "priorities": "Now: family bundle (adapted standard). Next: section lockers (capability check). Later: roaming sellers pilot.",
+    "test": "3-match pilot in two stands; measures: half-time transactions, queue length, fans back in seat at restart, accessible-section feedback.",
+    "credentials": "Arsenal FC (Emirates Stadium Experience, 2025), Roland-Garros (F&B Experience, 2026), Edinburgh Zoo (Visitor Experience Redesign, 2024) — listed in S06/S07; artifacts to verify."
+  },
+  "HEAL": {
+    "name": "St Aldric Hospital — the inpatient meal journey",
+    "client": "St Aldric Regional Hospital (fictional 600-bed acute hospital)",
+    "challenge": "Patient meal satisfaction is low and food waste on wards is high; families feel excluded from mealtimes.",
+    "users": "Inpatients (incl. dietary constraints), families, nurses, ward hosts, dietitians, kitchen team.",
+    "constraints": "Clinical diets and allergen rules; infection control; meal ordering 24 h ahead; nurse workload.",
+    "evidence": [
+      "Ward audit: 31% of trays returned more than half full [fictional]",
+      "Ordering happens 24 h before; 1 in 5 patients changed ward or diet in between [fictional]",
+      "Interview F02 (daughter of patient): 'Nobody tells me when Dad has eaten.' [fictional quote]",
+      "Ward host shadowing: 18 min per round spent finding the right tray [fictional observation]"
+    ],
+    "persona": "Ruth, the 'worried visitor' — daughter visiting her father after surgery, who wants to know he is eating and to help with choice.",
+    "journey": ["Admission", "Order the meal", "Wait", "Delivery to bedside", "Eat (or not)", "Tray collection", "Discharge"],
+    "insights": [
+      "The 24-hour order breaks when the patient's situation changes",
+      "Families are an unused ally at mealtimes",
+      "Waste is a signal of choice failure, not only appetite"
+    ],
+    "hmw": [
+      "How might we let patients choose closer to the meal without breaking clinical safety?",
+      "How might we involve families in mealtimes without adding nurse workload?"
+    ],
+    "workshop_inputs": "Persona Ruth (+ patient persona Arthur), current meal journey, 4 evidence cards, 3 HMW, 6 inspiration sheets.",
+    "ideas": ["Same-day bedside ordering with diet check", "Family meal update by text", "'Protected mealtimes' with ward hosts"],
+    "priorities": "Now: protected mealtimes (process change). Next: same-day ordering (capability + clinical validation). Later: family updates (privacy review).",
+    "test": "4-week ward pilot; measures: plate waste, meal satisfaction, missed meals, host time per round, incident log (safety).",
+    "credentials": "Clariane (Repensons — care-home food XP, 2025, care homes not acute hospitals: transfer limits apply). Cincinnati Children's / Cooper materials exist on the V1 board (RACI, SOW, pre-read) — use only after confirming sharing rules."
+  },
+  "LEARN": {
+    "name": "Lakeshore State University — the student campus day",
+    "client": "Lakeshore State University (fictional, 24,000 students) — FICTIONAL until a verified education credential is supplied",
+    "challenge": "Students leave campus after classes; dining participation is falling and students report food is unaffordable.",
+    "users": "Commuter students, residents, international students, students with dietary or financial constraints, library and dining staff.",
+    "constraints": "Meal-plan pricing set annually; diverse dietary and cultural needs; spaces owned by different departments.",
+    "evidence": [
+      "Meal-plan uptake down 9 points in 2 years [fictional]",
+      "Timetable analysis: 40% of students have a gap of 2+ hours between classes [fictional]",
+      "Interview St11: 'I eat in my car because the library doesn't allow food and the cafeteria is full.' [fictional quote]",
+      "Survey: 'affordable' is the top driver, ahead of 'healthy' [fictional]"
+    ],
+    "persona": "Leila, the 'between-classes commuter' — part-time worker on a tight budget who needs a place to eat, study and recharge for 3 hours.",
+    "journey": ["Plan the day", "Commute and park", "Morning classes", "The 3-hour gap", "Eat", "Study", "Evening and leave"],
+    "insights": [
+      "The real need is a 'home base' for the gap, not a meal",
+      "Affordability is about predictability as much as price",
+      "Food rules in study spaces push students out"
+    ],
+    "hmw": [
+      "How might we make the 3-hour gap the best part of a commuter's day?",
+      "How might we make eating on campus predictable for a tight budget?"
+    ],
+    "workshop_inputs": "Persona Leila, current campus-day journey, 4 evidence cards, 3 HMW, 6 inspiration sheets.",
+    "ideas": ["Flexible meal bundles for commuters", "Eat-and-study zones in the library annex", "Gap-time events with student clubs"],
+    "priorities": "Now: commuter bundle (adapted standard). Next: eat-and-study zone (space owner approval). Later: club partnerships.",
+    "test": "One-semester pilot; measures: bundle uptake, dwell time, zone occupancy, affordability perception survey vs. baseline.",
+    "credentials": "No education credential verified in the supplied decks (S05 lists a BRM for Education & Government; Cyber Campus is an innovation hub). Use as fictional case."
+  }
+}
