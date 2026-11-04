@@ -1,11 +1,12 @@
 import { NextResponse, type NextRequest } from "next/server";
 
-const ACCESS_COOKIE = "cds_access";
+import { ACCESS_COOKIE, accessToken } from "@/lib/access";
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const code = process.env.ACCESS_CODE;
   if (!code) return NextResponse.next();
-  if (request.cookies.get(ACCESS_COOKIE)?.value === code) return NextResponse.next();
+  const expected = await accessToken(code);
+  if (request.cookies.get(ACCESS_COOKIE)?.value === expected) return NextResponse.next();
   if (request.nextUrl.pathname.startsWith("/api/")) {
     return NextResponse.json({ error: "Access code required" }, { status: 401 });
   }
